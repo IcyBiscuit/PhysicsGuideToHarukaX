@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>大学雾里学习指南</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({"extensions":["tex2jax.js"],"jax":["input/TeX","output/HTML-CSS"],"messageStyle":"none","tex2jax":{"processEnvironments":false,"processEscapes":true,"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"TeX":{"extensions":["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]},"HTML-CSS":{"availableFonts":["TeX"]}});
+        </script>
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <style> 
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+ 
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview   ">
+      <h1 class="mume-header" id="%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B~~%E6%94%BE%E5%BC%83~~%E7%9A%84%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97">从零开始<s>放弃</s>的大学物理学习指南</h1>
+
+<p>大物太久没看，很多知识点已经遗忘，只能尽量回忆起当时的总结，按照我使用的课本的章节顺序写的，部分内容顺序可能会有所出入，但是知识点基本都重合。以我的能力可能只能做到解释一下一些公式的作用，并不能有什么万能的学习解题法宝。很抱歉，小粉丝只能做这一点微小的贡献了，望能对心瑶大物解题有帮助</p>
+<h2 class="mume-header" id="%E5%86%99%E5%9C%A8%E6%9C%80%E5%89%8D">写在最前</h2>
+
+<blockquote>
+<p>熊心瑶世界第一 ____（真的<br>
+——大家都这么说</p>
+</blockquote>
+<p>向量点积(内积)公式:<span class="mathjax-exps">$&#x5C;vec{a}&#x5C;cdot&#x5C;vec{b}=|&#x5C;vec{a}||&#x5C;vec{b}|&#x5C;cos&#x5C;theta$</span></p>
+<p>向量叉积(外积)公式:<span class="mathjax-exps">$&#x5C;vec{a}&#x5C;times&#x5C;vec{b}=&#x5C;vec{e}|&#x5C;vec{a}||&#x5C;vec{b}|&#x5C;sin&#x5C;theta$</span>, <span class="mathjax-exps">$&#x5C;vec{e}$</span> 方向满足右手定则.</p>
+<h2 class="mume-header" id="%E8%B4%A8%E7%82%B9%E8%BF%90%E5%8A%A8">质点运动</h2>
+
+<h3 class="mume-header" id="%E7%9B%B4%E7%BA%BF%E8%BF%90%E5%8A%A8">直线运动</h3>
+
+<p>直角坐标系中一点P，原点到P的可用位矢<span class="mathjax-exps">$&#x5C;vec{r}$</span>表示, <span class="mathjax-exps">$&#x5C;vec{r}=&#x5C;rm {x} &#x5C;vec{i} +&#x5C;rm {y} &#x5C;vec{j} + &#x5C;rm {z} &#x5C;vec{k}$</span>, 位矢大小<span class="mathjax-exps">$|&#x5C;vec{r}|=&#x5C;sqrt{x^2+y^2+z^2}$</span> (向量运算,求模不是绝对值).</p>
+<p>两点间位移可表示为<span class="mathjax-exps">$&#x5C;Delta&#x5C;vec{r}=&#x5C;vec{r_A}-&#x5C;vec{r_B}=(&#x5C;rm {x_A-x_B}) &#x5C;vec{i} +(&#x5C;rm {y_A-y_B}) &#x5C;vec{j} + (&#x5C;rm {z_A-z_B}) &#x5C;vec{k}$</span>, 位移只表示两点变化的结果,不表示实际运动的路径过程.</p>
+<p>平均速度: <span class="mathjax-exps">$&#x5C;overline{&#x5C;vec{v}}=&#x5C;frac{&#x5C;vec{r_2}-&#x5C;vec{r_1}}{&#x5C;Delta t}=&#x5C;frac{&#x5C;Delta &#x5C;vec{r}}{&#x5C;Delta t}$</span>, 也可以分解成<span class="mathjax-exps">$&#x5C;overline{&#x5C;vec{v}}=&#x5C;overline {v_x} &#x5C;vec{i} +&#x5C;overline{v_y} &#x5C;vec{j} + &#x5C;overline{v_z} &#x5C;vec{k}$</span></p>
+<p>速度: <span class="mathjax-exps">$&#x5C;lim_{&#x5C;Delta t &#x5C;rightarrow 0} &#x5C;frac{&#x5C;Delta&#x5C;vec{r}}{&#x5C;Delta t}=&#x5C;frac{&#x5C;rm d &#x5C;vec{r}}{&#x5C;rm{d} t}$</span>, 或者 <span class="mathjax-exps">${&#x5C;vec{v}}= {v_x} &#x5C;vec{i} +{v_y} &#x5C;vec{j} + {v_z} &#x5C;vec{k}$</span></p>
+<p>其中 <span class="mathjax-exps">$v_x=&#x5C;frac{&#x5C;rm d x}{&#x5C;rm d t}$</span>, <span class="mathjax-exps">$v_y, v_z$</span>以此类推.</p>
+<p>公式可根据坐标轴维度自行增删</p>
+<p>加速度:  <span class="mathjax-exps">$&#x5C;lim_{&#x5C;Delta t &#x5C;rightarrow 0} &#x5C;frac{&#x5C;Delta&#x5C;vec{v}}{&#x5C;Delta t}=&#x5C;frac{&#x5C;rm d &#x5C;vec{v}}{&#x5C;rm{d} t}$</span></p>
+<h4 class="mume-header" id="%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%BB%93">一些小结</h4>
+
+<p>位移: <span class="mathjax-exps">$&#x5C;vec s(t)$</span><br>
+速度: <span class="mathjax-exps">$&#x5C;vec v(t) = &#x5C;frac{&#x5C;rm d &#x5C;vec s(t)}{&#x5C;rm d t}$</span><br>
+加速度: <span class="mathjax-exps">$&#x5C;vec a(t) =&#x5C;frac{&#x5C;rm d &#x5C;vec v(t)}{&#x5C;rm d t}$</span><br>
+注意矢量方向<br>
+反过去就是积分关系</p>
+<p>一般有两种问题:</p>
+<ol>
+<li>
+<p>已知运动方程求运动状态</p>
+</li>
+<li>
+<p>已知运动状态求运动方程</p>
+</li>
+</ol>
+<p>速度可以分解, 合成, 可以先分开求解后再合成得出答案<br>
+求轨迹图可根据运动方程<span class="mathjax-exps">$x(t),y(t)$</span>, 消去t参数,就可以得到<span class="mathjax-exps">$y(x)$</span>轨迹</p>
+<h3 class="mume-header" id="%E5%9C%86%E5%91%A8%E8%BF%90%E5%8A%A8">圆周运动</h3>
+
+<p>法向加速度<span class="mathjax-exps">$&#x5C;vec{a_n}$</span>(指向圆心), 切向加速度<span class="mathjax-exps">$&#x5C;vec{a_t}$</span>(运动切线方向)</p>
+<h4 class="mume-header" id="%E7%BA%BF%E9%87%8F%E4%B8%8E%E8%A7%92%E9%87%8F%E5%85%B3%E7%B3%BB">线量与角量关系</h4>
+
+<p><img src="pics/%E7%BA%BF%E8%A7%92%E5%85%B3%E7%B3%BB.png" alt="&#x7EBF;&#x89D2;&#x5173;&#x7CFB;"></p>
+<p>角坐标为时间函数: <span class="mathjax-exps">$&#x5C;theta(t)$</span><br>
+角速度: <span class="mathjax-exps">$&#x5C;omega = &#x5C;frac{&#x5C;rm d &#x5C;theta}{&#x5C;rm d t}$</span>(弧度制)<br>
+<span class="mathjax-exps">$&#x5C;rm d s = R &#x5C;rm d &#x5C;theta$</span> (d意为取一微元量,下同)<br>
+<span class="mathjax-exps">$v=&#x5C;frac{&#x5C;rm d s}{&#x5C;rm d t}=R&#x5C;frac{&#x5C;rm d &#x5C;theta}{&#x5C;rm d t}=R&#x5C;omega$</span><br>
+<span class="mathjax-exps">$&#x5C;begin{cases} a_n=&#x5C;frac{v^2}{R}=R&#x5C;omega^2 &#x5C;&#x5C; a_t=&#x5C;frac{&#x5C;rm d v}{&#x5C;rm d t}=R&#x5C;frac{&#x5C;rm d &#x5C;omega}{&#x5C;rm d t}=R&#x5C;alpha &#x5C;end{cases}$</span></p>
+<p><img src="pics/%E5%9C%86%E5%91%A8%E5%8A%A0%E9%80%9F%E5%BA%A6.png" alt="&#x52A0;&#x901F;&#x5EA6;&#x5173;&#x7CFB;"><br>
+<span class="mathjax-exps">$&#x5C;vec{a}=&#x5C;vec{a_n}+&#x5C;vec{a_t}$</span><br>
+<span class="mathjax-exps">$|a|=&#x5C;sqrt{a_n^2+a_t^2}$</span> (大小)<br>
+<span class="mathjax-exps">$&#x5C;vec{a}=r&#x5C;alpha &#x5C;vec{e_t}+r&#x5C;omega^2 &#x5C;vec{e_n}$</span> (方向)<br>
+<span class="mathjax-exps">$&#x5C;theta=&#x5C;tan^{-1}{&#x5C;frac{a_n}{a_t}}$</span></p>
+<h3 class="mume-header" id="%E7%9B%B8%E5%AF%B9%E8%BF%90%E5%8A%A8%E4%BC%BD%E5%88%A9%E7%95%A5%E9%80%9F%E5%BA%A6%E5%8F%98%E6%8D%A2">相对运动(伽利略速度变换)</h3>
+
+<p><img src="pics/%E7%9B%B8%E5%AF%B9%E8%BF%90%E5%8A%A8.png" alt="&#x76F8;&#x5BF9;&#x8FD0;&#x52A8;"><br>
+<span class="mathjax-exps">$&#x5C;vec{v}=&#x5C;vec{v&#x27;}+&#x5C;vec{u}$</span><br>
+(接近光速请使用洛伦兹变换)</p>
+<h2 class="mume-header" id="%E7%89%9B%E9%A1%BF%E5%AE%9A%E7%90%86">牛顿定理</h2>
+
+<ol>
+<li>
+<p><span class="mathjax-exps">$&#x5C;vec{v}=恒矢量,当&#x5C;vec{F}=0$</span></p>
+</li>
+<li>
+<p><span class="mathjax-exps">$&#x5C;vec{p}=m&#x5C;vec{v}$</span>, <span class="mathjax-exps">$&#x5C;vec{F}=&#x5C;frac{&#x5C;rm d &#x5C;vec{p}}{&#x5C;rm d t}=&#x5C;frac{&#x5C;rm d (m&#x5C;vec{v})}{&#x5C;rm d t}$</span>, 远小于光速时:<span class="mathjax-exps">$&#x5C;vec{F}=m&#x5C;frac{&#x5C;rm d &#x5C;vec{v}}{&#x5C;rm d t}=m&#x5C;vec{a}$</span></p>
+</li>
+<li>
+<p><span class="mathjax-exps">$&#x5C;vec{F}=-&#x5C;vec{F&#x27;}$</span></p>
+</li>
+</ol>
+<h3 class="mume-header" id="%E5%B8%B8%E8%A7%81%E7%9A%84%E5%8A%9B">常见的力</h3>
+
+<h4 class="mume-header" id="%E4%B8%87%E6%9C%89%E5%BC%95%E5%8A%9B">万有引力</h4>
+
+<p><span class="mathjax-exps">$F=G&#x5C;frac{m_1m_2}{r^2}$</span>, <span class="mathjax-exps">$&#x5C;vec{F}=-G&#x5C;frac{m_1m_2}{r^2}&#x5C;vec{e_r}$</span>(向量形式)</p>
+<h4 class="mume-header" id="%E5%BC%B9%E6%80%A7%E5%8A%9B">弹性力</h4>
+
+<p>常见弹性力有:正压力、张力、弹簧弹性力等<br>
+弹簧弹性力:</p>
+<blockquote>
+<p><span class="mathjax-exps">$F = −kx$</span><br>
+胡克定律</p>
+</blockquote>
+<h4 class="mume-header" id="%E6%91%A9%E6%93%A6%E5%8A%9B">摩擦力</h4>
+
+<p>滑动摩擦力 最大静摩擦力: <span class="mathjax-exps">$F =&#x5C;mu F_N$</span><br>
+静摩擦力 一般情况: <span class="mathjax-exps">$F_{f_0 m} = &#x5C;mu_0 F_N$</span><br>
+<span class="mathjax-exps">$F_{f_0}&#x5C;leq F_{f_0 m}$</span><br>
+<span class="mathjax-exps">$&#x5C;mu &#x5C;approx &#x5C;mu_0$</span></p>
+<p>遗忘得太严重,只能这样了</p>
+<h2 class="mume-header" id="%E5%8A%A8%E9%87%8F%E5%AE%88%E6%81%92%E4%B8%8E%E8%83%BD%E9%87%8F%E5%AE%88%E6%81%92">动量守恒与能量守恒</h2>
+
+<h3 class="mume-header" id="%E5%8A%A8%E9%87%8F%E5%AE%9A%E7%90%86">动量定理</h3>
+
+<p>微分形式:<br>
+<span class="mathjax-exps">$&#x5C;vec{F}=&#x5C;frac{&#x5C;rm d &#x5C;vec{p}}{&#x5C;rm d t}=&#x5C;frac{&#x5C;rm d (m&#x5C;vec{v})}{&#x5C;rm d t}$</span>, <span class="mathjax-exps">$&#x5C;vec{F}&#x5C;rm d t=&#x5C;rm d &#x5C;vec{p}=&#x5C;rm d (m&#x5C;vec{v})$</span><br>
+积分形式:<br>
+<span class="mathjax-exps">$&#x5C;vec{I}=&#x5C;int_{t_1}^{t_2}&#x5C;vec{F}(t)&#x5C;rm d t=&#x5C;vec{p_2}-&#x5C;vec{p_1}=m&#x5C;vec{v_2}-m&#x5C;vec{v_1}$</span><br>
+作用于系统的合外力的冲量等于系统动量的增量(质点的动量定理) <s>我不知道这说的是啥</s></p>
+<p><span class="mathjax-exps">$&#x5C;vec{F^{ex}}=&#x5C;frac{&#x5C;rm d &#x5C;vec{p}}{&#x5C;rm d t}$</span></p>
+<h3 class="mume-header" id="%E5%8A%A8%E9%87%8F%E5%AE%88%E6%81%92%E5%AE%9A%E7%90%86">动量守恒定理</h3>
+
+<p><span class="mathjax-exps">$&#x5C;vec{p}=&#x5C;sum_{i=1}^n m_i&#x5C;vec{v_i}=恒矢量$</span> (系统合外力为零)</p>
+<h3 class="mume-header" id="%E5%8F%98%E5%8A%9B%E5%81%9A%E5%8A%9F">变力做功</h3>
+
+<p><span class="mathjax-exps">$&#x5C;rm dW = &#x5C;vec{F}&#x5C;cdot &#x5C;rm d &#x5C;vec{r}$</span><br>
+<span class="mathjax-exps">$&#x5C;therefore &#x5C;rm dW=F&#x5C;cos{&#x5C;theta}|&#x5C;rm d &#x5C;vec{r}|$</span></p>
+<p>将微元量积分,可得<br>
+<span class="mathjax-exps">$W=&#x5C;int_A^B{&#x5C;vec{F} &#x5C;cdot&#x5C;rm d &#x5C;vec{r}}=&#x5C;int_A^B{F &#x5C;cos &#x5C;theta &#x5C;rm d s}(&#x5C;rm d s = |&#x5C;rm d &#x5C;vec{r}|)$</span>(向量点积公式)</p>
+<h3 class="mume-header" id="%E8%B4%A8%E7%82%B9%E7%9A%84%E5%8A%A8%E8%83%BD%E5%AE%9A%E7%90%86">质点的动能定理</h3>
+
+<p><span class="mathjax-exps">$W=&#x5C;frac{1}{2}mv_2^2-&#x5C;frac{1}{2}mv_1^2=E_{k2}-E_{k1}$</span></p>
+<ul>
+<li>
+<p>功是过程量，动能是状态量</p>
+</li>
+<li>
+<p>功和动能依赖于惯性系的选取，但对不同惯性系动能定理形式相同.</p>
+</li>
+</ul>
+<h3 class="mume-header" id="%E4%BF%9D%E5%AE%88%E5%8A%9B%E4%B8%8E%E9%9D%9E%E4%BF%9D%E5%AE%88%E5%8A%9B">保守力与非保守力</h3>
+
+<h4 class="mume-header" id="%E4%BF%9D%E5%AE%88%E5%8A%9B%E4%BD%9C%E5%8A%9F%E7%9A%84%E6%95%B0%E5%AD%A6%E8%A1%A8%E8%BE%BE%E5%BC%8F">保守力作功的数学表达式</h4>
+
+<p>保守力所作的功与路径无关，仅决定于始、末位置.</p>
+<p>引力做功:<span class="mathjax-exps">$W=-[(-G&#x5C;frac{m&#x27;m}{r_B})-(-G&#x5C;frac{m&#x27;m}{r_A})]$</span></p>
+<p>弹力做功:<span class="mathjax-exps">$W=-(&#x5C;frac{1}{2}kx_B^2-&#x5C;frac{1}{2}kx_A^2)$</span></p>
+<h3 class="mume-header" id="%E5%8A%BF%E8%83%BD">势能</h3>
+
+<p>与质点位置有关的能量.<br>
+<img src="pics/%E5%8A%BF%E8%83%BD.png" alt="&#x52BF;&#x80FD;"></p>
+<h3 class="mume-header" id="%E5%8A%9F%E8%83%BD%E5%85%B3%E7%B3%BB">功能关系</h3>
+
+<p><span class="mathjax-exps">$W^{ex}+W_{nc}^{in}=(E_k+E_p)-(E_{k0}+E_{p0})$</span></p>
+<h4 class="mume-header" id="%E6%9C%BA%E6%A2%B0%E8%83%BD">机械能</h4>
+
+<p><span class="mathjax-exps">$E=E_k+E_p$</span></p>
+<p><span class="mathjax-exps">$W^{ex}+W_{nc}^{in}=E-E_0$</span></p>
+<p>一般情况碰撞<span class="mathjax-exps">$&#x5C;vec{F^{ex}} &lt;&lt; &#x5C;vec{F^{in}} &#x5C;sum_i p_i =&#x5C;vec{C}$</span></p>
+<ol>
+<li>
+<p>完全弹性碰撞: 动量和机械能均守恒</p>
+</li>
+<li>
+<p>非弹性碰撞: 动量守恒，机械能不守恒</p>
+</li>
+<li>
+<p>完全非弹性碰撞: 动量守恒，机械能不守恒</p>
+</li>
+</ol>
+<h2 class="mume-header" id="%E5%88%9A%E4%BD%93%E8%BD%AC%E5%8A%A8">刚体转动</h2>
+
+<h3 class="mume-header" id="%E8%A7%92%E9%80%9F%E5%BA%A6%E4%B8%8E%E8%A7%92%E5%8A%A0%E9%80%9F%E5%BA%A6">角速度与角加速度</h3>
+
+<p><img src="pics/%E5%88%9A%E4%BD%93%E8%BD%AC%E5%8A%A8.png" alt="&#x521A;&#x4F53;&#x8F6C;&#x52A8;"><br>
+角坐标: <span class="mathjax-exps">$&#x5C;theta=&#x5C;theta(t)$</span> (角度是关于时间的函数)</p>
+<ul>
+<li>
+<p>沿逆时针方向转动<span class="mathjax-exps">$&#x5C;theta&gt;0$</span></p>
+</li>
+<li>
+<p>沿顺时针方向转动<span class="mathjax-exps">$&#x5C;theta&lt;0$</span></p>
+</li>
+</ul>
+<p>角位移: <span class="mathjax-exps">$&#x5C;Delta&#x5C;theta=&#x5C;theta(t+&#x5C;Delta t)-&#x5C;theta(t)$</span></p>
+<p>角速度: <span class="mathjax-exps">$&#x5C;omega=&#x5C;lim_{&#x5C;Delta t &#x5C;rightarrow 0}&#x5C;frac{&#x5C;Delta &#x5C;theta}{&#x5C;Delta t}=&#x5C;frac{&#x5C;rm d &#x5C;theta}{&#x5C;rm d t}$</span></p>
+<p><span class="mathjax-exps">$&#x5C;vec{&#x5C;omega}$</span>正方向,右手螺旋,拇指所指的方向</p>
+<h3 class="mume-header" id="%E5%8C%80%E5%8F%98%E9%80%9F%E8%BD%AC%E5%8A%A8">匀变速转动</h3>
+
+<p>角加速度: <span class="mathjax-exps">$&#x5C;alpha=&#x5C;lim_{&#x5C;Delta t &#x5C;rightarrow 0}&#x5C;frac{&#x5C;Delta &#x5C;omega}{&#x5C;Delta t}=&#x5C;frac{&#x5C;rm d &#x5C;omega}{&#x5C;rm d t}$</span></p>
+<h4 class="mume-header" id="%E5%8C%80%E5%8F%98%E9%80%9F%E7%9B%B4%E7%BA%BF%E8%BF%90%E5%8A%A8%E5%8C%80%E5%8F%98%E9%80%9F%E8%BD%AC%E5%8A%A8%E7%9A%84%E5%AF%B9%E6%AF%94">匀变速直线运动匀变速转动的对比</h4>
+
+<p>当加速度/角加速度为常量时</p>
+<table>
+<thead>
+<tr>
+<th>质点匀变速直线运动</th>
+<th>刚体绕定轴作匀变速转动</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="mathjax-exps">$v=v_0+at$</span></td>
+<td><span class="mathjax-exps">$&#x5C;omega=&#x5C;omega_0+&#x5C;alpha t$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$x = x_0 + v_0 t + &#x5C;frac{1}{2}at^2$</span></td>
+<td><span class="mathjax-exps">$&#x5C;theta = &#x5C;theta_0 + &#x5C;omega_0 t + &#x5C;frac{1}{2}&#x5C;alpha t^2$</span></td>
+</tr>
+<tr>
+<td><span class="mathjax-exps">$v^2 =v_0^2 +2a(x−x_0)$</span></td>
+<td><span class="mathjax-exps">$&#x5C;omega^2 = &#x5C;omega_0^2 + 2 &#x5C;alpha ( θ − θ_0 )$</span></td>
+</tr>
+</tbody>
+</table>
+<h4 class="mume-header" id="%E8%A7%92%E9%87%8F%E4%B8%8E%E7%BA%BF%E9%87%8F%E7%9A%84%E5%85%B3%E7%B3%BB">角量与线量的关系</h4>
+
+<p><img src="pics/%E5%88%9A%E4%BD%93_%E8%A7%92%E7%BA%BF%E5%85%B3%E7%B3%BB.png" alt="&#x89D2;&#x7EBF;&#x5173;&#x7CFB;"></p>
+<p><span class="mathjax-exps">$&#x5C;omega=&#x5C;frac{&#x5C;rm d &#x5C;theta}{&#x5C;rm d t}$</span><br>
+<span class="mathjax-exps">$&#x5C;alpha=&#x5C;frac{&#x5C;rm d &#x5C;omega}{&#x5C;rm d t}=&#x5C;frac{&#x5C;rm{d^2}&#x5C;theta}{&#x5C;rm d t^2}$</span> (两次求导的意思)</p>
+<p><span class="mathjax-exps">$v=r&#x5C;omega$</span><br>
+<span class="mathjax-exps">$a_t=r&#x5C;alpha$</span> (切向)<br>
+<span class="mathjax-exps">$a_n=r&#x5C;omega^2$</span> (法向)<br>
+<span class="mathjax-exps">$&#x5C;vec{a}=r&#x5C;alpha &#x5C;vec{e_t} +r&#x5C;omega^2&#x5C;vec{e_n}$</span></p>
+<h4 class="mume-header" id="%E5%8A%9B%E7%9F%A9">力矩</h4>
+
+<p>用来描述力对刚体的转动作用<br>
+<img src="pics/%E5%8A%9B%E7%9F%A9.png" alt="&#x529B;&#x77E9;"></p>
+<p><span class="mathjax-exps">$&#x5C;vec{F}$</span> 对转轴z的力矩<br>
+**<span class="mathjax-exps">$&#x5C;vec{M}=&#x5C;vec{r}&#x5C;times&#x5C;vec{F}$</span><br>
+<span class="mathjax-exps">$M=Fr&#x5C;sin&#x5C;theta=Fd$</span> (d为力臂)</p>
+<p><strong>所以通过中心轴的力的力矩为0</strong><br>
+<img src="pics/%E5%8A%9B%E7%9F%A9%E5%85%B3%E7%B3%BB.png" alt="&#x529B;&#x77E9;&#x5173;&#x7CFB;"></p>
+<h4 class="mume-header" id="%E8%BD%AC%E5%8A%A8%E6%83%AF%E9%87%8F%E9%87%8D%E7%82%B9">转动惯量(重点)</h4>
+
+<p><span class="mathjax-exps">$J=&#x5C;sum_j &#x5C;Delta m_j r_j^2(离散情况)=&#x5C;int r^2&#x5C;rm d m(连续的情况下)$</span></p>
+<ul>
+<li>
+<p>转动惯量的单位:kg·m2</p>
+</li>
+<li>
+<p>J的意义:转动惯性的量度</p>
+</li>
+</ul>
+<p><strong>刚体的转动惯量与以下三个因素有关</strong></p>
+<ol>
+<li>
+<p>与刚体的体密度 ρ 有关.</p>
+</li>
+<li>
+<p>与刚体的几何形状及体密度 ρ 的分 布有关.</p>
+</li>
+<li>
+<p>与转轴的位置有关.</p>
+</li>
+</ol>
+<blockquote>
+<p>说点人话<br>
+把转动惯量理解成与质量, 密度一样是一个刚体本身的一种属性就基本OK了</p>
+</blockquote>
+<h5 class="mume-header" id="%E5%87%A0%E7%A7%8D%E5%B8%B8%E8%A7%81%E5%88%9A%E4%BD%93%E7%9A%84%E8%BD%AC%E5%8A%A8%E6%83%AF%E9%87%8F">几种常见刚体的转动惯量</h5>
+
+<p>(书上一般有表,在这里写几个常用的)</p>
+<table>
+<thead>
+<tr>
+<th>物体类型</th>
+<th>转动惯量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>细棒(转动轴通过并且垂直于细棒中心)</td>
+<td><span class="mathjax-exps">$J=&#x5C;frac{ml^2}{12}$</span></td>
+</tr>
+<tr>
+<td>圆柱体(转动轴沿几何轴 //理解为圆心, 常用的一个, 滑轮转动问题经常用)</td>
+<td><span class="mathjax-exps">$J=&#x5C;frac{mR^2}{2}$</span>(R为圆柱体半径)</td>
+</tr>
+<tr>
+<td>球体(转动轴过球径)</td>
+<td><span class="mathjax-exps">$J=&#x5C;frac{2mR^2}{5}$</span></td>
+</tr>
+<tr>
+<td>细棒(转动轴在细棒的一端且垂直)</td>
+<td>$J=\frac{ml^2}{3}</td>
+</tr>
+</tbody>
+</table>
+<h4 class="mume-header" id="%E8%BD%AC%E5%8A%A8%E5%AE%9A%E5%BE%8B%E7%BB%93%E5%90%88%E8%BD%AC%E5%8A%A8%E6%83%AF%E9%87%8F%E4%B8%8E%E5%8A%9B%E7%9F%A9%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9">转动定律(结合转动惯量与力矩的知识点)</h4>
+
+<p><span class="mathjax-exps">$M=J&#x5C;alpha$</span></p>
+<blockquote>
+<p>转动定律是解决刚体定轴转动问题的基本方程</p>
+</blockquote>
+<h4 class="mume-header" id="%E5%B9%B3%E8%A1%8C%E8%BD%B4%E5%AE%9A%E7%90%86">平行轴定理</h4>
+
+<p><img src="pics/%E5%B9%B3%E8%A1%8C%E8%BD%B4.png" alt="&#x5E73;&#x884C;&#x8F74;&#x5B9A;&#x7406;"><br>
+质量为m的刚体, 如果对其质心轴的转动惯量为<span class="mathjax-exps">$J_C$</span> ，则对任一与该轴平行，相距为d的转轴的转动惯量: <span class="mathjax-exps">$J_O =J_C +md^2$</span></p>
+<h4 class="mume-header" id="%E5%85%B3%E4%BA%8E%E8%BF%90%E7%94%A8%E8%BD%AC%E5%8A%A8%E6%83%AF%E9%87%8F%E7%9A%84%E4%B8%80%E8%88%AC%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF%E4%B8%8D%E5%90%8C%E4%BA%8E%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86%E7%9A%84%E8%A7%A3%E9%A2%98%E6%96%B9%E6%B3%95">关于运用转动惯量的一般解题思路(不同于高中物理的解题方法)</h4>
+
+<p><img src="pics/%E5%88%9A%E4%BD%93_%E4%BE%8B%E9%A2%98.jpg" alt="&#x4F8B;&#x9898;"></p>
+<blockquote>
+<p>如图所示,质量为<span class="mathjax-exps">$m_A$</span>的物体A静止在光滑水平面上,它和一质量不计的纯索相连接,此绳索跨过一半径为R、质量为<span class="mathjax-exps">$m_c$</span>的圆柱形滑轮C,并系在另一质量为<span class="mathjax-exps">$m_B$</span>的物体B上,B竖直悬挂,圆柱形滑轮可绕其几何中心轴转动,当滑轮转动时,它与绳索间没有滑动,且滑轮与轴承间的摩擦力可略去不计,问:</p>
+</blockquote>
+<ol>
+<li>这两物体的线加速度为多少?水平和竖直两段绳索的张力各为多少?</li>
+<li>物体从静止落下距离y时,其速率为多少?</li>
+</ol>
+<p>解题思路</p>
+<ol>
+<li>
+<p>先分别对各个物体分别进行受力分析 **(<span class="mathjax-exps">$F_{T2}=F_{T2}&#x27;$</span>, <span class="mathjax-exps">$F_{T1}=F_{T1}&#x27;$</span>, 但是<span class="mathjax-exps">$F_{T2}&#x5C;neq F_{T1}$</span> )</p>
+</li>
+<li>
+<p>分别计算A, B 加速度(对于此题:<span class="mathjax-exps">$F_{T1}=m_Aa$</span> **1, <span class="mathjax-exps">$m_B-F_{T2}=m_Ba$</span> **2)</p>
+</li>
+<li>
+<p>对于C,计算力矩 (此题: <span class="mathjax-exps">$M=Fr&#x5C;sin&#x5C;theta=Fr=RF_{T2}-RF_{T1}=J&#x5C;alpha$</span> **3 (此处结合受力分析以及运用转动定律)</p>
+</li>
+<li>
+<p>将转动惯量J(查表)代入**3,并且结合转动线角关系 <span class="mathjax-exps">$a_t=R&#x5C;alpha$</span> (滑轮边缘切向加速度与绳索和物体的加速度大小相等), 联立三个方程求解即可</p>
+</li>
+</ol>
+<h3 class="mume-header" id="%E8%A7%92%E5%8A%A8%E9%87%8F%E4%B8%8E%E8%A7%92%E5%8A%A8%E9%87%8F%E5%AE%88%E6%81%92">角动量与角动量守恒</h3>
+
+<h4 class="mume-header" id="%E8%B4%A8%E7%82%B9%E7%9A%84%E8%A7%92%E5%8A%A8%E9%87%8F">质点的角动量</h4>
+
+<p><img src="pics/%E8%A7%92%E5%8A%A8%E9%87%8F.png" alt="&#x89D2;&#x52A8;&#x91CF;"></p>
+<p><span class="mathjax-exps">$&#x5C;vec{L}=&#x5C;vec{r}&#x5C;times&#x5C;vec{p}=m&#x5C;vec{r}&#x5C;times&#x5C;vec{v}$</span></p>
+<p>可得<br>
+<span class="mathjax-exps">$L=rmv&#x5C;sin&#x5C;theta$</span> (标量形式)<strong>重要的公式</strong></p>
+<h4 class="mume-header" id="%E8%B4%A8%E7%82%B9%E7%9A%84%E8%A7%92%E5%8A%A8%E9%87%8F%E5%AE%9A%E7%90%86">质点的角动量定理</h4>
+
+<p><span class="mathjax-exps">$&#x5C;vec{r}&#x5C;times&#x5C;vec{F}=&#x5C;vec{M_{合力矩}}=&#x5C;frac{&#x5C;rm d&#x5C;vec{L}}{&#x5C;rm d t}=&#x5C;frac{&#x5C;rm d}{&#x5C;rm d t}(&#x5C;vec{r}&#x5C;times m&#x5C;vec{v})$</span></p>
+<p>两端积分:<br>
+<span class="mathjax-exps">$&#x5C;int_{t_1}^{t_2}&#x5C;vec{M}&#x5C;rm d t=&#x5C;vec{L_2}-&#x5C;vec{L_1}$</span></p>
+<p>若<span class="mathjax-exps">$&#x5C;vec{M}=0$</span>, <span class="mathjax-exps">$&#x5C;vec{L}=m&#x5C;vec{r}&#x5C;times&#x5C;vec{v}=恒矢量$</span> (质点的角动量守恒定理)</p>
+<h4 class="mume-header" id="%E4%B8%A4%E9%81%93%E4%BE%8B%E9%A2%98">两道例题</h4>
+
+<h5 class="mume-header" id="%E4%BE%8B1">例1</h5>
+
+<p><img src="pics/%E8%A7%92%E5%8A%A8%E9%87%8F%E5%AE%88%E6%81%921.jpg" alt="&#x4F8B;&#x9898;1"></p>
+<blockquote>
+<p>一杂技演员M由距水平跷板高为h处自由下落到跷板的一端A,并把板另一端的演员N弹了起来,设板是匀质的,长度为L,质量为m',支撑点在板的中部点C,晓板可绕点C在竖直平面内转动,演员M, N的质量都是m,假定演员M落在板上,与跳板的碰撞是完全非弹性碰撞,问演员N弹起多高</p>
+</blockquote>
+<p>解题思路:</p>
+<blockquote>
+<p>为使讨论简化,把演员视为质点,演员M落在板A处的速率为<span class="mathjax-exps">$v_m=&#x5C;sqrt{2gh}$</span>,这个,速率也就是演员M与板A处刚碰撞时的速率,此时演员N的速率<span class="mathjax-exps">$v_n=0$</span>.<strong>在碰撞后的瞬时,演员M, N具有相同的线速率u,其值为<span class="mathjax-exps">$u=&#x5C;frac{l}{2}&#x5C;omega$</span>, <span class="mathjax-exps">$&#x5C;omega$</span>为演员和板绕点C的角速率</strong>,现把演员M, N和板作为一个系统,并以通过点C垂直纸平面的轴为转轴,由于M, N两演员的<strong>质量相等</strong>,所以当演员M碰撞板A处时,<strong>作用在系统上的合外力矩为零</strong>,故系统的<strong>角动量守恒</strong></p>
+</blockquote>
+<p>可获得方程:<br>
+<div class="mathjax-exps">$$&#x5C;begin{cases}mv_m&#x5C;frac{l}{2}=&#x5C;overbrace{J&#x5C;omega}^{棒的角动量}+&#x5C;overbrace{2mu&#x5C;frac{l}{2}}^{两个演员的角动量}=J&#x5C;omega+&#x5C;frac{1}{2}ml^2&#x5C;omega &#x5C;&#x5C; &#x5C;&#x5C;J=&#x5C;frac{1}{12}m&#x27;l^2(查表)&#x5C;&#x5C; &#x5C;&#x5C;u=&#x5C;frac{l}{2}&#x5C;omega&#x5C;end{cases}$$</div></p>
+<p>解出<span class="mathjax-exps">$&#x5C;omega$</span>,再代入<span class="mathjax-exps">$h&#x27;=&#x5C;frac{u^2}{2g}$</span>(反向自由落体)</p>
+<h5 class="mume-header" id="%E4%BE%8B2">例2</h5>
+
+<p><img src="pics/%E8%A7%92%E5%8A%A8%E9%87%8F%E5%AE%88%E6%81%922.jpg" alt="&#x4F8B;&#x9898;2"></p>
+<blockquote>
+<p>有一根质量很小的长度为l的均匀细杆,可绕通过其中心点O并与纸平面垂直的轴在竖直平面内转动,当细杆静止于水平位置时,有一只小虫以速率<span class="mathjax-exps">$v_0$</span>,垂直落在距点O为l/4处,并背离点O向细杆的端点A爬行.<br>
+设小虫的<strong>质量与细杆的质量均为m</strong>, 问:欲使细杆以<strong>恒定的角速度</strong>转动,小虫应以多大速率向斜杆端点爬行。</p>
+</blockquote>
+<p>解题思路:</p>
+<blockquote>
+<p>解小虫落在杆上,可视完全非弹性碰撞,且碰撞时间极短,重力的动量矩可略去不计,于是,细杆带着小虫一起以角速度<span class="mathjax-exps">$&#x5C;omega$</span>转动,在碰撞前后,小虫和细杆系统的角动量守恒</p>
+</blockquote>
+<p>有:<br>
+<div class="mathjax-exps">$$&#x5C;overbrace{mv_0&#x5C;frac{l}{4}}^{角动量}=&#x5C;overbrace{[&#x5C;frac{l}{12}ml^2+m(&#x5C;frac{l}{4})^2]}^{小虫与细棒整体的转动惯量}&#x5C;omega$$</div><br>
+得<br>
+<span class="mathjax-exps">$&#x5C;omega=&#x5C;frac{12}{7}&#x5C;frac{v_0}{l}$</span> **1</p>
+<p>系统合外力矩仅为小虫重力矩<br>
+<span class="mathjax-exps">$M=mgr&#x5C;cos&#x5C;theta$</span> **2</p>
+<p>要求角速度恒定<br>
+<span class="mathjax-exps">$M=&#x5C;frac{&#x5C;rm d L}{&#x5C;rm d t}=&#x5C;frac{&#x5C;rm d}{&#x5C;rm dt}(J&#x5C;omega)=&#x5C;omega&#x5C;frac{&#x5C;rm dJ}{&#x5C;rm dt}$</span> **3</p>
+<p>运用平行轴定理<br>
+<span class="mathjax-exps">$J=&#x5C;frac{1}{12}ml^2+mr^2$</span></p>
+<p>求微分,可得<br>
+<span class="mathjax-exps">$&#x5C;frac{&#x5C;rm dJ}{&#x5C;rm dt}=2mr&#x5C;frac{&#x5C;rm dr}{&#x5C;rm dt}$</span> **4 (r为关于时间的t函数)</p>
+<p>**2 **4 代入 **3,得<br>
+<span class="mathjax-exps">$mgr&#x5C;cos&#x5C;theta=2mr&#x5C;omega&#x5C;frac{&#x5C;rm dr}{&#x5C;rm dt}$</span></p>
+<p>结合<br>
+<span class="mathjax-exps">$&#x5C;theta=&#x5C;omega t$</span></p>
+<p>求解出<span class="mathjax-exps">$&#x5C;frac{&#x5C;rm dr}{&#x5C;rm dt}$</span>, 即为答案.</p>
+
+      </div>
+      <div class="md-sidebar-toc"><ul>
+<li><a href="#%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B~~%E6%94%BE%E5%BC%83~~%E7%9A%84%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97">从零开始<s>放弃</s>的大学物理学习指南</a>
+<ul>
+<li><a href="#%E5%86%99%E5%9C%A8%E6%9C%80%E5%89%8D">写在最前</a></li>
+<li><a href="#%E8%B4%A8%E7%82%B9%E8%BF%90%E5%8A%A8">质点运动</a>
+<ul>
+<li><a href="#%E7%9B%B4%E7%BA%BF%E8%BF%90%E5%8A%A8">直线运动</a>
+<ul>
+<li><a href="#%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%BB%93">一些小结</a></li>
+</ul>
+</li>
+<li><a href="#%E5%9C%86%E5%91%A8%E8%BF%90%E5%8A%A8">圆周运动</a>
+<ul>
+<li><a href="#%E7%BA%BF%E9%87%8F%E4%B8%8E%E8%A7%92%E9%87%8F%E5%85%B3%E7%B3%BB">线量与角量关系</a></li>
+</ul>
+</li>
+<li><a href="#%E7%9B%B8%E5%AF%B9%E8%BF%90%E5%8A%A8%E4%BC%BD%E5%88%A9%E7%95%A5%E9%80%9F%E5%BA%A6%E5%8F%98%E6%8D%A2">相对运动(伽利略速度变换)</a></li>
+</ul>
+</li>
+<li><a href="#%E7%89%9B%E9%A1%BF%E5%AE%9A%E7%90%86">牛顿定理</a>
+<ul>
+<li><a href="#%E5%B8%B8%E8%A7%81%E7%9A%84%E5%8A%9B">常见的力</a>
+<ul>
+<li><a href="#%E4%B8%87%E6%9C%89%E5%BC%95%E5%8A%9B">万有引力</a></li>
+<li><a href="#%E5%BC%B9%E6%80%A7%E5%8A%9B">弹性力</a></li>
+<li><a href="#%E6%91%A9%E6%93%A6%E5%8A%9B">摩擦力</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E5%8A%A8%E9%87%8F%E5%AE%88%E6%81%92%E4%B8%8E%E8%83%BD%E9%87%8F%E5%AE%88%E6%81%92">动量守恒与能量守恒</a>
+<ul>
+<li><a href="#%E5%8A%A8%E9%87%8F%E5%AE%9A%E7%90%86">动量定理</a></li>
+<li><a href="#%E5%8A%A8%E9%87%8F%E5%AE%88%E6%81%92%E5%AE%9A%E7%90%86">动量守恒定理</a></li>
+<li><a href="#%E5%8F%98%E5%8A%9B%E5%81%9A%E5%8A%9F">变力做功</a></li>
+<li><a href="#%E8%B4%A8%E7%82%B9%E7%9A%84%E5%8A%A8%E8%83%BD%E5%AE%9A%E7%90%86">质点的动能定理</a></li>
+<li><a href="#%E4%BF%9D%E5%AE%88%E5%8A%9B%E4%B8%8E%E9%9D%9E%E4%BF%9D%E5%AE%88%E5%8A%9B">保守力与非保守力</a>
+<ul>
+<li><a href="#%E4%BF%9D%E5%AE%88%E5%8A%9B%E4%BD%9C%E5%8A%9F%E7%9A%84%E6%95%B0%E5%AD%A6%E8%A1%A8%E8%BE%BE%E5%BC%8F">保守力作功的数学表达式</a></li>
+</ul>
+</li>
+<li><a href="#%E5%8A%BF%E8%83%BD">势能</a></li>
+<li><a href="#%E5%8A%9F%E8%83%BD%E5%85%B3%E7%B3%BB">功能关系</a>
+<ul>
+<li><a href="#%E6%9C%BA%E6%A2%B0%E8%83%BD">机械能</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E5%88%9A%E4%BD%93%E8%BD%AC%E5%8A%A8">刚体转动</a>
+<ul>
+<li><a href="#%E8%A7%92%E9%80%9F%E5%BA%A6%E4%B8%8E%E8%A7%92%E5%8A%A0%E9%80%9F%E5%BA%A6">角速度与角加速度</a></li>
+<li><a href="#%E5%8C%80%E5%8F%98%E9%80%9F%E8%BD%AC%E5%8A%A8">匀变速转动</a>
+<ul>
+<li><a href="#%E5%8C%80%E5%8F%98%E9%80%9F%E7%9B%B4%E7%BA%BF%E8%BF%90%E5%8A%A8%E5%8C%80%E5%8F%98%E9%80%9F%E8%BD%AC%E5%8A%A8%E7%9A%84%E5%AF%B9%E6%AF%94">匀变速直线运动匀变速转动的对比</a></li>
+<li><a href="#%E8%A7%92%E9%87%8F%E4%B8%8E%E7%BA%BF%E9%87%8F%E7%9A%84%E5%85%B3%E7%B3%BB">角量与线量的关系</a></li>
+<li><a href="#%E5%8A%9B%E7%9F%A9">力矩</a></li>
+<li><a href="#%E8%BD%AC%E5%8A%A8%E6%83%AF%E9%87%8F%E9%87%8D%E7%82%B9">转动惯量(重点)</a>
+<ul>
+<li><a href="#%E5%87%A0%E7%A7%8D%E5%B8%B8%E8%A7%81%E5%88%9A%E4%BD%93%E7%9A%84%E8%BD%AC%E5%8A%A8%E6%83%AF%E9%87%8F">几种常见刚体的转动惯量</a></li>
+</ul>
+</li>
+<li><a href="#%E8%BD%AC%E5%8A%A8%E5%AE%9A%E5%BE%8B%E7%BB%93%E5%90%88%E8%BD%AC%E5%8A%A8%E6%83%AF%E9%87%8F%E4%B8%8E%E5%8A%9B%E7%9F%A9%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9">转动定律(结合转动惯量与力矩的知识点)</a></li>
+<li><a href="#%E5%B9%B3%E8%A1%8C%E8%BD%B4%E5%AE%9A%E7%90%86">平行轴定理</a></li>
+<li><a href="#%E5%85%B3%E4%BA%8E%E8%BF%90%E7%94%A8%E8%BD%AC%E5%8A%A8%E6%83%AF%E9%87%8F%E7%9A%84%E4%B8%80%E8%88%AC%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF%E4%B8%8D%E5%90%8C%E4%BA%8E%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86%E7%9A%84%E8%A7%A3%E9%A2%98%E6%96%B9%E6%B3%95">关于运用转动惯量的一般解题思路(不同于高中物理的解题方法)</a></li>
+</ul>
+</li>
+<li><a href="#%E8%A7%92%E5%8A%A8%E9%87%8F%E4%B8%8E%E8%A7%92%E5%8A%A8%E9%87%8F%E5%AE%88%E6%81%92">角动量与角动量守恒</a>
+<ul>
+<li><a href="#%E8%B4%A8%E7%82%B9%E7%9A%84%E8%A7%92%E5%8A%A8%E9%87%8F">质点的角动量</a></li>
+<li><a href="#%E8%B4%A8%E7%82%B9%E7%9A%84%E8%A7%92%E5%8A%A8%E9%87%8F%E5%AE%9A%E7%90%86">质点的角动量定理</a></li>
+<li><a href="#%E4%B8%A4%E9%81%93%E4%BE%8B%E9%A2%98">两道例题</a>
+<ul>
+<li><a href="#%E4%BE%8B1">例1</a></li>
+<li><a href="#%E4%BE%8B2">例2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+      <a id="sidebar-toc-btn">≡</a>
+    </body>
+    
+    
+    
+    
+    
+    
+    <script>
+(function bindTaskListEvent() {
+  var taskListItemCheckboxes = document.body.getElementsByClassName('task-list-item-checkbox')
+  for (var i = 0; i < taskListItemCheckboxes.length; i++) {
+    var checkbox = taskListItemCheckboxes[i]
+    var li = checkbox.parentElement
+    if (li.tagName !== 'LI') li = li.parentElement
+    if (li.tagName === 'LI') {
+      li.classList.add('task-list-item')
+    }
+  }
+}())    
+</script>
+    
+<script>
+
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
+      
+  </html>
