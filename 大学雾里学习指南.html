@@ -219,32 +219,33 @@ code.language-yaml {
       <div class="mume markdown-preview   ">
       <h1 class="mume-header" id="%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B~~%E6%94%BE%E5%BC%83~~%E7%9A%84%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97">从零开始<s>放弃</s>的大学物理学习指南</h1>
 
-<p>大物太久没看，很多知识点已经遗忘，只能尽量回忆起当时的总结，按照我使用的课本的章节顺序写的，部分内容顺序可能会有所出入，但是知识点基本都重合。以我的能力可能只能做到解释一下一些公式的作用，并不能有什么万能的学习解题法宝。很抱歉，小粉丝只能做这一点微小的贡献了，望能对心瑶大物解题有帮助</p>
 <h2 class="mume-header" id="%E5%86%99%E5%9C%A8%E6%9C%80%E5%89%8D">写在最前</h2>
 
 <blockquote>
 <p>熊心瑶世界第一 ____（真的<br>
 ——大家都这么说</p>
 </blockquote>
-<p>向量点积(内积)公式:<span class="mathjax-exps">$&#x5C;vec{a}&#x5C;cdot&#x5C;vec{b}=|&#x5C;vec{a}||&#x5C;vec{b}|&#x5C;cos&#x5C;theta$</span></p>
-<p>向量叉积(外积)公式:<span class="mathjax-exps">$&#x5C;vec{a}&#x5C;times&#x5C;vec{b}=&#x5C;vec{e}|&#x5C;vec{a}||&#x5C;vec{b}|&#x5C;sin&#x5C;theta$</span>, <span class="mathjax-exps">$&#x5C;vec{e}$</span> 方向满足右手定则.</p>
+<h2 class="mume-header" id="%E5%9F%BA%E6%9C%AC%E7%9F%A2%E9%87%8F%E8%BF%90%E7%AE%97">基本矢量运算</h2>
+
+<p>矢量点积(内积)公式:<span class="mathjax-exps">$&#x5C;vec{a}&#x5C;cdot&#x5C;vec{b}=|&#x5C;vec{a}||&#x5C;vec{b}|&#x5C;cos&#x5C;theta$</span></p>
+<p>矢量叉积(外积)公式:<span class="mathjax-exps">$&#x5C;vec{a}&#x5C;times&#x5C;vec{b}=&#x5C;vec{e}|&#x5C;vec{a}||&#x5C;vec{b}|&#x5C;sin&#x5C;theta$</span>, <span class="mathjax-exps">$&#x5C;vec{e}$</span> 方向满足右手定则.</p>
 <h2 class="mume-header" id="%E8%B4%A8%E7%82%B9%E8%BF%90%E5%8A%A8">质点运动</h2>
 
 <h3 class="mume-header" id="%E7%9B%B4%E7%BA%BF%E8%BF%90%E5%8A%A8">直线运动</h3>
 
-<p>直角坐标系中一点P，原点到P的可用位矢<span class="mathjax-exps">$&#x5C;vec{r}$</span>表示, <span class="mathjax-exps">$&#x5C;vec{r}=&#x5C;rm {x} &#x5C;vec{i} +&#x5C;rm {y} &#x5C;vec{j} + &#x5C;rm {z} &#x5C;vec{k}$</span>, 位矢大小<span class="mathjax-exps">$|&#x5C;vec{r}|=&#x5C;sqrt{x^2+y^2+z^2}$</span> (向量运算,求模不是绝对值).</p>
-<p>两点间位移可表示为<span class="mathjax-exps">$&#x5C;Delta&#x5C;vec{r}=&#x5C;vec{r_A}-&#x5C;vec{r_B}=(&#x5C;rm {x_A-x_B}) &#x5C;vec{i} +(&#x5C;rm {y_A-y_B}) &#x5C;vec{j} + (&#x5C;rm {z_A-z_B}) &#x5C;vec{k}$</span>, 位移只表示两点变化的结果,不表示实际运动的路径过程.</p>
-<p>平均速度: <span class="mathjax-exps">$&#x5C;overline{&#x5C;vec{v}}=&#x5C;frac{&#x5C;vec{r_2}-&#x5C;vec{r_1}}{&#x5C;Delta t}=&#x5C;frac{&#x5C;Delta &#x5C;vec{r}}{&#x5C;Delta t}$</span>, 也可以分解成<span class="mathjax-exps">$&#x5C;overline{&#x5C;vec{v}}=&#x5C;overline {v_x} &#x5C;vec{i} +&#x5C;overline{v_y} &#x5C;vec{j} + &#x5C;overline{v_z} &#x5C;vec{k}$</span></p>
-<p>速度: <span class="mathjax-exps">$&#x5C;lim_{&#x5C;Delta t &#x5C;rightarrow 0} &#x5C;frac{&#x5C;Delta&#x5C;vec{r}}{&#x5C;Delta t}=&#x5C;frac{&#x5C;rm d &#x5C;vec{r}}{&#x5C;rm{d} t}$</span>, 或者 <span class="mathjax-exps">${&#x5C;vec{v}}= {v_x} &#x5C;vec{i} +{v_y} &#x5C;vec{j} + {v_z} &#x5C;vec{k}$</span></p>
-<p>其中 <span class="mathjax-exps">$v_x=&#x5C;frac{&#x5C;rm d x}{&#x5C;rm d t}$</span>, <span class="mathjax-exps">$v_y, v_z$</span>以此类推.</p>
+<p>直角坐标系中一点P，原点到P的可用位矢<span class="mathjax-exps">$&#x5C;vec{r}$</span>表示, <span class="mathjax-exps">$&#x5C;vec{r}=&#x5C;rm {x} &#x5C;vec{i} +&#x5C;rm {y} &#x5C;vec{j} + &#x5C;rm {z} &#x5C;vec{k}$</span>, 位矢大小<span class="mathjax-exps">$|&#x5C;vec{r}|=&#x5C;sqrt{x^2+y^2+z^2}$</span> (矢量运算, 求模不是绝对值).</p>
+<p>两点间位移可表示为<span class="mathjax-exps">$&#x5C;Delta&#x5C;vec{r}=&#x5C;vec{r_A}-&#x5C;vec{r_B}=(&#x5C;rm {x_A-x_B}) &#x5C;vec{i} +(&#x5C;rm {y_A-y_B}) &#x5C;vec{j} + (&#x5C;rm {z_A-z_B}) &#x5C;vec{k}$</span>, 位移只表示两点变化的结果, 不表示实际运动的路径过程.</p>
+<p>平均速度: <span class="mathjax-exps">$&#x5C;overline{&#x5C;vec{v}}=&#x5C;dfrac{&#x5C;vec{r_2}-&#x5C;vec{r_1}}{&#x5C;Delta t}=&#x5C;dfrac{&#x5C;Delta &#x5C;vec{r}}{&#x5C;Delta t}$</span>, 也可以分解成<span class="mathjax-exps">$&#x5C;overline{&#x5C;vec{v}}=&#x5C;overline {v_x} &#x5C;vec{i} +&#x5C;overline{v_y} &#x5C;vec{j} + &#x5C;overline{v_z} &#x5C;vec{k}$</span></p>
+<p>速度: <span class="mathjax-exps">$&#x5C;lim_{&#x5C;Delta t &#x5C;rightarrow 0} &#x5C;dfrac{&#x5C;Delta&#x5C;vec{r}}{&#x5C;Delta t}=&#x5C;dfrac{{&#x5C;rm d} &#x5C;vec{r}}{&#x5C;rm{d} t}$</span>, 或者 <span class="mathjax-exps">${&#x5C;vec{v}}= {v_x} &#x5C;vec{i} +{v_y} &#x5C;vec{j} + {v_z} &#x5C;vec{k}$</span></p>
+<p>其中 <span class="mathjax-exps">$v_x=&#x5C;dfrac{{&#x5C;rm d} x}{{&#x5C;rm d} t}$</span>, <span class="mathjax-exps">$v_y, v_z$</span>以此类推.</p>
 <p>公式可根据坐标轴维度自行增删</p>
-<p>加速度:  <span class="mathjax-exps">$&#x5C;lim_{&#x5C;Delta t &#x5C;rightarrow 0} &#x5C;frac{&#x5C;Delta&#x5C;vec{v}}{&#x5C;Delta t}=&#x5C;frac{&#x5C;rm d &#x5C;vec{v}}{&#x5C;rm{d} t}$</span></p>
+<p>加速度: <span class="mathjax-exps">$&#x5C;lim_{&#x5C;Delta t &#x5C;rightarrow 0} &#x5C;dfrac{&#x5C;Delta&#x5C;vec{v}}{&#x5C;Delta t}=&#x5C;dfrac{{&#x5C;rm d} &#x5C;vec{v}}{&#x5C;rm{d} t}$</span></p>
 <h4 class="mume-header" id="%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%BB%93">一些小结</h4>
 
-<p>位移: <span class="mathjax-exps">$&#x5C;vec s(t)$</span><br>
-速度: <span class="mathjax-exps">$&#x5C;vec v(t) = &#x5C;frac{&#x5C;rm d &#x5C;vec s(t)}{&#x5C;rm d t}$</span><br>
-加速度: <span class="mathjax-exps">$&#x5C;vec a(t) =&#x5C;frac{&#x5C;rm d &#x5C;vec v(t)}{&#x5C;rm d t}$</span><br>
-注意矢量方向<br>
+<p>位移: <span class="mathjax-exps">$&#x5C;vec s(t)$</span></p>
+<p>速度: <span class="mathjax-exps">$&#x5C;vec v(t) = &#x5C;dfrac{{&#x5C;rm d} &#x5C;vec s(t)}{{&#x5C;rm d} t}$</span></p>
+<p>加速度: <span class="mathjax-exps">$&#x5C;vec a(t) =&#x5C;dfrac{{&#x5C;rm d} &#x5C;vec v(t)}{{&#x5C;rm d} t}$</span></p>
+<p>注意矢量方向<br>
 反过去就是积分关系</p>
 <p>一般有两种问题:</p>
 <ol>
@@ -256,23 +257,24 @@ code.language-yaml {
 </li>
 </ol>
 <p>速度可以分解, 合成, 可以先分开求解后再合成得出答案<br>
-求轨迹图可根据运动方程<span class="mathjax-exps">$x(t),y(t)$</span>, 消去t参数,就可以得到<span class="mathjax-exps">$y(x)$</span>轨迹</p>
+求轨迹图可根据运动方程<span class="mathjax-exps">$x(t), y(t)$</span>, 消去t参数, 就可以得到<span class="mathjax-exps">$y(x)$</span>轨迹</p>
 <h3 class="mume-header" id="%E5%9C%86%E5%91%A8%E8%BF%90%E5%8A%A8">圆周运动</h3>
 
 <p>法向加速度<span class="mathjax-exps">$&#x5C;vec{a_n}$</span>(指向圆心), 切向加速度<span class="mathjax-exps">$&#x5C;vec{a_t}$</span>(运动切线方向)</p>
 <h4 class="mume-header" id="%E7%BA%BF%E9%87%8F%E4%B8%8E%E8%A7%92%E9%87%8F%E5%85%B3%E7%B3%BB">线量与角量关系</h4>
 
 <p><img src="pics/%E7%BA%BF%E8%A7%92%E5%85%B3%E7%B3%BB.png" alt="&#x7EBF;&#x89D2;&#x5173;&#x7CFB;"></p>
-<p>角坐标为时间函数: <span class="mathjax-exps">$&#x5C;theta(t)$</span><br>
-角速度: <span class="mathjax-exps">$&#x5C;omega = &#x5C;frac{&#x5C;rm d &#x5C;theta}{&#x5C;rm d t}$</span>(弧度制)<br>
-<span class="mathjax-exps">$&#x5C;rm d s = R &#x5C;rm d &#x5C;theta$</span> (d意为取一微元量,下同)<br>
-<span class="mathjax-exps">$v=&#x5C;frac{&#x5C;rm d s}{&#x5C;rm d t}=R&#x5C;frac{&#x5C;rm d &#x5C;theta}{&#x5C;rm d t}=R&#x5C;omega$</span><br>
-<span class="mathjax-exps">$&#x5C;begin{cases} a_n=&#x5C;frac{v^2}{R}=R&#x5C;omega^2 &#x5C;&#x5C; a_t=&#x5C;frac{&#x5C;rm d v}{&#x5C;rm d t}=R&#x5C;frac{&#x5C;rm d &#x5C;omega}{&#x5C;rm d t}=R&#x5C;alpha &#x5C;end{cases}$</span></p>
-<p><img src="pics/%E5%9C%86%E5%91%A8%E5%8A%A0%E9%80%9F%E5%BA%A6.png" alt="&#x52A0;&#x901F;&#x5EA6;&#x5173;&#x7CFB;"><br>
-<span class="mathjax-exps">$&#x5C;vec{a}=&#x5C;vec{a_n}+&#x5C;vec{a_t}$</span><br>
-<span class="mathjax-exps">$|a|=&#x5C;sqrt{a_n^2+a_t^2}$</span> (大小)<br>
-<span class="mathjax-exps">$&#x5C;vec{a}=r&#x5C;alpha &#x5C;vec{e_t}+r&#x5C;omega^2 &#x5C;vec{e_n}$</span> (方向)<br>
-<span class="mathjax-exps">$&#x5C;theta=&#x5C;tan^{-1}{&#x5C;frac{a_n}{a_t}}$</span></p>
+<p>角坐标为时间函数: <span class="mathjax-exps">$&#x5C;theta(t)$</span></p>
+<p>角速度: <span class="mathjax-exps">$&#x5C;omega = &#x5C;dfrac{{&#x5C;rm d} &#x5C;theta}{{&#x5C;rm d} t}$</span>(弧度制)</p>
+<p>角加速度: <span class="mathjax-exps">$&#x5C;alpha=&#x5C;dfrac{{&#x5C;rm d}&#x5C;omega}{{&#x5C;rm d}t}$</span></p>
+<p><span class="mathjax-exps">${&#x5C;rm d} s = R {&#x5C;rm d} &#x5C;theta$</span> (d意为取一微元量, 下同)</p>
+<p><span class="mathjax-exps">$v=&#x5C;dfrac{{&#x5C;rm d} s}{{&#x5C;rm d} t}=R&#x5C;dfrac{{&#x5C;rm d} &#x5C;theta}{{&#x5C;rm d} t}=R&#x5C;omega$</span></p>
+<p><span class="mathjax-exps">$&#x5C;begin{cases} a_n=&#x5C;dfrac{v^2}{R}=R&#x5C;omega^2 &#x5C;&#x5C; a_t=&#x5C;dfrac{{&#x5C;rm d} v}{{&#x5C;rm d} t}=R&#x5C;dfrac{{&#x5C;rm d} &#x5C;omega}{{&#x5C;rm d} t}=R&#x5C;alpha &#x5C;end{cases}$</span></p>
+<p><img src="pics/%E5%9C%86%E5%91%A8%E5%8A%A0%E9%80%9F%E5%BA%A6.png" alt="&#x52A0;&#x901F;&#x5EA6;&#x5173;&#x7CFB;"></p>
+<p><span class="mathjax-exps">$&#x5C;vec{a}=&#x5C;vec{a_n}+&#x5C;vec{a_t}$</span></p>
+<p><span class="mathjax-exps">$|a|=&#x5C;sqrt{a_n^2+a_t^2}$</span> (大小)</p>
+<p><span class="mathjax-exps">$&#x5C;vec{a}=r&#x5C;alpha &#x5C;vec{e_t}+r&#x5C;omega^2 &#x5C;vec{e_n}$</span> (方向矢量)</p>
+<p><span class="mathjax-exps">$&#x5C;theta=&#x5C;tan^{-1}{&#x5C;dfrac{a_n}{a_t}}$</span></p>
 <h3 class="mume-header" id="%E7%9B%B8%E5%AF%B9%E8%BF%90%E5%8A%A8%E4%BC%BD%E5%88%A9%E7%95%A5%E9%80%9F%E5%BA%A6%E5%8F%98%E6%8D%A2">相对运动(伽利略速度变换)</h3>
 
 <p><img src="pics/%E7%9B%B8%E5%AF%B9%E8%BF%90%E5%8A%A8.png" alt="&#x76F8;&#x5BF9;&#x8FD0;&#x52A8;"><br>
@@ -282,10 +284,10 @@ code.language-yaml {
 
 <ol>
 <li>
-<p><span class="mathjax-exps">$&#x5C;vec{v}=恒矢量,当&#x5C;vec{F}=0$</span></p>
+<p><span class="mathjax-exps">$&#x5C;vec{v}=恒矢量, 当&#x5C;vec{F}=0$</span></p>
 </li>
 <li>
-<p><span class="mathjax-exps">$&#x5C;vec{p}=m&#x5C;vec{v}$</span>, <span class="mathjax-exps">$&#x5C;vec{F}=&#x5C;frac{&#x5C;rm d &#x5C;vec{p}}{&#x5C;rm d t}=&#x5C;frac{&#x5C;rm d (m&#x5C;vec{v})}{&#x5C;rm d t}$</span>, 远小于光速时:<span class="mathjax-exps">$&#x5C;vec{F}=m&#x5C;frac{&#x5C;rm d &#x5C;vec{v}}{&#x5C;rm d t}=m&#x5C;vec{a}$</span></p>
+<p><span class="mathjax-exps">$&#x5C;vec{p}=m&#x5C;vec{v}$</span>, <span class="mathjax-exps">$&#x5C;vec{F}=&#x5C;dfrac{{&#x5C;rm d} &#x5C;vec{p}}{{&#x5C;rm d} t}=&#x5C;dfrac{{&#x5C;rm d} (m&#x5C;vec{v})}{{&#x5C;rm d} t}$</span>, 远小于光速时:<span class="mathjax-exps">$&#x5C;vec{F}=m&#x5C;dfrac{{&#x5C;rm d} &#x5C;vec{v}}{{&#x5C;rm d} t}=m&#x5C;vec{a}$</span></p>
 </li>
 <li>
 <p><span class="mathjax-exps">$&#x5C;vec{F}=-&#x5C;vec{F&#x27;}$</span></p>
@@ -295,7 +297,7 @@ code.language-yaml {
 
 <h4 class="mume-header" id="%E4%B8%87%E6%9C%89%E5%BC%95%E5%8A%9B">万有引力</h4>
 
-<p><span class="mathjax-exps">$F=G&#x5C;frac{m_1m_2}{r^2}$</span>, <span class="mathjax-exps">$&#x5C;vec{F}=-G&#x5C;frac{m_1m_2}{r^2}&#x5C;vec{e_r}$</span>(向量形式)</p>
+<p><span class="mathjax-exps">$F=G&#x5C;dfrac{m_1m_2}{r^2}$</span>, <span class="mathjax-exps">$&#x5C;vec{F}=-G&#x5C;dfrac{m_1m_2}{r^2}&#x5C;vec{e_r}$</span>(矢量形式)</p>
 <h4 class="mume-header" id="%E5%BC%B9%E6%80%A7%E5%8A%9B">弹性力</h4>
 
 <p>常见弹性力有:正压力、张力、弹簧弹性力等<br>
@@ -310,29 +312,29 @@ code.language-yaml {
 静摩擦力 一般情况: <span class="mathjax-exps">$F_{f_0 m} = &#x5C;mu_0 F_N$</span><br>
 <span class="mathjax-exps">$F_{f_0}&#x5C;leq F_{f_0 m}$</span><br>
 <span class="mathjax-exps">$&#x5C;mu &#x5C;approx &#x5C;mu_0$</span></p>
-<p>遗忘得太严重,只能这样了</p>
+<p>遗忘得太严重, 只能这样了</p>
 <h2 class="mume-header" id="%E5%8A%A8%E9%87%8F%E5%AE%88%E6%81%92%E4%B8%8E%E8%83%BD%E9%87%8F%E5%AE%88%E6%81%92">动量守恒与能量守恒</h2>
 
 <h3 class="mume-header" id="%E5%8A%A8%E9%87%8F%E5%AE%9A%E7%90%86">动量定理</h3>
 
 <p>微分形式:<br>
-<span class="mathjax-exps">$&#x5C;vec{F}=&#x5C;frac{&#x5C;rm d &#x5C;vec{p}}{&#x5C;rm d t}=&#x5C;frac{&#x5C;rm d (m&#x5C;vec{v})}{&#x5C;rm d t}$</span>, <span class="mathjax-exps">$&#x5C;vec{F}&#x5C;rm d t=&#x5C;rm d &#x5C;vec{p}=&#x5C;rm d (m&#x5C;vec{v})$</span><br>
+<span class="mathjax-exps">$&#x5C;vec{F}=&#x5C;dfrac{{&#x5C;rm d} &#x5C;vec{p}}{{&#x5C;rm d} t}=&#x5C;dfrac{{&#x5C;rm d} (m&#x5C;vec{v})}{{&#x5C;rm d} t}$</span>, <span class="mathjax-exps">$&#x5C;vec{F}{&#x5C;rm d} t={&#x5C;rm d} &#x5C;vec{p}={&#x5C;rm d} (m&#x5C;vec{v})$</span><br>
 积分形式:<br>
-<span class="mathjax-exps">$&#x5C;vec{I}=&#x5C;int_{t_1}^{t_2}&#x5C;vec{F}(t)&#x5C;rm d t=&#x5C;vec{p_2}-&#x5C;vec{p_1}=m&#x5C;vec{v_2}-m&#x5C;vec{v_1}$</span><br>
+<span class="mathjax-exps">$&#x5C;vec{I}=&#x5C;int_{t_1}^{t_2}&#x5C;vec{F}(t){&#x5C;rm d} t=&#x5C;vec{p_2}-&#x5C;vec{p_1}=m&#x5C;vec{v_2}-m&#x5C;vec{v_1}$</span><br>
 作用于系统的合外力的冲量等于系统动量的增量(质点的动量定理) <s>我不知道这说的是啥</s></p>
-<p><span class="mathjax-exps">$&#x5C;vec{F^{ex}}=&#x5C;frac{&#x5C;rm d &#x5C;vec{p}}{&#x5C;rm d t}$</span></p>
+<p><span class="mathjax-exps">$&#x5C;vec{F^{ex}}=&#x5C;dfrac{{&#x5C;rm d} &#x5C;vec{p}}{{&#x5C;rm d} t}$</span></p>
 <h3 class="mume-header" id="%E5%8A%A8%E9%87%8F%E5%AE%88%E6%81%92%E5%AE%9A%E7%90%86">动量守恒定理</h3>
 
 <p><span class="mathjax-exps">$&#x5C;vec{p}=&#x5C;sum_{i=1}^n m_i&#x5C;vec{v_i}=恒矢量$</span> (系统合外力为零)</p>
 <h3 class="mume-header" id="%E5%8F%98%E5%8A%9B%E5%81%9A%E5%8A%9F">变力做功</h3>
 
-<p><span class="mathjax-exps">$&#x5C;rm dW = &#x5C;vec{F}&#x5C;cdot &#x5C;rm d &#x5C;vec{r}$</span><br>
-<span class="mathjax-exps">$&#x5C;therefore &#x5C;rm dW=F&#x5C;cos{&#x5C;theta}|&#x5C;rm d &#x5C;vec{r}|$</span></p>
-<p>将微元量积分,可得<br>
-<span class="mathjax-exps">$W=&#x5C;int_A^B{&#x5C;vec{F} &#x5C;cdot&#x5C;rm d &#x5C;vec{r}}=&#x5C;int_A^B{F &#x5C;cos &#x5C;theta &#x5C;rm d s}(&#x5C;rm d s = |&#x5C;rm d &#x5C;vec{r}|)$</span>(向量点积公式)</p>
+<p><span class="mathjax-exps">${&#x5C;rm d}W = &#x5C;vec{F}&#x5C;cdot {&#x5C;rm d} &#x5C;vec{r}$</span><br>
+<span class="mathjax-exps">$&#x5C;therefore {&#x5C;rm d}W=F&#x5C;cos{&#x5C;theta}|{&#x5C;rm d} &#x5C;vec{r}|$</span></p>
+<p>将微元量积分, 可得<br>
+<span class="mathjax-exps">$W=&#x5C;int_A^B{&#x5C;vec{F} &#x5C;cdot{&#x5C;rm d} &#x5C;vec{r}}=&#x5C;int_A^B{F &#x5C;cos &#x5C;theta {&#x5C;rm d} s}({&#x5C;rm d} s = |{&#x5C;rm d} &#x5C;vec{r}|)$</span>(矢量点积公式)</p>
 <h3 class="mume-header" id="%E8%B4%A8%E7%82%B9%E7%9A%84%E5%8A%A8%E8%83%BD%E5%AE%9A%E7%90%86">质点的动能定理</h3>
 
-<p><span class="mathjax-exps">$W=&#x5C;frac{1}{2}mv_2^2-&#x5C;frac{1}{2}mv_1^2=E_{k2}-E_{k1}$</span></p>
+<p><span class="mathjax-exps">$W=&#x5C;dfrac{1}{2}mv_2^2-&#x5C;dfrac{1}{2}mv_1^2=E_{k2}-E_{k1}$</span></p>
 <ul>
 <li>
 <p>功是过程量，动能是状态量</p>
@@ -346,8 +348,8 @@ code.language-yaml {
 <h4 class="mume-header" id="%E4%BF%9D%E5%AE%88%E5%8A%9B%E4%BD%9C%E5%8A%9F%E7%9A%84%E6%95%B0%E5%AD%A6%E8%A1%A8%E8%BE%BE%E5%BC%8F">保守力作功的数学表达式</h4>
 
 <p>保守力所作的功与路径无关，仅决定于始、末位置.</p>
-<p>引力做功:<span class="mathjax-exps">$W=-[(-G&#x5C;frac{m&#x27;m}{r_B})-(-G&#x5C;frac{m&#x27;m}{r_A})]$</span></p>
-<p>弹力做功:<span class="mathjax-exps">$W=-(&#x5C;frac{1}{2}kx_B^2-&#x5C;frac{1}{2}kx_A^2)$</span></p>
+<p>引力做功:<span class="mathjax-exps">$W=-[(-G&#x5C;dfrac{m&#x27;m}{r_B})-(-G&#x5C;dfrac{m&#x27;m}{r_A})]$</span></p>
+<p>弹力做功:<span class="mathjax-exps">$W=-(&#x5C;dfrac{1}{2}kx_B^2-&#x5C;dfrac{1}{2}kx_A^2)$</span></p>
 <h3 class="mume-header" id="%E5%8A%BF%E8%83%BD">势能</h3>
 
 <p>与质点位置有关的能量.<br>
@@ -386,11 +388,11 @@ code.language-yaml {
 </li>
 </ul>
 <p>角位移: <span class="mathjax-exps">$&#x5C;Delta&#x5C;theta=&#x5C;theta(t+&#x5C;Delta t)-&#x5C;theta(t)$</span></p>
-<p>角速度: <span class="mathjax-exps">$&#x5C;omega=&#x5C;lim_{&#x5C;Delta t &#x5C;rightarrow 0}&#x5C;frac{&#x5C;Delta &#x5C;theta}{&#x5C;Delta t}=&#x5C;frac{&#x5C;rm d &#x5C;theta}{&#x5C;rm d t}$</span></p>
-<p><span class="mathjax-exps">$&#x5C;vec{&#x5C;omega}$</span>正方向,右手螺旋,拇指所指的方向</p>
+<p>角速度: <span class="mathjax-exps">$&#x5C;omega=&#x5C;lim_{&#x5C;Delta t &#x5C;rightarrow 0}&#x5C;dfrac{&#x5C;Delta &#x5C;theta}{&#x5C;Delta t}=&#x5C;dfrac{{&#x5C;rm d} &#x5C;theta}{{&#x5C;rm d} t}$</span></p>
+<p><span class="mathjax-exps">$&#x5C;vec{&#x5C;omega}$</span>正方向, 右手螺旋, 拇指所指的方向</p>
 <h3 class="mume-header" id="%E5%8C%80%E5%8F%98%E9%80%9F%E8%BD%AC%E5%8A%A8">匀变速转动</h3>
 
-<p>角加速度: <span class="mathjax-exps">$&#x5C;alpha=&#x5C;lim_{&#x5C;Delta t &#x5C;rightarrow 0}&#x5C;frac{&#x5C;Delta &#x5C;omega}{&#x5C;Delta t}=&#x5C;frac{&#x5C;rm d &#x5C;omega}{&#x5C;rm d t}$</span></p>
+<p>角加速度: <span class="mathjax-exps">$&#x5C;alpha=&#x5C;lim_{&#x5C;Delta t &#x5C;rightarrow 0}&#x5C;dfrac{&#x5C;Delta &#x5C;omega}{&#x5C;Delta t}=&#x5C;dfrac{{&#x5C;rm d} &#x5C;omega}{{&#x5C;rm d} t}$</span></p>
 <h4 class="mume-header" id="%E5%8C%80%E5%8F%98%E9%80%9F%E7%9B%B4%E7%BA%BF%E8%BF%90%E5%8A%A8%E5%8C%80%E5%8F%98%E9%80%9F%E8%BD%AC%E5%8A%A8%E7%9A%84%E5%AF%B9%E6%AF%94">匀变速直线运动匀变速转动的对比</h4>
 
 <p>当加速度/角加速度为常量时</p>
@@ -407,8 +409,8 @@ code.language-yaml {
 <td><span class="mathjax-exps">$&#x5C;omega=&#x5C;omega_0+&#x5C;alpha t$</span></td>
 </tr>
 <tr>
-<td><span class="mathjax-exps">$x = x_0 + v_0 t + &#x5C;frac{1}{2}at^2$</span></td>
-<td><span class="mathjax-exps">$&#x5C;theta = &#x5C;theta_0 + &#x5C;omega_0 t + &#x5C;frac{1}{2}&#x5C;alpha t^2$</span></td>
+<td><span class="mathjax-exps">$x = x_0 + v_0 t + &#x5C;dfrac{1}{2}at^2$</span></td>
+<td><span class="mathjax-exps">$&#x5C;theta = &#x5C;theta_0 + &#x5C;omega_0 t + &#x5C;dfrac{1}{2}&#x5C;alpha t^2$</span></td>
 </tr>
 <tr>
 <td><span class="mathjax-exps">$v^2 =v_0^2 +2a(x−x_0)$</span></td>
@@ -419,8 +421,8 @@ code.language-yaml {
 <h4 class="mume-header" id="%E8%A7%92%E9%87%8F%E4%B8%8E%E7%BA%BF%E9%87%8F%E7%9A%84%E5%85%B3%E7%B3%BB">角量与线量的关系</h4>
 
 <p><img src="pics/%E5%88%9A%E4%BD%93_%E8%A7%92%E7%BA%BF%E5%85%B3%E7%B3%BB.png" alt="&#x89D2;&#x7EBF;&#x5173;&#x7CFB;"></p>
-<p><span class="mathjax-exps">$&#x5C;omega=&#x5C;frac{&#x5C;rm d &#x5C;theta}{&#x5C;rm d t}$</span><br>
-<span class="mathjax-exps">$&#x5C;alpha=&#x5C;frac{&#x5C;rm d &#x5C;omega}{&#x5C;rm d t}=&#x5C;frac{&#x5C;rm{d^2}&#x5C;theta}{&#x5C;rm d t^2}$</span> (两次求导的意思)</p>
+<p><span class="mathjax-exps">$&#x5C;omega=&#x5C;dfrac{{&#x5C;rm d} &#x5C;theta}{{&#x5C;rm d} t}$</span><br>
+<span class="mathjax-exps">$&#x5C;alpha=&#x5C;dfrac{{&#x5C;rm d} &#x5C;omega}{{&#x5C;rm d} t}=&#x5C;dfrac{&#x5C;rm{d^2}&#x5C;theta}{{&#x5C;rm d} t^2}$</span> (两次求导的意思)</p>
 <p><span class="mathjax-exps">$v=r&#x5C;omega$</span><br>
 <span class="mathjax-exps">$a_t=r&#x5C;alpha$</span> (切向)<br>
 <span class="mathjax-exps">$a_n=r&#x5C;omega^2$</span> (法向)<br>
@@ -436,7 +438,7 @@ code.language-yaml {
 <img src="pics/%E5%8A%9B%E7%9F%A9%E5%85%B3%E7%B3%BB.png" alt="&#x529B;&#x77E9;&#x5173;&#x7CFB;"></p>
 <h4 class="mume-header" id="%E8%BD%AC%E5%8A%A8%E6%83%AF%E9%87%8F%E9%87%8D%E7%82%B9">转动惯量(重点)</h4>
 
-<p><span class="mathjax-exps">$J=&#x5C;sum_j &#x5C;Delta m_j r_j^2(离散情况)=&#x5C;int r^2&#x5C;rm d m(连续的情况下)$</span></p>
+<p><span class="mathjax-exps">$J=&#x5C;sum_j &#x5C;Delta m_j r_j^2(离散情况)=&#x5C;int r^2{&#x5C;rm d} m(连续的情况下)$</span></p>
 <ul>
 <li>
 <p>转动惯量的单位:kg·m2</p>
@@ -445,7 +447,8 @@ code.language-yaml {
 <p>J的意义:转动惯性的量度</p>
 </li>
 </ul>
-<p><strong>刚体的转动惯量与以下三个因素有关</strong></p>
+<h5 class="mume-header" id="%E5%88%9A%E4%BD%93%E7%9A%84%E8%BD%AC%E5%8A%A8%E6%83%AF%E9%87%8F%E4%B8%8E%E4%BB%A5%E4%B8%8B%E4%B8%89%E4%B8%AA%E5%9B%A0%E7%B4%A0%E6%9C%89%E5%85%B3">刚体的转动惯量与以下三个因素有关</h5>
+
 <ol>
 <li>
 <p>与刚体的体密度 ρ 有关.</p>
@@ -463,7 +466,7 @@ code.language-yaml {
 </blockquote>
 <h5 class="mume-header" id="%E5%87%A0%E7%A7%8D%E5%B8%B8%E8%A7%81%E5%88%9A%E4%BD%93%E7%9A%84%E8%BD%AC%E5%8A%A8%E6%83%AF%E9%87%8F">几种常见刚体的转动惯量</h5>
 
-<p>(书上一般有表,在这里写几个常用的)</p>
+<p>(书上一般有表, 在这里写几个常用的)</p>
 <table>
 <thead>
 <tr>
@@ -474,19 +477,19 @@ code.language-yaml {
 <tbody>
 <tr>
 <td>细棒(转动轴通过并且垂直于细棒中心)</td>
-<td><span class="mathjax-exps">$J=&#x5C;frac{ml^2}{12}$</span></td>
+<td><span class="mathjax-exps">$J=&#x5C;dfrac{ml^2}{12}$</span></td>
 </tr>
 <tr>
 <td>圆柱体(转动轴沿几何轴 //理解为圆心, 常用的一个, 滑轮转动问题经常用)</td>
-<td><span class="mathjax-exps">$J=&#x5C;frac{mR^2}{2}$</span>(R为圆柱体半径)</td>
+<td><span class="mathjax-exps">$J=&#x5C;dfrac{mR^2}{2}$</span>(R为圆柱体半径)</td>
 </tr>
 <tr>
 <td>球体(转动轴过球径)</td>
-<td><span class="mathjax-exps">$J=&#x5C;frac{2mR^2}{5}$</span></td>
+<td><span class="mathjax-exps">$J=&#x5C;dfrac{2mR^2}{5}$</span></td>
 </tr>
 <tr>
 <td>细棒(转动轴在细棒的一端且垂直)</td>
-<td>$J=\frac{ml^2}{3}</td>
+<td>$J=\dfrac{ml^2}{3}</td>
 </tr>
 </tbody>
 </table>
@@ -499,16 +502,16 @@ code.language-yaml {
 <h4 class="mume-header" id="%E5%B9%B3%E8%A1%8C%E8%BD%B4%E5%AE%9A%E7%90%86">平行轴定理</h4>
 
 <p><img src="pics/%E5%B9%B3%E8%A1%8C%E8%BD%B4.png" alt="&#x5E73;&#x884C;&#x8F74;&#x5B9A;&#x7406;"><br>
-质量为m的刚体, 如果对其质心轴的转动惯量为<span class="mathjax-exps">$J_C$</span> ，则对任一与该轴平行，相距为d的转轴的转动惯量: <span class="mathjax-exps">$J_O =J_C +md^2$</span></p>
+<strong>质量为m的刚体, 如果对其质心轴的转动惯量为<span class="mathjax-exps">$J_C$</span> ，则对任一与该轴平行，相距为d的转轴的转动惯量: <span class="mathjax-exps">$J_O =J_C +md^2$</span></strong> (一条重要的公式)</p>
 <h4 class="mume-header" id="%E5%85%B3%E4%BA%8E%E8%BF%90%E7%94%A8%E8%BD%AC%E5%8A%A8%E6%83%AF%E9%87%8F%E7%9A%84%E4%B8%80%E8%88%AC%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF%E4%B8%8D%E5%90%8C%E4%BA%8E%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86%E7%9A%84%E8%A7%A3%E9%A2%98%E6%96%B9%E6%B3%95">关于运用转动惯量的一般解题思路(不同于高中物理的解题方法)</h4>
 
 <p><img src="pics/%E5%88%9A%E4%BD%93_%E4%BE%8B%E9%A2%98.jpg" alt="&#x4F8B;&#x9898;"></p>
 <blockquote>
-<p>如图所示,质量为<span class="mathjax-exps">$m_A$</span>的物体A静止在光滑水平面上,它和一质量不计的纯索相连接,此绳索跨过一半径为R、质量为<span class="mathjax-exps">$m_c$</span>的圆柱形滑轮C,并系在另一质量为<span class="mathjax-exps">$m_B$</span>的物体B上,B竖直悬挂,圆柱形滑轮可绕其几何中心轴转动,当滑轮转动时,它与绳索间没有滑动,且滑轮与轴承间的摩擦力可略去不计,问:</p>
+<p>如图所示, 质量为<span class="mathjax-exps">$m_A$</span>的物体A静止在光滑水平面上, 它和一质量不计的纯索相连接, 此绳索跨过一半径为R、质量为<span class="mathjax-exps">$m_c$</span>的圆柱形滑轮C, 并系在另一质量为<span class="mathjax-exps">$m_B$</span>的物体B上, B竖直悬挂, 圆柱形滑轮可绕其几何中心轴转动, 当滑轮转动时, 它与绳索间没有滑动, 且滑轮与轴承间的摩擦力可略去不计, 问:</p>
 </blockquote>
 <ol>
 <li>这两物体的线加速度为多少?水平和竖直两段绳索的张力各为多少?</li>
-<li>物体从静止落下距离y时,其速率为多少?</li>
+<li>物体从静止落下距离y时, 其速率为多少?</li>
 </ol>
 <p>解题思路</p>
 <ol>
@@ -519,10 +522,10 @@ code.language-yaml {
 <p>分别计算A, B 加速度(对于此题:<span class="mathjax-exps">$F_{T1}=m_Aa$</span> **1, <span class="mathjax-exps">$m_B-F_{T2}=m_Ba$</span> **2)</p>
 </li>
 <li>
-<p>对于C,计算力矩 (此题: <span class="mathjax-exps">$M=Fr&#x5C;sin&#x5C;theta=Fr=RF_{T2}-RF_{T1}=J&#x5C;alpha$</span> **3 (此处结合受力分析以及运用转动定律)</p>
+<p>对于C, 计算力矩 (此题: <span class="mathjax-exps">$M=Fr&#x5C;sin&#x5C;theta=Fr=RF_{T2}-RF_{T1}=J&#x5C;alpha$</span> **3 (此处结合受力分析以及运用转动定律)</p>
 </li>
 <li>
-<p>将转动惯量J(查表)代入**3,并且结合转动线角关系 <span class="mathjax-exps">$a_t=R&#x5C;alpha$</span> (滑轮边缘切向加速度与绳索和物体的加速度大小相等), 联立三个方程求解即可</p>
+<p>将转动惯量J(查表)代入**3, 并且结合转动线角关系 <span class="mathjax-exps">$a_t=R&#x5C;alpha$</span> (滑轮边缘切向加速度与绳索和物体的加速度大小相等), 联立三个方程求解即可</p>
 </li>
 </ol>
 <h3 class="mume-header" id="%E8%A7%92%E5%8A%A8%E9%87%8F%E4%B8%8E%E8%A7%92%E5%8A%A8%E9%87%8F%E5%AE%88%E6%81%92">角动量与角动量守恒</h3>
@@ -535,59 +538,431 @@ code.language-yaml {
 <span class="mathjax-exps">$L=rmv&#x5C;sin&#x5C;theta$</span> (标量形式)<strong>重要的公式</strong></p>
 <h4 class="mume-header" id="%E8%B4%A8%E7%82%B9%E7%9A%84%E8%A7%92%E5%8A%A8%E9%87%8F%E5%AE%9A%E7%90%86">质点的角动量定理</h4>
 
-<p><span class="mathjax-exps">$&#x5C;vec{r}&#x5C;times&#x5C;vec{F}=&#x5C;vec{M_{合力矩}}=&#x5C;frac{&#x5C;rm d&#x5C;vec{L}}{&#x5C;rm d t}=&#x5C;frac{&#x5C;rm d}{&#x5C;rm d t}(&#x5C;vec{r}&#x5C;times m&#x5C;vec{v})$</span></p>
+<p><span class="mathjax-exps">$&#x5C;vec{r}&#x5C;times&#x5C;vec{F}=&#x5C;vec{M_{合力矩}}=&#x5C;dfrac{{&#x5C;rm d}&#x5C;vec{L}}{{&#x5C;rm d} t}=&#x5C;dfrac{{&#x5C;rm d}}{{&#x5C;rm d} t}(&#x5C;vec{r}&#x5C;times m&#x5C;vec{v})$</span></p>
 <p>两端积分:<br>
-<span class="mathjax-exps">$&#x5C;int_{t_1}^{t_2}&#x5C;vec{M}&#x5C;rm d t=&#x5C;vec{L_2}-&#x5C;vec{L_1}$</span></p>
+<span class="mathjax-exps">$&#x5C;int_{t_1}^{t_2}&#x5C;vec{M}{&#x5C;rm d} t=&#x5C;vec{L_2}-&#x5C;vec{L_1}$</span></p>
 <p>若<span class="mathjax-exps">$&#x5C;vec{M}=0$</span>, <span class="mathjax-exps">$&#x5C;vec{L}=m&#x5C;vec{r}&#x5C;times&#x5C;vec{v}=恒矢量$</span> (质点的角动量守恒定理)</p>
 <h4 class="mume-header" id="%E4%B8%A4%E9%81%93%E4%BE%8B%E9%A2%98">两道例题</h4>
 
 <h5 class="mume-header" id="%E4%BE%8B1">例1</h5>
 
-<p><img src="pics/%E8%A7%92%E5%8A%A8%E9%87%8F%E5%AE%88%E6%81%921.jpg" alt="&#x4F8B;&#x9898;1"></p>
 <blockquote>
-<p>一杂技演员M由距水平跷板高为h处自由下落到跷板的一端A,并把板另一端的演员N弹了起来,设板是匀质的,长度为L,质量为m',支撑点在板的中部点C,晓板可绕点C在竖直平面内转动,演员M, N的质量都是m,假定演员M落在板上,与跳板的碰撞是完全非弹性碰撞,问演员N弹起多高</p>
+<p>一杂技演员M由距水平跷板高为h处自由下落到跷板的一端A, 并把板另一端的演员N弹了起来, 设板是匀质的, 长度为L, 质量为m', 支撑点在板的中部点C, 晓板可绕点C在竖直平面内转动, 演员M, N的质量都是m, 假定演员M落在板上, 与跳板的碰撞是完全非弹性碰撞, 问演员N弹起多高<br>
+<img src="pics/%E8%A7%92%E5%8A%A8%E9%87%8F%E5%AE%88%E6%81%921.jpg" alt="&#x4F8B;&#x9898;1"></p>
 </blockquote>
 <p>解题思路:</p>
 <blockquote>
-<p>为使讨论简化,把演员视为质点,演员M落在板A处的速率为<span class="mathjax-exps">$v_m=&#x5C;sqrt{2gh}$</span>,这个,速率也就是演员M与板A处刚碰撞时的速率,此时演员N的速率<span class="mathjax-exps">$v_n=0$</span>.<strong>在碰撞后的瞬时,演员M, N具有相同的线速率u,其值为<span class="mathjax-exps">$u=&#x5C;frac{l}{2}&#x5C;omega$</span>, <span class="mathjax-exps">$&#x5C;omega$</span>为演员和板绕点C的角速率</strong>,现把演员M, N和板作为一个系统,并以通过点C垂直纸平面的轴为转轴,由于M, N两演员的<strong>质量相等</strong>,所以当演员M碰撞板A处时,<strong>作用在系统上的合外力矩为零</strong>,故系统的<strong>角动量守恒</strong></p>
+<p>为使讨论简化, 把演员视为质点, 演员M落在板A处的速率为<span class="mathjax-exps">$v_m=&#x5C;sqrt{2gh}$</span>, 这个, 速率也就是演员M与板A处刚碰撞时的速率, 此时演员N的速率<span class="mathjax-exps">$v_n=0$</span>.<strong>在碰撞后的瞬时, 演员M, N具有相同的线速率u, 其值为<span class="mathjax-exps">$u=&#x5C;dfrac{l}{2}&#x5C;omega$</span>, <span class="mathjax-exps">$&#x5C;omega$</span>为演员和板绕点C的角速率</strong>, 现把演员M, N和板作为一个系统, 并以通过点C垂直纸平面的轴为转轴, 由于M, N两演员的<strong>质量相等</strong>, 所以当演员M碰撞板A处时, <strong>作用在系统上的合外力矩为零</strong>, 故系统的<strong>角动量守恒</strong></p>
 </blockquote>
 <p>可获得方程:<br>
-<div class="mathjax-exps">$$&#x5C;begin{cases}mv_m&#x5C;frac{l}{2}=&#x5C;overbrace{J&#x5C;omega}^{棒的角动量}+&#x5C;overbrace{2mu&#x5C;frac{l}{2}}^{两个演员的角动量}=J&#x5C;omega+&#x5C;frac{1}{2}ml^2&#x5C;omega &#x5C;&#x5C; &#x5C;&#x5C;J=&#x5C;frac{1}{12}m&#x27;l^2(查表)&#x5C;&#x5C; &#x5C;&#x5C;u=&#x5C;frac{l}{2}&#x5C;omega&#x5C;end{cases}$$</div></p>
-<p>解出<span class="mathjax-exps">$&#x5C;omega$</span>,再代入<span class="mathjax-exps">$h&#x27;=&#x5C;frac{u^2}{2g}$</span>(反向自由落体)</p>
+<div class="mathjax-exps">$$&#x5C;begin{cases}mv_m&#x5C;dfrac{l}{2}=&#x5C;overbrace{J&#x5C;omega}^{棒的角动量}+&#x5C;overbrace{2mu&#x5C;dfrac{l}{2}}^{两个演员的角动量}=J&#x5C;omega+&#x5C;dfrac{1}{2}ml^2&#x5C;omega &#x5C;&#x5C; &#x5C;&#x5C;J=&#x5C;dfrac{1}{12}m&#x27;l^2(查表)&#x5C;&#x5C; &#x5C;&#x5C;v_m=&#x5C;sqrt{2gh}&#x5C;&#x5C; &#x5C;&#x5C;u=&#x5C;dfrac{l}{2}&#x5C;omega&#x5C;end{cases}$$</div></p>
+<p>解出<span class="mathjax-exps">$&#x5C;omega$</span>, 再代入<span class="mathjax-exps">$h&#x27;=&#x5C;dfrac{u^2}{2g}$</span>(自由落体逆过程)</p>
 <h5 class="mume-header" id="%E4%BE%8B2">例2</h5>
 
-<p><img src="pics/%E8%A7%92%E5%8A%A8%E9%87%8F%E5%AE%88%E6%81%922.jpg" alt="&#x4F8B;&#x9898;2"></p>
 <blockquote>
-<p>有一根质量很小的长度为l的均匀细杆,可绕通过其中心点O并与纸平面垂直的轴在竖直平面内转动,当细杆静止于水平位置时,有一只小虫以速率<span class="mathjax-exps">$v_0$</span>,垂直落在距点O为l/4处,并背离点O向细杆的端点A爬行.<br>
-设小虫的<strong>质量与细杆的质量均为m</strong>, 问:欲使细杆以<strong>恒定的角速度</strong>转动,小虫应以多大速率向斜杆端点爬行。</p>
+<p>有一根质量很小的长度为l的均匀细杆, 可绕通过其中心点O并与纸平面垂直的轴在竖直平面内转动, 当细杆静止于水平位置时, 有一只小虫以速率<span class="mathjax-exps">$v_0$</span>, 垂直落在距点O为l/4处, 并背离点O向细杆的端点A爬行.<br>
+设小虫的<strong>质量与细杆的质量均为m</strong>, 问:欲使细杆以<strong>恒定的角速度</strong>转动, 小虫应以多大速率向斜杆端点爬行 .<br>
+<img src="pics/%E8%A7%92%E5%8A%A8%E9%87%8F%E5%AE%88%E6%81%922.jpg" alt="&#x4F8B;&#x9898;2"></p>
 </blockquote>
 <p>解题思路:</p>
 <blockquote>
-<p>解小虫落在杆上,可视完全非弹性碰撞,且碰撞时间极短,重力的动量矩可略去不计,于是,细杆带着小虫一起以角速度<span class="mathjax-exps">$&#x5C;omega$</span>转动,在碰撞前后,小虫和细杆系统的角动量守恒</p>
+<p>解小虫落在杆上, 可视完全非弹性碰撞, 且碰撞时间极短, 重力的动量矩可略去不计, 于是, 细杆带着小虫一起以角速度<span class="mathjax-exps">$&#x5C;omega$</span>转动, 在碰撞前后, 小虫和细杆系统的角动量守恒</p>
 </blockquote>
 <p>有:<br>
-<div class="mathjax-exps">$$&#x5C;overbrace{mv_0&#x5C;frac{l}{4}}^{角动量}=&#x5C;overbrace{[&#x5C;frac{l}{12}ml^2+m(&#x5C;frac{l}{4})^2]}^{小虫与细棒整体的转动惯量}&#x5C;omega$$</div><br>
+<div class="mathjax-exps">$$&#x5C;overbrace{mv_0&#x5C;dfrac{l}{4}}^{系统的角动量}=&#x5C;overbrace{&#x5C;underbrace{[&#x5C;dfrac{l}{12}ml^2+m(&#x5C;dfrac{l}{4})^2]}_{小虫与细棒整体的转动惯量(平行轴定理)}&#x5C;omega}^{系统的角动量}$$</div><br>
 得<br>
-<span class="mathjax-exps">$&#x5C;omega=&#x5C;frac{12}{7}&#x5C;frac{v_0}{l}$</span> **1</p>
+<span class="mathjax-exps">$&#x5C;omega=&#x5C;dfrac{12}{7}&#x5C;dfrac{v_0}{l}$</span> **1</p>
 <p>系统合外力矩仅为小虫重力矩<br>
 <span class="mathjax-exps">$M=mgr&#x5C;cos&#x5C;theta$</span> **2</p>
 <p>要求角速度恒定<br>
-<span class="mathjax-exps">$M=&#x5C;frac{&#x5C;rm d L}{&#x5C;rm d t}=&#x5C;frac{&#x5C;rm d}{&#x5C;rm dt}(J&#x5C;omega)=&#x5C;omega&#x5C;frac{&#x5C;rm dJ}{&#x5C;rm dt}$</span> **3</p>
+<span class="mathjax-exps">$M=&#x5C;dfrac{{&#x5C;rm d} L}{{&#x5C;rm d} t}=&#x5C;dfrac{{&#x5C;rm d}}{{&#x5C;rm d}t}(J&#x5C;omega)=&#x5C;omega&#x5C;dfrac{{&#x5C;rm d}J}{{&#x5C;rm d}t}$</span> **3</p>
 <p>运用平行轴定理<br>
-<span class="mathjax-exps">$J=&#x5C;frac{1}{12}ml^2+mr^2$</span></p>
-<p>求微分,可得<br>
-<span class="mathjax-exps">$&#x5C;frac{&#x5C;rm dJ}{&#x5C;rm dt}=2mr&#x5C;frac{&#x5C;rm dr}{&#x5C;rm dt}$</span> **4 (r为关于时间的t函数)</p>
-<p>**2 **4 代入 **3,得<br>
-<span class="mathjax-exps">$mgr&#x5C;cos&#x5C;theta=2mr&#x5C;omega&#x5C;frac{&#x5C;rm dr}{&#x5C;rm dt}$</span></p>
+<span class="mathjax-exps">$J=&#x5C;dfrac{1}{12}ml^2+mr^2$</span></p>
+<p>求微分, 可得<br>
+<span class="mathjax-exps">$&#x5C;dfrac{{&#x5C;rm d}J}{{&#x5C;rm d}t}=2mr&#x5C;dfrac{{&#x5C;rm d}r}{{&#x5C;rm d}t}$</span> **4 (r为关于时间的t函数)</p>
+<p>**2 **4 代入 **3, 得<br>
+<span class="mathjax-exps">$mgr&#x5C;cos&#x5C;theta=2mr&#x5C;omega&#x5C;dfrac{{&#x5C;rm d}r}{{&#x5C;rm d}t}$</span></p>
 <p>结合<br>
 <span class="mathjax-exps">$&#x5C;theta=&#x5C;omega t$</span></p>
-<p>求解出<span class="mathjax-exps">$&#x5C;frac{&#x5C;rm dr}{&#x5C;rm dt}$</span>, 即为答案.</p>
+<p>求解出<span class="mathjax-exps">$&#x5C;dfrac{{&#x5C;rm d}r}{{&#x5C;rm d}t}$</span>, 即为答案.</p>
+<h3 class="mume-header" id="%E5%88%9A%E4%BD%93%E7%BB%95%E5%AE%9A%E8%BD%B4%E8%BD%AC%E5%8A%A8%E7%9A%84%E5%8A%A8%E8%83%BD%E5%AE%9A%E7%90%86">刚体绕定轴转动的动能定理</h3>
+
+<p><span class="mathjax-exps">$W=&#x5C;int_{&#x5C;theta_1}^{&#x5C;theta_2} M {&#x5C;rm d}&#x5C;theta = &#x5C;int_{&#x5C;theta_1}^{&#x5C;theta_2} J&#x5C;dfrac{{&#x5C;rm d}&#x5C;omega}{{&#x5C;rm d}t} d&#x5C;theta=&#x5C;int_{&#x5C;omega_1}^{&#x5C;omega_2} J&#x5C;omega{&#x5C;rm d}&#x5C;omega$</span></p>
+<p><span class="mathjax-exps">$W=&#x5C;int_{&#x5C;theta_1}^{&#x5C;theta_2} M {&#x5C;rm d}&#x5C;theta =&#x5C;dfrac{1}{2}J&#x5C;omega_2^2-&#x5C;dfrac{1}{2}J&#x5C;omega_1^2$</span></p>
+<blockquote>
+<p>可对比动能定理 <span class="mathjax-exps">$W=&#x5C;int&#x5C;vec{F}{&#x5C;rm d}&#x5C;vec{r}=&#x5C;dfrac{1}{2}mv_2^2-&#x5C;dfrac{1}{2}mv_1^2$</span></p>
+</blockquote>
+<h4 class="mume-header" id="%E5%87%A0%E7%A7%8D%E8%AE%A8%E8%AE%BA">几种讨论</h4>
+
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>配图</th>
+<th>结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>子弹击入沙袋, 细绳质量不计</td>
+<td><img src="pics/%E5%AD%90%E5%BC%B9_%E7%BB%86%E7%BB%B3.png" alt="&#x5B50;&#x5F39;_&#x7EC6;&#x7EF3;"></td>
+<td>动量守恒, 角动量守恒, 机械能<strong>不</strong>守恒 <strong>(以子弹和沙袋为系统)</strong></td>
+</tr>
+<tr>
+<td>子弹击入杆</td>
+<td><img src="pics/%E5%AD%90%E5%BC%B9_%E6%9D%86.png" alt="&#x5B50;&#x5F39;_&#x6746;"></td>
+<td>动量<strong>不</strong>守恒, 角动量守恒, 机械能<strong>不</strong>守恒 <strong>以子弹和杆为系统</strong></td>
+</tr>
+<tr>
+<td>圆锥摆</td>
+<td><img src="pics/%E5%9C%86%E9%94%A5%E6%91%86.png" alt="&#x5706;&#x9525;&#x6446;"></td>
+<td>动量<strong>不</strong>守恒, 角动量守恒, 机械能守恒</td>
+</tr>
+</tbody>
+</table>
+<h4 class="mume-header" id="%E4%B8%80%E9%81%93%E4%BE%8B%E9%A2%98">一道例题</h4>
+
+<blockquote>
+<p>如图所示, 一长为l, 质量为m'的杆可绕支点O自由转动, 一质量为m、速率为v的子弹射入柱內距支点为a处, <strong>使杆的偏转角为30°</strong>, 问子弹的初速率为多少?<br>
+<img src="pics/%E8%BD%AC%E5%8A%A8%E5%8A%A8%E8%83%BD%E5%AE%9A%E7%90%86.jpg" alt="&#x8F6C;&#x52A8;&#x52A8;&#x80FD;&#x5B9A;&#x7406;"></p>
+</blockquote>
+<p>解:</p>
+<blockquote>
+<p>把子弹和杆看作一个系统, 系统所受的外力有重力和抽对细杆的约束力, 在子弹射入杆的极短时间里, 重力和约束力均通过轴O, 因此他们对轴0的力矩均为零, 系统的角动量应当守恒, 于是有</p>
+</blockquote>
+<p><div class="mathjax-exps">$$&#x5C;overbrace{mva}^{子弹入射前一瞬间的角动量}=&#x5C;underbrace{(&#x5C;overbrace{&#x5C;dfrac{1}{3}m&#x27;l^2+ma^2}^{平行轴定理计算子弹+细棒整个系统的转动惯量})&#x5C;omega}_{子弹木棒系统角动量}$$</div></p>
+<blockquote>
+<p>子弹射入后, 细杆在摆动过程中只有重力作功, 故如以子弹、细杆和地球为一系统, 则此系统机械能守恒 . 于是有</p>
+</blockquote>
+<p><div class="mathjax-exps">$$&#x5C;overbrace{&#x5C;dfrac{1}{2}(&#x5C;dfrac{2}{3}m&#x27;l^2+ma^2)&#x5C;omega^2}^{转动动能}=&#x5C;underbrace{mga(1-&#x5C;cos{30^&#x5C;circ})+&#x5C;overbrace{m&#x27;g&#x5C;dfrac{l}{2}(1-&#x5C;cos{30^&#x5C;circ})}^{质心在棒中心, 故取&#x5C;dfrac{l}{2}}}_{系统总的重力势能}$$</div></p>
+<p>联立两式就可以解得<span class="mathjax-exps">$v$</span></p>
+<h2 class="mume-header" id="%E7%94%B5%E7%A3%81%E5%AD%A6">电磁学</h2>
+
+<p>电磁相互关联, 这里就一起写了</p>
+<blockquote>
+<p>最重要的两条公式 (<span class="mathjax-exps">$&#x5C;vec{F}$</span>为一矢量场)</p>
+</blockquote>
+<ol>
+<li>
+<p>高斯散度定理 <div class="mathjax-exps">$$&#x5C;int_v&#x5C;nabla&#x5C;cdot&#x5C;vec{F}{&#x5C;rm d}v=&#x5C;oint_s&#x5C;vec{F}&#x5C;cdot{&#x5C;rm d}s$$</div>(将体积分转化为<strong>闭合</strong>面积分)</p>
+</li>
+<li>
+<p>斯托克斯定理 <div class="mathjax-exps">$$&#x5C;int_s(&#x5C;nabla&#x5C;times&#x5C;vec{F})&#x5C;cdot{&#x5C;rm d}s=&#x5C;oint_c&#x5C;vec{F}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{l}$$</div>(将面积分转化为<strong>闭合</strong>环路积分)</p>
+</li>
+</ol>
+<h3 class="mume-header" id="%E9%9D%99%E7%94%B5%E5%9C%BA">静电场</h3>
+
+<h4 class="mume-header" id="%E5%BA%93%E4%BB%91%E5%AE%9A%E5%BE%8B">库仑定律</h4>
+
+<p><div class="mathjax-exps">$$&#x5C;vec{F}=&#x5C;dfrac{q_1q_2}{4&#x5C;pi&#x5C;varepsilon R^2}&#x5C;vec{a_R}$$</div></p>
+<h4 class="mume-header" id="%E7%94%B5%E5%9C%BA%E5%8A%9B%E4%B8%8E%E7%94%B5%E5%9C%BA%E5%BC%BA%E5%BA%A6">电场力与电场强度</h4>
+
+<p>点电荷q受周围电荷的总作用力为每个电荷单独作用与q的力的矢量和</p>
+<p><div class="mathjax-exps">$$&#x5C;vec{F}=&#x5C;sum_{i=1}^n&#x5C;dfrac{qq_i(&#x5C;vec{r}-&#x5C;vec{r_i})}{4&#x5C;pi&#x5C;varepsilon |(&#x5C;vec{r}-&#x5C;vec{r_i})|^3}$$</div></p>
+<p>探测电荷<span class="mathjax-exps">$q_t$</span>在电荷量<span class="mathjax-exps">$q_t&#x5C;rightarrow 0$</span>时的受力定义为电场强度.</p>
+<p><div class="mathjax-exps">$$&#x5C;vec{E}=&#x5C;dfrac{&#x5C;vec{F}}{q_t}=&#x5C;dfrac{q}{4&#x5C;pi&#x5C;varepsilon R^2}&#x5C;vec{a_R}$$</div></p>
+<p>体, 面和线电荷分布情况下电场强度表达式</p>
+<p><div class="mathjax-exps">$$&#x5C;vec{E}=&#x5C;dfrac{1}{4&#x5C;pi&#x5C;varepsilon}&#x5C;int_v&#x5C;dfrac{&#x5C;rho_v&#x27;{&#x5C;rm d}v&#x27;}{|&#x5C;vec{r}-&#x5C;vec{r&#x27;}|^3}(&#x5C;vec{r}-&#x5C;vec{r&#x27;})$$</div></p>
+<p><div class="mathjax-exps">$$&#x5C;vec{E}=&#x5C;dfrac{1}{4&#x5C;pi&#x5C;varepsilon}&#x5C;int_s&#x5C;dfrac{&#x5C;rho_s&#x27;{&#x5C;rm d}s&#x27;}{|&#x5C;vec{r}-&#x5C;vec{r&#x27;}|^3}(&#x5C;vec{r}-&#x5C;vec{r&#x27;})$$</div></p>
+<p><div class="mathjax-exps">$$&#x5C;vec{E}=&#x5C;dfrac{1}{4&#x5C;pi&#x5C;varepsilon}&#x5C;int_c&#x5C;dfrac{&#x5C;rho_l&#x27;{&#x5C;rm d}l&#x27;}{|&#x5C;vec{r}-&#x5C;vec{r&#x27;}|^3}(&#x5C;vec{r}-&#x5C;vec{r&#x27;})$$</div></p>
+<p>其中, <span class="mathjax-exps">$&#x5C;rho$</span>为<strong>单位</strong> 体积/面积/长度 的电荷量, 结合上方公式推导得出的 <s>(这么难的应该不会考吧)</s></p>
+<p>电场力与电场强度均符合矢量叠加原理</p>
+<h4 class="mume-header" id="%E9%AB%98%E6%96%AF%E5%AE%9A%E7%90%86%E9%87%8D%E7%82%B9%E6%9D%A5%E4%BA%86">高斯定理(重点来了)</h4>
+
+<p>先来定义电通密度</p>
+<p><div class="mathjax-exps">$$&#x5C;vec{D}=&#x5C;varepsilon&#x5C;vec{E}=&#x5C;varepsilon_0&#x5C;vec{E}+&#x5C;vec{P}$$</div></p>
+<p>再定义穿过曲面<span class="mathjax-exps">$s$</span>的电通</p>
+<p><div class="mathjax-exps">$$&#x5C;oint_s&#x5C;vec{D}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{s}=Q$$</div></p>
+<blockquote>
+<p><s>上面的都是废话</s></p>
+</blockquote>
+<p><strong>就有高斯定理</strong>(证明过程略, <s>应该不会考证明这么丧心病狂</s>)<br>
+<div class="mathjax-exps">$$&#x5C;oint_s&#x5C;vec{D}&#x5C;cdot{&#x5C;rm d}s=Q$$</div><br>
+高斯定理指出从一个闭合面静外向电通量等于闭合面内的<strong>净正电荷Q</strong>(可以理解为闭合面内电荷之数量和).</p>
+<p>再结合公式: <span class="mathjax-exps">$&#x5C;vec{D}=&#x5C;varepsilon&#x5C;vec{E}=&#x5C;varepsilon_0&#x5C;vec{E}+&#x5C;vec{P}$</span>, 就可以计算出电场强度</p>
+<h5 class="mume-header" id="%E7%94%A8%E9%AB%98%E6%96%AF%E5%AE%9A%E7%90%86%E6%B1%82%E7%94%B5%E5%9C%BA%E5%BC%BA%E5%BA%A6%E4%B8%80%E7%82%B9%E7%82%B9%E6%80%BB%E7%BB%93">用高斯定理求电场强度一点点总结</h5>
+
+<ol>
+<li>先找一个<strong>闭合曲面</strong>包裹住电荷(一般是<strong>球面</strong>[点电荷], <strong>圆柱侧面</strong>[带电直导线(有可能是同轴电缆或者是无限长的导线)], 或者是无限大均匀带电平面)</li>
+<li>列出高斯定理</li>
+<li>代入数据</li>
+<li>求出电通密度</li>
+<li>求出电场强度(注意高斯面内是否有电介质, 并代入介电常数<span class="mathjax-exps">$&#x5C;varepsilon$</span>计算)</li>
+</ol>
+<ul>
+<li>学会分段计算</li>
+<li>学会把一整块的带电物体进行分割计算部分的电荷量(这一点挺重要的下面有例题)</li>
+</ul>
+<p>补充一点: 静电平衡时, <strong>导体内部</strong>的体电荷密度为零, 也<strong>不存在电场</strong></p>
+<h4 class="mume-header" id="%E7%94%B5%E5%8A%BF%E4%B8%8E%E7%94%B5%E5%9C%BA%E4%B8%AD%E7%9A%84%E5%82%A8%E8%83%BD">电势与电场中的储能</h4>
+
+<p>电位为单位电荷所做的功</p>
+<p><div class="mathjax-exps">$$V_{ab}=-&#x5C;int_b^a&#x5C;vec{E}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{l}$$</div></p>
+<p>点电荷q在b点产生的绝对电位</p>
+<p><div class="mathjax-exps">$$V_b=&#x5C;dfrac{q}{4&#x5C;pi&#x5C;varepsilon R}$$</div></p>
+<p>从电位方程可以求得电场强度<span class="mathjax-exps">$&#x5C;vec{E}$</span>为 (电位的负梯度)</p>
+<p><div class="mathjax-exps">$$&#x5C;vec{E}=-&#x5C;nabla V$$</div></p>
+<p>n个点电荷的静电能量为</p>
+<p><div class="mathjax-exps">$$W=&#x5C;dfrac{1}{2}&#x5C;sum_{i=1}^nq_iV_i$$</div></p>
+<p>体电荷连续分布的静电能量为</p>
+<p><div class="mathjax-exps">$$W=&#x5C;dfrac{1}{2}&#x5C;int_v&#x5C;rho_vV{&#x5C;rm d}v$$</div></p>
+<p><strong>用<span class="mathjax-exps">$&#x5C;vec{D}$</span>和<span class="mathjax-exps">$&#x5C;vec{E}$</span>表示</strong>(记一下这个)<br>
+<div class="mathjax-exps">$$W=&#x5C;dfrac{1}{2}&#x5C;int_v&#x5C;vec{D}&#x5C;cdot&#x5C;vec{E}{&#x5C;rm d}v$$</div></p>
+<p>其中单位体积的能量密度<br>
+<div class="mathjax-exps">$$w=&#x5C;dfrac{1}{2}&#x5C;vec{D}&#x5C;cdot&#x5C;vec{E}=&#x5C;dfrac{1}{2}&#x5C;varepsilon E^2=&#x5C;dfrac{1}{2&#x5C;varepsilon}D^2$$</div></p>
+<h4 class="mume-header" id="%E7%94%B5%E5%AE%B9">电容</h4>
+
+<p>电容的数学描述</p>
+<p><div class="mathjax-exps">$$C=&#x5C;dfrac{Q_a}{V_{ab}}$$</div></p>
+<p>平行板电容器<br>
+<div class="mathjax-exps">$$C=&#x5C;dfrac{&#x5C;varepsilon &#x5C;overbrace{A}^{面积}}{d}$$</div></p>
+<p>长度为L的圆柱形电容器(同轴电缆)<br>
+<div class="mathjax-exps">$$C=&#x5C;dfrac{2&#x5C;pi&#x5C;varepsilon L}{&#x5C;ln{(&#x5C;dfrac{b}{a})}}$$</div></p>
+<p>球体电容器电容<br>
+<div class="mathjax-exps">$$C=&#x5C;dfrac{4&#x5C;pi&#x5C;varepsilon ab}{b-a}$$</div></p>
+<p>电容串联<br>
+<div class="mathjax-exps">$$&#x5C;dfrac{1}{C_&#x5C;Sigma}=&#x5C;dfrac{1}{C_1}+&#x5C;dfrac{1}{C_2}+...$$</div></p>
+<p>电容并联<br>
+<div class="mathjax-exps">$$C_&#x5C;Sigma=C_1+C_2+...$$</div></p>
+<h4 class="mume-header" id="%E4%BE%8B%E9%A2%98">例题</h4>
+
+<blockquote>
+<p>一个内半径为b, 外半径为r的孤立导体球壳, 内部同心放置一个有电荷<strong>均匀分布</strong>半径为a的球, 如图所示 . 试求空间各处的电场强度 .<br>
+<img src="pics/%E9%AB%98%E6%96%AF%E5%AE%9A%E7%90%86.jpg" alt="&#x9AD8;&#x65AF;&#x5B9A;&#x7406;"></p>
+</blockquote>
+<p>解<br>
+如图所示, 把空间分为四个区域</p>
+<ul>
+<li>区域I, r&lt;d . 曲面包围的总电荷为</li>
+</ul>
+<p><div class="mathjax-exps">$$Q=&#x5C;dfrac{4&#x5C;pi}{3}r^3&#x5C;rho_v$$</div></p>
+<p>因为电荷均匀分布, <span class="mathjax-exps">$&#x5C;vec{E}$</span>场不仅是沿半径方向, 并且在<strong>球 (高斯) 面</strong>上为常数, 由</p>
+<p><div class="mathjax-exps">$$&#x5C;begin{cases}&#x5C;oint_s&#x5C;vec{E}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{s}=&#x5C;overbrace{4&#x5C;pi r^2}^{球 (高斯) 面面积}E_r&#x5C;&#x5C; &#x5C;&#x5C;&#x5C;oint_s&#x5C;vec{D}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{s}=Q&#x5C;&#x5C; &#x5C;&#x5C;Q=&#x5C;dfrac{4&#x5C;pi}{3}r^3&#x5C;rho_v&#x5C;&#x5C; &#x5C;&#x5C;&#x5C;vec{D}=&#x5C;varepsilon&#x5C;vec{E}(此处&#x5C;varepsilon=&#x5C;varepsilon_0)&#x5C;end{cases}$$</div></p>
+<p>得到:</p>
+<p><div class="mathjax-exps">$$&#x5C;vec{E}=&#x5C;dfrac{r}{3&#x5C;varepsilon_0r^2}&#x5C;vec{a_r}(0 &lt; r &lt; a)$$</div></p>
+<blockquote>
+<p>注:<br>
+<span class="mathjax-exps">${&#x5C;rho_v}&#x5C;rightarrow$</span>单位体积的电荷量<br>
+如果总电荷量为Q, 球半径为a, 则有单位电荷量为 <span class="mathjax-exps">${&#x5C;rho_v}=&#x5C;dfrac{Q}{&#x5C;dfrac{4}{3}&#x5C;pi a^3}$</span> (这个就是上面说的把电荷分割计算部分的电荷量, 若换为直导线, 计算方法也类似).</p>
+</blockquote>
+<ul>
+<li>区域II, a ≤ r &lt; b . 球面包围总电荷量为</li>
+</ul>
+<p><div class="mathjax-exps">$$Q=&#x5C;dfrac{4&#x5C;pi}{3}a^3&#x5C;rho_v$$</div></p>
+<p>由高斯定理得</p>
+<p><div class="mathjax-exps">$$&#x5C;vec{E}=&#x5C;dfrac{a^3}{3&#x5C;varepsilon_0r^2}&#x5C;rho_v&#x5C;vec{a_r}(a&#x5C;leq r&lt;b)$$</div></p>
+<ul>
+<li>
+<p>区域III, <span class="mathjax-exps">$b&#x5C;leq r&#x5C;leq c$</span> . 导体内 <span class="mathjax-exps">$&#x5C;vec{E}$</span> 必须为零</p>
+</li>
+<li>
+<p>区域IV, <span class="mathjax-exps">$r&#x5C;geq c$</span>. 如果孤立导体球壳内表面获得负电荷, 则r=c的外表面必须获得与之等量的正电荷</p>
+</li>
+</ul>
+<p><div class="mathjax-exps">$$&#x5C;begin{cases}&#x5C;oint_s&#x5C;vec{E}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{s}=&#x5C;overbrace{4&#x5C;pi r^2}^{球 (高斯) 面面积}E_r&#x5C;&#x5C; &#x5C;&#x5C;&#x5C;oint_s&#x5C;vec{D}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{s}=Q&#x5C;&#x5C; &#x5C;&#x5C;Q=&#x5C;dfrac{4&#x5C;pi}{3}a^3&#x5C;rho_v(若题目直接给出带电量Q, 则可以直接使用Q代入计算)&#x5C;&#x5C; &#x5C;&#x5C;&#x5C;vec{D}=&#x5C;varepsilon&#x5C;vec{E}(此处&#x5C;varepsilon=&#x5C;varepsilon_0)&#x5C;&#x5C; &#x5C;&#x5C;&#x5C;end{cases}$$</div></p>
+<p>此区域电场强度为</p>
+<p><div class="mathjax-exps">$$&#x5C;vec{E}=&#x5C;dfrac{a^3}{3&#x5C;varepsilon_0r^2}&#x5C;rho_v&#x5C;vec{a_r}(r&#x5C;geq c)$$</div></p>
+<ul>
+<li>
+<p>如果题目中有说有电介质, 则将<span class="mathjax-exps">$&#x5C;varepsilon_0$</span>变为相应的<span class="mathjax-exps">$&#x5C;varepsilon$</span>进行计算(题目大同小异)</p>
+</li>
+<li>
+<p>结合电位公式<span class="mathjax-exps">$V_{ab}=-&#x5C;int_b^a&#x5C;vec{E}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{l}$</span>可以求解空间各点电位问题</p>
+</li>
+<li>
+<p>结合电容公式<span class="mathjax-exps">$C=&#x5C;dfrac{Q_a}{V_{ab}}$</span>, 就可以求解电容问题</p>
+</li>
+</ul>
+<h3 class="mume-header" id="%E6%81%92%E5%AE%9A%E7%94%B5%E6%B5%81">恒定电流</h3>
+
+<p>定义电流<br>
+<div class="mathjax-exps">$$i=&#x5C;dfrac{{&#x5C;rm d}q}{{&#x5C;rm d}t}$$</div></p>
+<p>单位面积的电流称为电流密度</p>
+<p><div class="mathjax-exps">$$&#x5C;Delta I=&#x5C;vec{J}&#x5C;cdot&#x5C;Delta &#x5C;vec{s}$$</div><br>
+通过面积s的电流</p>
+<p><div class="mathjax-exps">$$I=&#x5C;int_s&#x5C;vec{J}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{s}$$</div></p>
+<p>运流电流(自由空间中飞的电子形成的电流)密度为<br>
+<div class="mathjax-exps">$$&#x5C;vec{J}=&#x5C;rho_v&#x5C;vec{U_v}$$</div><br>
+<span class="mathjax-exps">$&#x5C;rho_v$</span>为体电荷密度, <span class="mathjax-exps">$&#x5C;vec{U_v}$</span>为电荷运动平均速度</p>
+<p>传导电流(导线里面的)密度为<br>
+<div class="mathjax-exps">$$&#x5C;vec{J}=&#x5C;sigma&#x5C;vec{E}(又叫欧姆定律微分形式)$$</div><br>
+<span class="mathjax-exps">$&#x5C;sigma$</span>为媒质电导率, <span class="mathjax-exps">$&#x5C;vec{E}$</span>为导体中的电场强度</p>
+<blockquote>
+<p><s>上面这俩看看就行了</s></p>
+</blockquote>
+<h4 class="mume-header" id="%E7%84%A6%E8%80%B3%E5%AE%9A%E5%BE%8B">焦耳定律</h4>
+
+<p>功率密度<br>
+<div class="mathjax-exps">$$p=&#x5C;vec{J}&#x5C;cdot&#x5C;vec{E}$$</div></p>
+<p>整个体积内功率<br>
+<div class="mathjax-exps">$$P=&#x5C;int_vp{&#x5C;rm d}v=&#x5C;int_v&#x5C;vec{J}&#x5C;cdot&#x5C;vec{E}{&#x5C;rm d}v$$</div></p>
+<p>整个导体发热功率<br>
+<div class="mathjax-exps">$$P_d=I^2R=&#x5C;dfrac{V^2}{R}$$</div></p>
+<h4 class="mume-header" id="%E7%94%B5%E5%8A%A8%E5%8A%BF">电动势</h4>
+
+<p>静电场中<br>
+<div class="mathjax-exps">$$&#x5C;oint_c&#x5C;vec{E}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{l}=0$$</div></p>
+<p>流过导体的电流<br>
+<div class="mathjax-exps">$$I=&#x5C;int_s&#x5C;vec{J}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{s}=&#x5C;int_s&#x5C;sigma&#x5C;vec{E}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{s}$$</div></p>
+<p>在外加电场(电源)的作用<span class="mathjax-exps">$&#x5C;vec{E&#x27;}$</span>下, 闭合回路中总电场为<span class="mathjax-exps">$&#x5C;vec{E}+&#x5C;vec{E&#x27;}$</span>, 相应总功率<br>
+<div class="mathjax-exps">$$P=&#x5C;int_v(&#x5C;vec{E}+&#x5C;vec{E&#x27;})&#x5C;cdot&#x5C;vec{J}{&#x5C;rm d}v$$</div></p>
+<p>假设回路中恒定电流电流是均匀分布的, 用<span class="mathjax-exps">$I{&#x5C;rm d}&#x5C;vec{l}$</span>代替<span class="mathjax-exps">$&#x5C;vec{J}{&#x5C;rm d}v$</span></p>
+<p>化简积分<br>
+<div class="mathjax-exps">$$P=&#x5C;oint_cI(&#x5C;vec{E}+&#x5C;vec{E&#x27;})&#x5C;cdot{&#x5C;rm d} &#x5C;vec{l}=I&#x5C;oint_c&#x5C;vec{E&#x27;}&#x5C;cdot{&#x5C;rm d} &#x5C;vec{l}$$</div></p>
+<p>定义电动势为<br>
+<div class="mathjax-exps">$$&#x5C;epsilon=&#x5C;oint_c&#x5C;vec{E&#x27;}&#x5C;cdot{&#x5C;rm d} &#x5C;vec{l}$$</div></p>
+<p>供给回路的功率是<br>
+<div class="mathjax-exps">$$P=&#x5C;epsilon I$$</div></p>
+<blockquote>
+<p>这里的瞄一眼就OK了</p>
+</blockquote>
+<h3 class="mume-header" id="%E9%9D%99%E7%A3%81%E5%9C%BA">静磁场</h3>
+
+<p>静磁场是研究由运动电荷建立的与时间无关的场</p>
+<p>于是用电流定义在媒质中的<strong>磁通密度</strong>(毕奥-萨伐尔定律)<br>
+<div class="mathjax-exps">$$&#x5C;vec{B}=&#x5C;dfrac{&#x5C;mu}{4&#x5C;pi}&#x5C;int_c&#x5C;dfrac{I{&#x5C;rm d}&#x5C;vec{l}&#x5C;times&#x5C;vec{R}}{R^3}$$</div></p>
+<p>同时用<strong>磁场强度</strong>定义<strong>磁通密度</strong>为(重要)<br>
+<div class="mathjax-exps">$$&#x5C;vec{B}=&#x5C;mu&#x5C;vec{H}$$</div></p>
+<p>载流导体在磁场中受到的力由<strong>安培力定律</strong><br>
+<div class="mathjax-exps">$$&#x5C;vec{F}=&#x5C;int_cI{&#x5C;rm d}&#x5C;vec{l}&#x5C;times&#x5C;vec{B}$$</div><br>
+确定, 此处<span class="mathjax-exps">$&#x5C;vec{B}$</span>为式中电流I以外的源所产生的磁通密度<br>
+又有<span class="mathjax-exps">$&#x5C;vec{F}=q&#x5C;vec{v}&#x5C;times&#x5C;vec{B}$</span></p>
+<p>通过一个开表面的磁通(等下会用到)<br>
+<div class="mathjax-exps">$$&#x5C;Phi=&#x5C;int_s&#x5C;vec{B}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{s}$$</div></p>
+<p>通过闭合面的静磁通量等于零. 即<br>
+<div class="mathjax-exps">$$&#x5C;oint_s&#x5C;vec{B}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{s}=0或&#x5C;nabla&#x5C;cdot B=0$$</div></p>
+<p><strong>安培环路定律(重要)</strong><br>
+<div class="mathjax-exps">$$&#x5C;oint_c&#x5C;vec{H}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{l}=I或&#x5C;nabla&#x5C;times&#x5C;vec{H}=&#x5C;vec{J_v}$$</div><br>
+若电流或者电流分布是高度<strong>对称</strong>的, <strong>由上式可以计算出<span class="mathjax-exps">$&#x5C;vec{H}$</span>场.</strong></p>
+<p>安培环路定律常用解题步骤</p>
+<ol>
+<li>分析磁场对称性</li>
+<li>根据磁场对称性建立安培环路</li>
+<li>利用公式计算磁场强度<span class="mathjax-exps">$&#x5C;vec{H}$</span></li>
+<li>根据<span class="mathjax-exps">$&#x5C;vec{B}=&#x5C;mu&#x5C;vec{H}$</span>计算磁通密度</li>
+</ol>
+<h4 class="mume-header" id="%E5%B8%B8%E7%94%A8%E7%9A%84%E7%A3%81%E9%80%9A%E5%AF%86%E5%BA%A6">常用的磁通密度</h4>
+
+<table>
+<thead>
+<tr>
+<th>导线类型</th>
+<th>计算磁通密度(空气为介质)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>无限长载流直导线</td>
+<td><span class="mathjax-exps">$B=&#x5C;dfrac{&#x5C;mu_0I}{2&#x5C;pi r}$</span></td>
+</tr>
+<tr>
+<td><strong>半</strong>无限长载流直导线</td>
+<td><span class="mathjax-exps">$B=&#x5C;dfrac{&#x5C;mu_0I}{4&#x5C;pi r}$</span></td>
+</tr>
+<tr>
+<td>载流圆形线圈</td>
+<td><span class="mathjax-exps">$B=&#x5C;dfrac{&#x5C;mu_0I}{2R}$</span></td>
+</tr>
+<tr>
+<td>半圆形</td>
+<td><span class="mathjax-exps">$B=&#x5C;dfrac{&#x5C;mu_0I}{4R}$</span></td>
+</tr>
+<tr>
+<td>无限长直螺线管</td>
+<td><span class="mathjax-exps">$B=&#x5C;mu_0nI$</span></td>
+</tr>
+</tbody>
+</table>
+<p>磁场能量密度<br>
+<div class="mathjax-exps">$$w_m=&#x5C;dfrac{1}{2}&#x5C;vec{B}&#x5C;cdot&#x5C;vec{H}=&#x5C;dfrac{1}{2}&#x5C;mu H^2=&#x5C;dfrac{1}{2&#x5C;mu}B^2$$</div></p>
+<p>磁场能量<br>
+<div class="mathjax-exps">$$W=&#x5C;int_v w&#x5C; {&#x5C;rm d}v$$</div></p>
+<h4 class="mume-header" id="%E4%BE%8B%E9%A2%98-1">例题</h4>
+
+<blockquote>
+<p>一根极长的沿轴放置的空心导体, 其外径为b, 内径为a, 载有沿轴方向的电流I, 如图5-21a所示 . 若电流是<strong>均匀分布</strong>的, 试求在空间任一点的磁场强度 .<br>
+此题使用圆柱坐标解题 ( <span class="mathjax-exps">$&#x5C;rho,&#x5C; &#x5C;phi,&#x5C; z$</span>坐标系 ) 更佳<br>
+<img src="pics/%E5%AE%89%E5%9F%B9%E5%AE%9A%E5%BE%8B.jpg" alt="&#x5B89;&#x57F9;&#x5B9A;&#x5F8B;"></p>
+</blockquote>
+<p>电流均匀分布, 因此可以先算电流密度<span class="mathjax-exps">$&#x5C;vec{J_v}=&#x5C;dfrac{&#x5C;vec{I}}{S}$</span>(总电流除以面积), 此处则有<br>
+<div class="mathjax-exps">$$&#x5C;vec{J}=&#x5C;dfrac{I}{&#x5C;pi r(b^2-a^2)}$$</div><br>
+根据对称的理由, 磁力线应是同心圆, 磁场强度应在<span class="mathjax-exps">$&#x5C;phi$</span>方向, <span class="mathjax-exps">$H_&#x5C;phi$</span>沿每一圆环为一常数 . 此处有三个区域, 我们分别对每一区域求磁场强度 .</p>
+<ul>
+<li>
+<p>(a)区域1. <span class="mathjax-exps">$&#x5C;rho&#x5C;leq a$</span>: 对于任何闭合环路来说, 所包围的电流为零, 即<span class="mathjax-exps">$&#x5C;rho$</span>=1时, <span class="mathjax-exps">$&#x5C;vec{H}=0$</span></p>
+</li>
+<li>
+<p>(b)区域2. <span class="mathjax-exps">$a&#x5C;leq&#x5C;rho&#x5C;leq b$</span>: 图b示半径为<span class="mathjax-exps">$&#x5C;rho$</span>的闭合圆环截流导体截面图 . 所包围的净电流为</p>
+</li>
+</ul>
+<p><div class="mathjax-exps">$$&#x5C;begin{eqnarray}I_{enc}  &amp;=&amp;&#x5C;int_s&#x5C;vec{J_v}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{s}=&#x5C;dfrac{I}{&#x5C;pi r(b^2-a^2)}&#x5C;int_a^&#x5C;rho &#x5C;rho{&#x5C;rm d}&#x5C;rho&#x5C;int_0^{2&#x5C;pi}{&#x5C;rm d}&#x5C;phi&#x5C;&#x5C;  &amp;=&amp;&#x5C;dfrac{I(&#x5C;rho^2-a^2)}{b^2-a^2}&#x5C;&#x5C;&#x5C;end{eqnarray}$$</div></p>
+<blockquote>
+<p>电流除以圆环总面积在乘以包围住的面积, 就计算出环路内被包围的电流,<s>其实不用写积分直接算就OK(真的</s></p>
+</blockquote>
+<p>另一方面<br>
+<div class="mathjax-exps">$$&#x5C;oint_c&#x5C;vec{H}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{l}=2&#x5C;pi&#x5C;rho H_&#x5C;phi$$</div></p>
+<p>因此结合安培定律可得<br>
+<div class="mathjax-exps">$$&#x5C;vec{H}=&#x5C;dfrac{I}{2&#x5C;pi&#x5C;rho}&#x5C;left[&#x5C;dfrac{&#x5C;rho^2-a^2}{b^2-a^2}&#x5C;right]&#x5C;vec{a_&#x5C;phi}&#x5C; (&#x5C;vec{a_&#x5C;phi}表示方向),&#x5C; a&#x5C;leq&#x5C;rho&#x5C;leq b$$</div></p>
+<ul>
+<li>(c)区域3, <span class="mathjax-exps">$&#x5C;rho&#x5C;geq b$</span>: 观测点在导体之外(见图5-21c). 因此包围的净电流为I. 在此区域的磁场强度为</li>
+</ul>
+<p><div class="mathjax-exps">$$&#x5C;vec{H}=&#x5C;dfrac{I}{2&#x5C;pi&#x5C;rho}&#x5C;vec{a_&#x5C;rho},&#x5C; &#x5C;rho&#x5C;geq b$$</div></p>
+<blockquote>
+<p>其他的利用安培定律计算的题目也跟这个类似啦, 希望可以举一反三哦</p>
+</blockquote>
+<h3 class="mume-header" id="%E6%97%B6%E5%8F%98%E7%94%B5%E7%A3%81%E5%9C%BA">时变电磁场</h3>
+
+<p>导体在磁场中移动产生的运动emf(电动势)为(动生电动势)<br>
+<div class="mathjax-exps">$$e_m=&#x5C;int_c(&#x5C;vec{u}&#x5C;times&#x5C;vec{B})&#x5C;cdot{&#x5C;rm d}&#x5C;vec{l}$$</div><br>
+式中<span class="mathjax-exps">$&#x5C;vec{u}$</span>为导体的速度, <span class="mathjax-exps">$&#x5C;vec{B}$</span>为磁通密度, 闭合导体中由运动emf产生的感应电流是在感应电流场<span class="mathjax-exps">$(&#x5C;vec{u}&#x5C;times&#x5C;vec{B})$</span>的方向</p>
+<p>通过在空间固定的N匝线圈所包围的面积的时变磁通产生的变压器emf为(感生电动势)<br>
+<div class="mathjax-exps">$$e_t=-N&#x5C;int_s&#x5C;dfrac{&#x5C;partial&#x5C;vec{B}}{&#x5C;partial t}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{s}&#x5C; (磁通密度&#x5C;vec{B}对时间求偏导数)$$</div></p>
+<blockquote>
+<p><s>如果没学过偏导数的话... 那就百度一下吧</s></p>
+</blockquote>
+<p>线圈自感的定义</p>
+<p><div class="mathjax-exps">$$L=N&#x5C;dfrac{{&#x5C;rm d}&#x5C;Phi}{{&#x5C;rm d}i}$$</div></p>
+<p>线圈互感的定义</p>
+<p><div class="mathjax-exps">$$L_{21}=N_2&#x5C;dfrac{{&#x5C;rm d}&#x5C;Phi_{21}}{{&#x5C;rm d}i_1}$$</div></p>
+<blockquote>
+<p>式中<span class="mathjax-exps">$L_{21}$</span>为<strong>线圈2</strong>由<strong>线圈1所产生的磁通</strong>引起的互感(脚标表示的意义的顺序不要搞反咯, 谁产生磁通就除以谁的电流)</p>
+</blockquote>
+<ul>
+<li><strong>此处N均为匝数</strong></li>
+</ul>
+<p>同理<br>
+<div class="mathjax-exps">$$L_{12}=N_1&#x5C;dfrac{{&#x5C;rm d}&#x5C;Phi_{12}}{{&#x5C;rm d}i_2}$$</div></p>
+<blockquote>
+<p>简化一下 <span class="mathjax-exps">$L=N&#x5C;dfrac{&#x5C;Phi}{i}$</span></p>
+</blockquote>
+<p>计算自感的方式</p>
+<ol>
+<li>假设电感内电流强度为I</li>
+<li>计算磁通密度<span class="mathjax-exps">$&#x5C;vec{B}$</span></li>
+<li>计算磁通<span class="mathjax-exps">$&#x5C;Phi=N&#x5C;int_s &#x5C;vec{B}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{s}$</span></li>
+<li>根据定义计算自感<span class="mathjax-exps">$L=N&#x5C;dfrac{&#x5C;Phi}{i}$</span></li>
+</ol>
+<p>若以自感计算磁场能量, 有<br>
+<div class="mathjax-exps">$$W_m=&#x5C;dfrac{1}{2}LI^2$$</div></p>
+<p>这章我就不放例题了...</p>
+<h3 class="mume-header" id="%E8%A1%A5%E5%85%85">补充</h3>
+
+<p>电磁场的结构方程<br>
+<div class="mathjax-exps">$$&#x5C;left.&#x5C;vec{D}=&#x5C;varepsilon&#x5C;vec{E}&#x5C;&#x5C;&#x5C;vec{J}=&#x5C;sigma&#x5C;vec{E}&#x5C;&#x5C;&#x5C;vec{B}=&#x5C;mu&#x5C;vec{H}&#x5C;right.$$</div><br>
+式中<br>
+<span class="mathjax-exps">$&#x5C;varepsilon&#x5C; 电容率&#x5C; (自由空间(真空)中&#x5C; &#x5C;varepsilon_0=8.854&#x5C;times 10^{-12}F&#x2F;m)&#x5C;&#x5C;&#x5C;mu&#x5C; 磁导率&#x5C; (自由空间(真空)中&#x5C; &#x5C;mu_0=4&#x5C;pi&#x5C;times 10^{-7}H&#x2F;m)&#x5C;&#x5C;&#x5C;sigma&#x5C; 电导率$</span></p>
+<p>位移电流: 电容器之间的 &quot;电流&quot; 不能由传导产生</p>
+<h4 class="mume-header" id="%E9%BA%A6%E5%85%8B%E6%96%AF%E9%9F%A6%E6%96%B9%E7%A8%8B%E7%BB%84">麦克斯韦方程组</h4>
+
+<p>积分形式<br>
+<div class="mathjax-exps">$$&#x5C;begin{eqnarray}&#x5C;oint_c&#x5C;vec{E}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{l}&amp;=&amp;-&#x5C;int_s&#x5C;dfrac{&#x5C;partial&#x5C;vec{B}}{&#x5C;partial t}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{s} &#x5C;&#x5C;&#x5C;oint_c&#x5C;vec{H}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{l}&amp;=&amp;&#x5C;int_s&#x5C;vec{J}{&#x5C;rm d}s+&#x5C;int_s&#x5C;dfrac{&#x5C;partial&#x5C;vec{D}}{&#x5C;partial t}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{s}&#x5C;&#x5C;&#x5C;oint_s&#x5C;vec{D}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{s}&amp;=&amp;&#x5C;int_v&#x5C;rho_v{&#x5C;rm d}v&#x5C;&#x5C;&#x5C;oint_s&#x5C;vec{B}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{s}&amp;=&amp;0&#x5C;end{eqnarray}$$</div></p>
 
       </div>
       <div class="md-sidebar-toc"><ul>
 <li><a href="#%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B~~%E6%94%BE%E5%BC%83~~%E7%9A%84%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97">从零开始<s>放弃</s>的大学物理学习指南</a>
 <ul>
 <li><a href="#%E5%86%99%E5%9C%A8%E6%9C%80%E5%89%8D">写在最前</a></li>
+<li><a href="#%E5%9F%BA%E6%9C%AC%E7%9F%A2%E9%87%8F%E8%BF%90%E7%AE%97">基本矢量运算</a></li>
 <li><a href="#%E8%B4%A8%E7%82%B9%E8%BF%90%E5%8A%A8">质点运动</a>
 <ul>
 <li><a href="#%E7%9B%B4%E7%BA%BF%E8%BF%90%E5%8A%A8">直线运动</a>
@@ -643,6 +1018,7 @@ code.language-yaml {
 <li><a href="#%E5%8A%9B%E7%9F%A9">力矩</a></li>
 <li><a href="#%E8%BD%AC%E5%8A%A8%E6%83%AF%E9%87%8F%E9%87%8D%E7%82%B9">转动惯量(重点)</a>
 <ul>
+<li><a href="#%E5%88%9A%E4%BD%93%E7%9A%84%E8%BD%AC%E5%8A%A8%E6%83%AF%E9%87%8F%E4%B8%8E%E4%BB%A5%E4%B8%8B%E4%B8%89%E4%B8%AA%E5%9B%A0%E7%B4%A0%E6%9C%89%E5%85%B3">刚体的转动惯量与以下三个因素有关</a></li>
 <li><a href="#%E5%87%A0%E7%A7%8D%E5%B8%B8%E8%A7%81%E5%88%9A%E4%BD%93%E7%9A%84%E8%BD%AC%E5%8A%A8%E6%83%AF%E9%87%8F">几种常见刚体的转动惯量</a></li>
 </ul>
 </li>
@@ -661,6 +1037,48 @@ code.language-yaml {
 <li><a href="#%E4%BE%8B2">例2</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li><a href="#%E5%88%9A%E4%BD%93%E7%BB%95%E5%AE%9A%E8%BD%B4%E8%BD%AC%E5%8A%A8%E7%9A%84%E5%8A%A8%E8%83%BD%E5%AE%9A%E7%90%86">刚体绕定轴转动的动能定理</a>
+<ul>
+<li><a href="#%E5%87%A0%E7%A7%8D%E8%AE%A8%E8%AE%BA">几种讨论</a></li>
+<li><a href="#%E4%B8%80%E9%81%93%E4%BE%8B%E9%A2%98">一道例题</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E7%94%B5%E7%A3%81%E5%AD%A6">电磁学</a>
+<ul>
+<li><a href="#%E9%9D%99%E7%94%B5%E5%9C%BA">静电场</a>
+<ul>
+<li><a href="#%E5%BA%93%E4%BB%91%E5%AE%9A%E5%BE%8B">库仑定律</a></li>
+<li><a href="#%E7%94%B5%E5%9C%BA%E5%8A%9B%E4%B8%8E%E7%94%B5%E5%9C%BA%E5%BC%BA%E5%BA%A6">电场力与电场强度</a></li>
+<li><a href="#%E9%AB%98%E6%96%AF%E5%AE%9A%E7%90%86%E9%87%8D%E7%82%B9%E6%9D%A5%E4%BA%86">高斯定理(重点来了)</a>
+<ul>
+<li><a href="#%E7%94%A8%E9%AB%98%E6%96%AF%E5%AE%9A%E7%90%86%E6%B1%82%E7%94%B5%E5%9C%BA%E5%BC%BA%E5%BA%A6%E4%B8%80%E7%82%B9%E7%82%B9%E6%80%BB%E7%BB%93">用高斯定理求电场强度一点点总结</a></li>
+</ul>
+</li>
+<li><a href="#%E7%94%B5%E5%8A%BF%E4%B8%8E%E7%94%B5%E5%9C%BA%E4%B8%AD%E7%9A%84%E5%82%A8%E8%83%BD">电势与电场中的储能</a></li>
+<li><a href="#%E7%94%B5%E5%AE%B9">电容</a></li>
+<li><a href="#%E4%BE%8B%E9%A2%98">例题</a></li>
+</ul>
+</li>
+<li><a href="#%E6%81%92%E5%AE%9A%E7%94%B5%E6%B5%81">恒定电流</a>
+<ul>
+<li><a href="#%E7%84%A6%E8%80%B3%E5%AE%9A%E5%BE%8B">焦耳定律</a></li>
+<li><a href="#%E7%94%B5%E5%8A%A8%E5%8A%BF">电动势</a></li>
+</ul>
+</li>
+<li><a href="#%E9%9D%99%E7%A3%81%E5%9C%BA">静磁场</a>
+<ul>
+<li><a href="#%E5%B8%B8%E7%94%A8%E7%9A%84%E7%A3%81%E9%80%9A%E5%AF%86%E5%BA%A6">常用的磁通密度</a></li>
+<li><a href="#%E4%BE%8B%E9%A2%98-1">例题</a></li>
+</ul>
+</li>
+<li><a href="#%E6%97%B6%E5%8F%98%E7%94%B5%E7%A3%81%E5%9C%BA">时变电磁场</a></li>
+<li><a href="#%E8%A1%A5%E5%85%85">补充</a>
+<ul>
+<li><a href="#%E9%BA%A6%E5%85%8B%E6%96%AF%E9%9F%A6%E6%96%B9%E7%A8%8B%E7%BB%84">麦克斯韦方程组</a></li>
 </ul>
 </li>
 </ul>
