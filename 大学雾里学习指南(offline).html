@@ -225,6 +225,7 @@ code.language-yaml {
 <p>熊心瑶世界第一 ____（真的<br>
 ——大家都这么说</p>
 </blockquote>
+<p>手工整理, 可能会有纰漏或者错误, 请见谅</p>
 <h2 class="mume-header" id="%E5%9F%BA%E6%9C%AC%E7%9F%A2%E9%87%8F%E8%BF%90%E7%AE%97">基本矢量运算</h2>
 
 <p>矢量点积(内积)公式:<span class="mathjax-exps">$&#x5C;vec{a}&#x5C;cdot&#x5C;vec{b}=|&#x5C;vec{a}||&#x5C;vec{b}|&#x5C;cos&#x5C;theta$</span></p>
@@ -318,23 +319,22 @@ code.language-yaml {
 <h3 class="mume-header" id="%E5%8A%A8%E9%87%8F%E5%AE%9A%E7%90%86">动量定理</h3>
 
 <p>微分形式:<br>
-<span class="mathjax-exps">$&#x5C;vec{F}=&#x5C;dfrac{{&#x5C;rm d} &#x5C;vec{p}}{{&#x5C;rm d} t}=&#x5C;dfrac{{&#x5C;rm d} (m&#x5C;vec{v})}{{&#x5C;rm d} t}$</span>, <span class="mathjax-exps">$&#x5C;vec{F}{&#x5C;rm d} t={&#x5C;rm d} &#x5C;vec{p}={&#x5C;rm d} (m&#x5C;vec{v})$</span><br>
-积分形式:<br>
-<span class="mathjax-exps">$&#x5C;vec{I}=&#x5C;int_{t_1}^{t_2}&#x5C;vec{F}(t){&#x5C;rm d} t=&#x5C;vec{p_2}-&#x5C;vec{p_1}=m&#x5C;vec{v_2}-m&#x5C;vec{v_1}$</span><br>
+<div class="mathjax-exps">$$&#x5C;vec{F}=&#x5C;dfrac{{&#x5C;rm d} &#x5C;vec{p}}{{&#x5C;rm d} t}=&#x5C;dfrac{{&#x5C;rm d} (m&#x5C;vec{v})}{{&#x5C;rm d} t},&#x5C; &#x5C;vec{F}{&#x5C;rm d} t={&#x5C;rm d} &#x5C;vec{p}={&#x5C;rm d} (m&#x5C;vec{v})$$</div></p>
+<p>积分形式:<br>
+<div class="mathjax-exps">$$&#x5C;vec{I}=&#x5C;int_{t_1}^{t_2}&#x5C;vec{F}(t){&#x5C;rm d} t=&#x5C;vec{p_2}-&#x5C;vec{p_1}=m&#x5C;vec{v_2}-m&#x5C;vec{v_1}$$</div><br>
 作用于系统的合外力的冲量等于系统动量的增量(质点的动量定理) <s>我不知道这说的是啥</s></p>
-<p><span class="mathjax-exps">$&#x5C;vec{F^{ex}}=&#x5C;dfrac{{&#x5C;rm d} &#x5C;vec{p}}{{&#x5C;rm d} t}$</span></p>
+<p><div class="mathjax-exps">$$&#x5C;vec{F^{ex}}=&#x5C;dfrac{{&#x5C;rm d} &#x5C;vec{p}}{{&#x5C;rm d} t}$$</div></p>
 <h3 class="mume-header" id="%E5%8A%A8%E9%87%8F%E5%AE%88%E6%81%92%E5%AE%9A%E7%90%86">动量守恒定理</h3>
 
-<p><span class="mathjax-exps">$&#x5C;vec{p}=&#x5C;sum_{i=1}^n m_i&#x5C;vec{v_i}=恒矢量$</span> (系统合外力为零)</p>
+<p><div class="mathjax-exps">$$&#x5C;vec{p}=&#x5C;sum_{i=1}^n m_i&#x5C;vec{v_i}=恒矢量&#x5C; (系统合外力为零)$$</div></p>
 <h3 class="mume-header" id="%E5%8F%98%E5%8A%9B%E5%81%9A%E5%8A%9F">变力做功</h3>
 
-<p><span class="mathjax-exps">${&#x5C;rm d}W = &#x5C;vec{F}&#x5C;cdot {&#x5C;rm d} &#x5C;vec{r}$</span><br>
-<span class="mathjax-exps">$&#x5C;therefore {&#x5C;rm d}W=F&#x5C;cos{&#x5C;theta}|{&#x5C;rm d} &#x5C;vec{r}|$</span></p>
+<p><div class="mathjax-exps">$$&#x5C;begin{eqnarray}{&#x5C;rm d}W&amp;=&amp; &#x5C;vec{F}&#x5C;cdot {&#x5C;rm d} &#x5C;vec{r}&#x5C;&#x5C;&#x5C;therefore {&#x5C;rm d}W&amp;=&amp;F&#x5C;cos{&#x5C;theta}|{&#x5C;rm d} &#x5C;vec{r}|&#x5C;end{eqnarray}$$</div></p>
 <p>将微元量积分, 可得<br>
-<span class="mathjax-exps">$W=&#x5C;int_A^B{&#x5C;vec{F} &#x5C;cdot{&#x5C;rm d} &#x5C;vec{r}}=&#x5C;int_A^B{F &#x5C;cos &#x5C;theta {&#x5C;rm d} s}({&#x5C;rm d} s = |{&#x5C;rm d} &#x5C;vec{r}|)$</span>(矢量点积公式)</p>
+<div class="mathjax-exps">$$W=&#x5C;int_A^B{&#x5C;vec{F} &#x5C;cdot{&#x5C;rm d} &#x5C;vec{r}}=&#x5C;int_A^B{F &#x5C;cos &#x5C;theta {&#x5C;rm d} s}({&#x5C;rm d} s = |{&#x5C;rm d} &#x5C;vec{r}|)&#x5C; (矢量点积公式)$$</div></p>
 <h3 class="mume-header" id="%E8%B4%A8%E7%82%B9%E7%9A%84%E5%8A%A8%E8%83%BD%E5%AE%9A%E7%90%86">质点的动能定理</h3>
 
-<p><span class="mathjax-exps">$W=&#x5C;dfrac{1}{2}mv_2^2-&#x5C;dfrac{1}{2}mv_1^2=E_{k2}-E_{k1}$</span></p>
+<p><div class="mathjax-exps">$$W=&#x5C;dfrac{1}{2}mv_2^2-&#x5C;dfrac{1}{2}mv_1^2=E_{k2}-E_{k1}$$</div></p>
 <ul>
 <li>
 <p>功是过程量，动能是状态量</p>
@@ -356,12 +356,12 @@ code.language-yaml {
 <img src="pics/%E5%8A%BF%E8%83%BD.png" alt="&#x52BF;&#x80FD;"></p>
 <h3 class="mume-header" id="%E5%8A%9F%E8%83%BD%E5%85%B3%E7%B3%BB">功能关系</h3>
 
-<p><span class="mathjax-exps">$W^{ex}+W_{nc}^{in}=(E_k+E_p)-(E_{k0}+E_{p0})$</span></p>
+<p><div class="mathjax-exps">$$W^{ex}+W_{nc}^{in}=(E_k+E_p)-(E_{k0}+E_{p0})$$</div></p>
 <h4 class="mume-header" id="%E6%9C%BA%E6%A2%B0%E8%83%BD">机械能</h4>
 
-<p><span class="mathjax-exps">$E=E_k+E_p$</span></p>
-<p><span class="mathjax-exps">$W^{ex}+W_{nc}^{in}=E-E_0$</span></p>
-<p>一般情况碰撞<span class="mathjax-exps">$&#x5C;vec{F^{ex}} &lt;&lt; &#x5C;vec{F^{in}} &#x5C;sum_i p_i =&#x5C;vec{C}$</span></p>
+<p><div class="mathjax-exps">$$&#x5C;begin{eqnarray}E&amp;=&amp;E_k+E_p&#x5C;&#x5C;W^{ex}+W_{nc}^{in}&amp;=&amp;E-E_0&#x5C;end{eqnarray}$$</div></p>
+<p>一般情况碰撞<br>
+<div class="mathjax-exps">$$&#x5C;vec{F^{ex}} &lt;&lt; &#x5C;vec{F^{in}}&#x5C;&#x5C;&#x5C;sum_i p_i =&#x5C;vec{C}&#x5C; (恒矢量)$$</div></p>
 <ol>
 <li>
 <p>完全弹性碰撞: 动量和机械能均守恒</p>
@@ -392,7 +392,7 @@ code.language-yaml {
 <p><span class="mathjax-exps">$&#x5C;vec{&#x5C;omega}$</span>正方向, 右手螺旋, 拇指所指的方向</p>
 <h3 class="mume-header" id="%E5%8C%80%E5%8F%98%E9%80%9F%E8%BD%AC%E5%8A%A8">匀变速转动</h3>
 
-<p>角加速度: <span class="mathjax-exps">$&#x5C;alpha=&#x5C;lim_{&#x5C;Delta t &#x5C;rightarrow 0}&#x5C;dfrac{&#x5C;Delta &#x5C;omega}{&#x5C;Delta t}=&#x5C;dfrac{{&#x5C;rm d} &#x5C;omega}{{&#x5C;rm d} t}$</span></p>
+<p>角加速度: <div class="mathjax-exps">$$&#x5C;alpha=&#x5C;lim_{&#x5C;Delta t &#x5C;rightarrow 0}&#x5C;dfrac{&#x5C;Delta &#x5C;omega}{&#x5C;Delta t}=&#x5C;dfrac{{&#x5C;rm d} &#x5C;omega}{{&#x5C;rm d} t}$$</div></p>
 <h4 class="mume-header" id="%E5%8C%80%E5%8F%98%E9%80%9F%E7%9B%B4%E7%BA%BF%E8%BF%90%E5%8A%A8%E5%8C%80%E5%8F%98%E9%80%9F%E8%BD%AC%E5%8A%A8%E7%9A%84%E5%AF%B9%E6%AF%94">匀变速直线运动匀变速转动的对比</h4>
 
 <p>当加速度/角加速度为常量时</p>
@@ -421,12 +421,8 @@ code.language-yaml {
 <h4 class="mume-header" id="%E8%A7%92%E9%87%8F%E4%B8%8E%E7%BA%BF%E9%87%8F%E7%9A%84%E5%85%B3%E7%B3%BB">角量与线量的关系</h4>
 
 <p><img src="pics/%E5%88%9A%E4%BD%93_%E8%A7%92%E7%BA%BF%E5%85%B3%E7%B3%BB.png" alt="&#x89D2;&#x7EBF;&#x5173;&#x7CFB;"></p>
-<p><span class="mathjax-exps">$&#x5C;omega=&#x5C;dfrac{{&#x5C;rm d} &#x5C;theta}{{&#x5C;rm d} t}$</span><br>
-<span class="mathjax-exps">$&#x5C;alpha=&#x5C;dfrac{{&#x5C;rm d} &#x5C;omega}{{&#x5C;rm d} t}=&#x5C;dfrac{&#x5C;rm{d^2}&#x5C;theta}{{&#x5C;rm d} t^2}$</span> (两次求导的意思)</p>
-<p><span class="mathjax-exps">$v=r&#x5C;omega$</span><br>
-<span class="mathjax-exps">$a_t=r&#x5C;alpha$</span> (切向)<br>
-<span class="mathjax-exps">$a_n=r&#x5C;omega^2$</span> (法向)<br>
-<span class="mathjax-exps">$&#x5C;vec{a}=r&#x5C;alpha &#x5C;vec{e_t} +r&#x5C;omega^2&#x5C;vec{e_n}$</span></p>
+<p><div class="mathjax-exps">$$&#x5C;begin{eqnarray}&#x5C;omega&amp;=&amp;&#x5C;dfrac{{&#x5C;rm d} &#x5C;theta}{{&#x5C;rm d} t}&#x5C;&#x5C;&#x5C;alpha&amp;=&amp;&#x5C;dfrac{{&#x5C;rm d} &#x5C;omega}{{&#x5C;rm d} t}=&#x5C;dfrac{&#x5C;rm{d^2}&#x5C;theta}{{&#x5C;rm d} t^2}&#x5C; (两次求导的意思)&#x5C;end{eqnarray}$$</div></p>
+<p><div class="mathjax-exps">$$&#x5C;begin{eqnarray}v&amp;=&amp;r&#x5C;omega$&#x5C;&#x5C;a_t&amp;=&amp;r&#x5C;alpha(切向)&#x5C;&#x5C;a_n&amp;=&amp;r&#x5C;omega^2(法向)&#x5C;&#x5C;&#x5C;vec{a}&amp;=&amp;r&#x5C;alpha &#x5C;vec{e_t} +r&#x5C;omega^2&#x5C;vec{e_n}&#x5C;end{eqnarray}$$</div></p>
 <h4 class="mume-header" id="%E5%8A%9B%E7%9F%A9">力矩</h4>
 
 <p>用来描述力对刚体的转动作用<br>
@@ -438,7 +434,7 @@ code.language-yaml {
 <img src="pics/%E5%8A%9B%E7%9F%A9%E5%85%B3%E7%B3%BB.png" alt="&#x529B;&#x77E9;&#x5173;&#x7CFB;"></p>
 <h4 class="mume-header" id="%E8%BD%AC%E5%8A%A8%E6%83%AF%E9%87%8F%E9%87%8D%E7%82%B9">转动惯量(重点)</h4>
 
-<p><span class="mathjax-exps">$J=&#x5C;sum_j &#x5C;Delta m_j r_j^2(离散情况)=&#x5C;int r^2{&#x5C;rm d} m(连续的情况下)$</span></p>
+<p><div class="mathjax-exps">$$J=&#x5C;sum_j &#x5C;Delta m_j r_j^2&#x5C; (离散情况)=&#x5C;int r^2{&#x5C;rm d} m&#x5C; (连续的情况下)$$</div></p>
 <ul>
 <li>
 <p>转动惯量的单位:kg·m2</p>
@@ -481,7 +477,7 @@ code.language-yaml {
 </tr>
 <tr>
 <td>圆柱体(转动轴沿几何轴 //理解为圆心, 常用的一个, 滑轮转动问题经常用)</td>
-<td><span class="mathjax-exps">$J=&#x5C;dfrac{mR^2}{2}$</span>(R为圆柱体半径)</td>
+<td><span class="mathjax-exps">$J=&#x5C;dfrac{mR^2}{2}$</span> (R为圆柱体半径)</td>
 </tr>
 <tr>
 <td>球体(转动轴过球径)</td>
@@ -489,20 +485,21 @@ code.language-yaml {
 </tr>
 <tr>
 <td>细棒(转动轴在细棒的一端且垂直)</td>
-<td>$J=\dfrac{ml^2}{3}</td>
+<td><span class="mathjax-exps">$J=&#x5C;dfrac{ml^2}{3}$</span></td>
 </tr>
 </tbody>
 </table>
 <h4 class="mume-header" id="%E8%BD%AC%E5%8A%A8%E5%AE%9A%E5%BE%8B%E7%BB%93%E5%90%88%E8%BD%AC%E5%8A%A8%E6%83%AF%E9%87%8F%E4%B8%8E%E5%8A%9B%E7%9F%A9%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9">转动定律(结合转动惯量与力矩的知识点)</h4>
 
-<p><span class="mathjax-exps">$M=J&#x5C;alpha$</span></p>
+<p><div class="mathjax-exps">$$M=J&#x5C;alpha$$</div></p>
 <blockquote>
 <p>转动定律是解决刚体定轴转动问题的基本方程</p>
 </blockquote>
 <h4 class="mume-header" id="%E5%B9%B3%E8%A1%8C%E8%BD%B4%E5%AE%9A%E7%90%86">平行轴定理</h4>
 
-<p><img src="pics/%E5%B9%B3%E8%A1%8C%E8%BD%B4.png" alt="&#x5E73;&#x884C;&#x8F74;&#x5B9A;&#x7406;"><br>
-<strong>质量为m的刚体, 如果对其质心轴的转动惯量为<span class="mathjax-exps">$J_C$</span> ，则对任一与该轴平行，相距为d的转轴的转动惯量: <span class="mathjax-exps">$J_O =J_C +md^2$</span></strong> (一条重要的公式)</p>
+<p><img src="pics/%E5%B9%B3%E8%A1%8C%E8%BD%B4.png" alt="&#x5E73;&#x884C;&#x8F74;&#x5B9A;&#x7406;"></p>
+<p><strong>质量为m的刚体, 如果对其质心轴的转动惯量为<span class="mathjax-exps">$J_C$</span> ，则对任一与该轴平行，相距为d的转轴的转动惯量(一条重要的公式):</strong><br>
+<div class="mathjax-exps">$$J_O =J_C +md^2$$</div></p>
 <h4 class="mume-header" id="%E5%85%B3%E4%BA%8E%E8%BF%90%E7%94%A8%E8%BD%AC%E5%8A%A8%E6%83%AF%E9%87%8F%E7%9A%84%E4%B8%80%E8%88%AC%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF%E4%B8%8D%E5%90%8C%E4%BA%8E%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86%E7%9A%84%E8%A7%A3%E9%A2%98%E6%96%B9%E6%B3%95">关于运用转动惯量的一般解题思路(不同于高中物理的解题方法)</h4>
 
 <p><img src="pics/%E5%88%9A%E4%BD%93_%E4%BE%8B%E9%A2%98.jpg" alt="&#x4F8B;&#x9898;"></p>
@@ -510,7 +507,7 @@ code.language-yaml {
 <p>如图所示, 质量为<span class="mathjax-exps">$m_A$</span>的物体A静止在光滑水平面上, 它和一质量不计的纯索相连接, 此绳索跨过一半径为R、质量为<span class="mathjax-exps">$m_c$</span>的圆柱形滑轮C, 并系在另一质量为<span class="mathjax-exps">$m_B$</span>的物体B上, B竖直悬挂, 圆柱形滑轮可绕其几何中心轴转动, 当滑轮转动时, 它与绳索间没有滑动, 且滑轮与轴承间的摩擦力可略去不计, 问:</p>
 </blockquote>
 <ol>
-<li>这两物体的线加速度为多少?水平和竖直两段绳索的张力各为多少?</li>
+<li>这两物体的线加速度为多少? 水平和竖直两段绳索的张力各为多少?</li>
 <li>物体从静止落下距离y时, 其速率为多少?</li>
 </ol>
 <p>解题思路</p>
@@ -533,14 +530,14 @@ code.language-yaml {
 <h4 class="mume-header" id="%E8%B4%A8%E7%82%B9%E7%9A%84%E8%A7%92%E5%8A%A8%E9%87%8F">质点的角动量</h4>
 
 <p><img src="pics/%E8%A7%92%E5%8A%A8%E9%87%8F.png" alt="&#x89D2;&#x52A8;&#x91CF;"></p>
-<p><span class="mathjax-exps">$&#x5C;vec{L}=&#x5C;vec{r}&#x5C;times&#x5C;vec{p}=m&#x5C;vec{r}&#x5C;times&#x5C;vec{v}$</span></p>
-<p>可得<br>
-<span class="mathjax-exps">$L=rmv&#x5C;sin&#x5C;theta$</span> (标量形式)<strong>重要的公式</strong></p>
+<p><div class="mathjax-exps">$$&#x5C;vec{L}=&#x5C;vec{r}&#x5C;times&#x5C;vec{p}=m&#x5C;vec{r}&#x5C;times&#x5C;vec{v}$$</div></p>
+<p>可得<strong>重要的公式</strong><br>
+<div class="mathjax-exps">$$L=rmv&#x5C;sin&#x5C;theta&#x5C; (标量形式)$$</div></p>
 <h4 class="mume-header" id="%E8%B4%A8%E7%82%B9%E7%9A%84%E8%A7%92%E5%8A%A8%E9%87%8F%E5%AE%9A%E7%90%86">质点的角动量定理</h4>
 
-<p><span class="mathjax-exps">$&#x5C;vec{r}&#x5C;times&#x5C;vec{F}=&#x5C;vec{M_{合力矩}}=&#x5C;dfrac{{&#x5C;rm d}&#x5C;vec{L}}{{&#x5C;rm d} t}=&#x5C;dfrac{{&#x5C;rm d}}{{&#x5C;rm d} t}(&#x5C;vec{r}&#x5C;times m&#x5C;vec{v})$</span></p>
+<p><div class="mathjax-exps">$$&#x5C;vec{r}&#x5C;times&#x5C;vec{F}=&#x5C;vec{M_{合力矩}}=&#x5C;dfrac{{&#x5C;rm d}&#x5C;vec{L}}{{&#x5C;rm d} t}=&#x5C;dfrac{{&#x5C;rm d}}{{&#x5C;rm d} t}(&#x5C;vec{r}&#x5C;times m&#x5C;vec{v})$$</div></p>
 <p>两端积分:<br>
-<span class="mathjax-exps">$&#x5C;int_{t_1}^{t_2}&#x5C;vec{M}{&#x5C;rm d} t=&#x5C;vec{L_2}-&#x5C;vec{L_1}$</span></p>
+<div class="mathjax-exps">$$&#x5C;int_{t_1}^{t_2}&#x5C;vec{M}{&#x5C;rm d} t=&#x5C;vec{L_2}-&#x5C;vec{L_1}$$</div></p>
 <p>若<span class="mathjax-exps">$&#x5C;vec{M}=0$</span>, <span class="mathjax-exps">$&#x5C;vec{L}=m&#x5C;vec{r}&#x5C;times&#x5C;vec{v}=恒矢量$</span> (质点的角动量守恒定理)</p>
 <h4 class="mume-header" id="%E4%B8%A4%E9%81%93%E4%BE%8B%E9%A2%98">两道例题</h4>
 
@@ -555,13 +552,13 @@ code.language-yaml {
 <p>为使讨论简化, 把演员视为质点, 演员M落在板A处的速率为<span class="mathjax-exps">$v_m=&#x5C;sqrt{2gh}$</span>, 这个, 速率也就是演员M与板A处刚碰撞时的速率, 此时演员N的速率<span class="mathjax-exps">$v_n=0$</span>.<strong>在碰撞后的瞬时, 演员M, N具有相同的线速率u, 其值为<span class="mathjax-exps">$u=&#x5C;dfrac{l}{2}&#x5C;omega$</span>, <span class="mathjax-exps">$&#x5C;omega$</span>为演员和板绕点C的角速率</strong>, 现把演员M, N和板作为一个系统, 并以通过点C垂直纸平面的轴为转轴, 由于M, N两演员的<strong>质量相等</strong>, 所以当演员M碰撞板A处时, <strong>作用在系统上的合外力矩为零</strong>, 故系统的<strong>角动量守恒</strong></p>
 </blockquote>
 <p>可获得方程:<br>
-<div class="mathjax-exps">$$&#x5C;begin{cases}mv_m&#x5C;dfrac{l}{2}=&#x5C;overbrace{J&#x5C;omega}^{棒的角动量}+&#x5C;overbrace{2mu&#x5C;dfrac{l}{2}}^{两个演员的角动量}=J&#x5C;omega+&#x5C;dfrac{1}{2}ml^2&#x5C;omega &#x5C;&#x5C; &#x5C;&#x5C;J=&#x5C;dfrac{1}{12}m&#x27;l^2(查表)&#x5C;&#x5C; &#x5C;&#x5C;v_m=&#x5C;sqrt{2gh}&#x5C;&#x5C; &#x5C;&#x5C;u=&#x5C;dfrac{l}{2}&#x5C;omega&#x5C;end{cases}$$</div></p>
+<div class="mathjax-exps">$$&#x5C;begin{cases}mv_m&#x5C;dfrac{l}{2}&amp;=&amp;&#x5C;overbrace{J&#x5C;omega}^{棒的角动量}+&#x5C;overbrace{2mu&#x5C;dfrac{l}{2}}^{两个演员的角动量}=J&#x5C;omega+&#x5C;dfrac{1}{2}ml^2&#x5C;omega &#x5C;&#x5C; &#x5C;&#x5C;J&amp;=&amp;&#x5C;dfrac{1}{12}m&#x27;l^2(查表)&#x5C;&#x5C; &#x5C;&#x5C;v_m&amp;=&amp;&#x5C;sqrt{2gh}&#x5C;&#x5C; &#x5C;&#x5C;u&amp;=&amp;&#x5C;dfrac{l}{2}&#x5C;omega&#x5C;end{cases}$$</div></p>
 <p>解出<span class="mathjax-exps">$&#x5C;omega$</span>, 再代入<span class="mathjax-exps">$h&#x27;=&#x5C;dfrac{u^2}{2g}$</span>(自由落体逆过程)</p>
 <h5 class="mume-header" id="%E4%BE%8B2">例2</h5>
 
 <blockquote>
 <p>有一根质量很小的长度为l的均匀细杆, 可绕通过其中心点O并与纸平面垂直的轴在竖直平面内转动, 当细杆静止于水平位置时, 有一只小虫以速率<span class="mathjax-exps">$v_0$</span>, 垂直落在距点O为l/4处, 并背离点O向细杆的端点A爬行.<br>
-设小虫的<strong>质量与细杆的质量均为m</strong>, 问:欲使细杆以<strong>恒定的角速度</strong>转动, 小虫应以多大速率向斜杆端点爬行 .<br>
+设小虫的<strong>质量与细杆的质量均为m</strong>, 问:欲使细杆以<strong>恒定的角速度</strong>转动, 小虫应以多大速率向斜杆端点爬行.<br>
 <img src="pics/%E8%A7%92%E5%8A%A8%E9%87%8F%E5%AE%88%E6%81%922.jpg" alt="&#x4F8B;&#x9898;2"></p>
 </blockquote>
 <p>解题思路:</p>
@@ -587,10 +584,10 @@ code.language-yaml {
 <p>求解出<span class="mathjax-exps">$&#x5C;dfrac{{&#x5C;rm d}r}{{&#x5C;rm d}t}$</span>, 即为答案.</p>
 <h3 class="mume-header" id="%E5%88%9A%E4%BD%93%E7%BB%95%E5%AE%9A%E8%BD%B4%E8%BD%AC%E5%8A%A8%E7%9A%84%E5%8A%A8%E8%83%BD%E5%AE%9A%E7%90%86">刚体绕定轴转动的动能定理</h3>
 
-<p><span class="mathjax-exps">$W=&#x5C;int_{&#x5C;theta_1}^{&#x5C;theta_2} M {&#x5C;rm d}&#x5C;theta = &#x5C;int_{&#x5C;theta_1}^{&#x5C;theta_2} J&#x5C;dfrac{{&#x5C;rm d}&#x5C;omega}{{&#x5C;rm d}t} d&#x5C;theta=&#x5C;int_{&#x5C;omega_1}^{&#x5C;omega_2} J&#x5C;omega{&#x5C;rm d}&#x5C;omega$</span></p>
-<p><span class="mathjax-exps">$W=&#x5C;int_{&#x5C;theta_1}^{&#x5C;theta_2} M {&#x5C;rm d}&#x5C;theta =&#x5C;dfrac{1}{2}J&#x5C;omega_2^2-&#x5C;dfrac{1}{2}J&#x5C;omega_1^2$</span></p>
+<p><div class="mathjax-exps">$$W=&#x5C;int_{&#x5C;theta_1}^{&#x5C;theta_2} M {&#x5C;rm d}&#x5C;theta = &#x5C;int_{&#x5C;theta_1}^{&#x5C;theta_2} J&#x5C;dfrac{{&#x5C;rm d}&#x5C;omega}{{&#x5C;rm d}t} d&#x5C;theta=&#x5C;int_{&#x5C;omega_1}^{&#x5C;omega_2} J&#x5C;omega{&#x5C;rm d}&#x5C;omega$$</div></p>
+<p><div class="mathjax-exps">$$W=&#x5C;int_{&#x5C;theta_1}^{&#x5C;theta_2} M {&#x5C;rm d}&#x5C;theta =&#x5C;dfrac{1}{2}J&#x5C;omega_2^2-&#x5C;dfrac{1}{2}J&#x5C;omega_1^2$$</div></p>
 <blockquote>
-<p>可对比动能定理 <span class="mathjax-exps">$W=&#x5C;int&#x5C;vec{F}{&#x5C;rm d}&#x5C;vec{r}=&#x5C;dfrac{1}{2}mv_2^2-&#x5C;dfrac{1}{2}mv_1^2$</span></p>
+<p>可对比动能定理 <div class="mathjax-exps">$$W=&#x5C;int&#x5C;vec{F}{&#x5C;rm d}&#x5C;vec{r}=&#x5C;dfrac{1}{2}mv_2^2-&#x5C;dfrac{1}{2}mv_1^2$$</div></p>
 </blockquote>
 <h4 class="mume-header" id="%E5%87%A0%E7%A7%8D%E8%AE%A8%E8%AE%BA">几种讨论</h4>
 
@@ -604,18 +601,18 @@ code.language-yaml {
 </thead>
 <tbody>
 <tr>
-<td>子弹击入沙袋, 细绳质量不计</td>
-<td><img src="pics/%E5%AD%90%E5%BC%B9_%E7%BB%86%E7%BB%B3.png" alt="&#x5B50;&#x5F39;_&#x7EC6;&#x7EF3;"></td>
+<td colspan="2">子弹击入沙袋, 细绳质量不计</td>
+
 <td>动量守恒, 角动量守恒, 机械能<strong>不</strong>守恒 <strong>(以子弹和沙袋为系统)</strong></td>
 </tr>
 <tr>
-<td>子弹击入杆</td>
-<td><img src="pics/%E5%AD%90%E5%BC%B9_%E6%9D%86.png" alt="&#x5B50;&#x5F39;_&#x6746;"></td>
+<td colspan="2">子弹击入杆</td>
+
 <td>动量<strong>不</strong>守恒, 角动量守恒, 机械能<strong>不</strong>守恒 <strong>以子弹和杆为系统</strong></td>
 </tr>
 <tr>
-<td>圆锥摆</td>
-<td><img src="pics/%E5%9C%86%E9%94%A5%E6%91%86.png" alt="&#x5706;&#x9525;&#x6446;"></td>
+<td colspan="2">圆锥摆</td>
+
 <td>动量<strong>不</strong>守恒, 角动量守恒, 机械能守恒</td>
 </tr>
 </tbody>
@@ -676,10 +673,10 @@ code.language-yaml {
 <blockquote>
 <p><s>上面的都是废话</s></p>
 </blockquote>
-<p><strong>就有高斯定理</strong>(证明过程略, <s>应该不会考证明这么丧心病狂</s>)<br>
+<p><strong>就有高斯定理</strong> (证明过程略, <s>应该不会考证明这么丧心病狂</s>)<br>
 <div class="mathjax-exps">$$&#x5C;oint_s&#x5C;vec{D}&#x5C;cdot{&#x5C;rm d}s=Q$$</div><br>
 高斯定理指出从一个闭合面静外向电通量等于闭合面内的<strong>净正电荷Q</strong>(可以理解为闭合面内电荷之数量和).</p>
-<p>再结合公式: <span class="mathjax-exps">$&#x5C;vec{D}=&#x5C;varepsilon&#x5C;vec{E}=&#x5C;varepsilon_0&#x5C;vec{E}+&#x5C;vec{P}$</span>, 就可以计算出电场强度</p>
+<p>再结合公式: <span class="mathjax-exps">$&#x5C;vec{D}=&#x5C;varepsilon_0&#x5C;vec{E}+&#x5C;vec{P}=&#x5C;varepsilon&#x5C;vec{E}$</span>, 就可以计算出电场强度</p>
 <h5 class="mume-header" id="%E7%94%A8%E9%AB%98%E6%96%AF%E5%AE%9A%E7%90%86%E6%B1%82%E7%94%B5%E5%9C%BA%E5%BC%BA%E5%BA%A6%E4%B8%80%E7%82%B9%E7%82%B9%E6%80%BB%E7%BB%93">用高斯定理求电场强度一点点总结</h5>
 
 <ol>
@@ -693,7 +690,9 @@ code.language-yaml {
 <li>学会分段计算</li>
 <li>学会把一整块的带电物体进行分割计算部分的电荷量(这一点挺重要的下面有例题)</li>
 </ul>
-<p>补充一点: 静电平衡时, <strong>导体内部</strong>的体电荷密度为零, 也<strong>不存在电场</strong></p>
+<h5 class="mume-header" id="%E8%A1%A5%E5%85%85%E4%B8%80%E7%82%B9">补充一点</h5>
+
+<p>静电平衡时, <strong>导体内部</strong>的体电荷密度为零, 也<strong>不存在电场</strong></p>
 <h4 class="mume-header" id="%E7%94%B5%E5%8A%BF%E4%B8%8E%E7%94%B5%E5%9C%BA%E4%B8%AD%E7%9A%84%E5%82%A8%E8%83%BD">电势与电场中的储能</h4>
 
 <p>电位为单位电荷所做的功</p>
@@ -759,15 +758,15 @@ code.language-yaml {
 <p>区域IV, <span class="mathjax-exps">$r&#x5C;geq c$</span>. 如果孤立导体球壳内表面获得负电荷, 则r=c的外表面必须获得与之等量的正电荷</p>
 </li>
 </ul>
-<p><div class="mathjax-exps">$$&#x5C;begin{cases}&#x5C;oint_s&#x5C;vec{E}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{s}=&#x5C;overbrace{4&#x5C;pi r^2}^{球 (高斯) 面面积}E_r&#x5C;&#x5C; &#x5C;&#x5C;&#x5C;oint_s&#x5C;vec{D}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{s}=Q&#x5C;&#x5C; &#x5C;&#x5C;Q=&#x5C;dfrac{4&#x5C;pi}{3}a^3&#x5C;rho_v(若题目直接给出带电量Q, 则可以直接使用Q代入计算)&#x5C;&#x5C; &#x5C;&#x5C;&#x5C;vec{D}=&#x5C;varepsilon&#x5C;vec{E}(此处&#x5C;varepsilon=&#x5C;varepsilon_0)&#x5C;&#x5C; &#x5C;&#x5C;&#x5C;end{cases}$$</div></p>
+<p><div class="mathjax-exps">$$&#x5C;begin{cases}&#x5C;oint_s&#x5C;vec{E}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{s}=&#x5C;overbrace{4&#x5C;pi r^2}^{球 (高斯) 面面积}E_r&#x5C;&#x5C; &#x5C;&#x5C;&#x5C;oint_s&#x5C;vec{D}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{s}=Q&#x5C;&#x5C; &#x5C;&#x5C;Q=&#x5C;dfrac{4&#x5C;pi}{3}a^3&#x5C;rho_v&#x5C; (若题目直接给出带电量Q, 则可以直接使用Q代入计算)&#x5C;&#x5C; &#x5C;&#x5C;&#x5C;vec{D}=&#x5C;varepsilon&#x5C;vec{E}&#x5C; (此处&#x5C;varepsilon=&#x5C;varepsilon_0)&#x5C;&#x5C; &#x5C;&#x5C;&#x5C;end{cases}$$</div></p>
 <p>此区域电场强度为</p>
 <p><div class="mathjax-exps">$$&#x5C;vec{E}=&#x5C;dfrac{a^3}{3&#x5C;varepsilon_0r^2}&#x5C;rho_v&#x5C;vec{a_r}(r&#x5C;geq c)$$</div></p>
 <ul>
 <li>
-<p>如果题目中有说有电介质, 则将<span class="mathjax-exps">$&#x5C;varepsilon_0$</span>变为相应的<span class="mathjax-exps">$&#x5C;varepsilon$</span>进行计算(题目大同小异)</p>
+<p>如果题目中有说有电介质, 则将 <span class="mathjax-exps">$&#x5C;varepsilon_0$</span>变为相应的<span class="mathjax-exps">$&#x5C;varepsilon$</span>进行计算(题目大同小异)</p>
 </li>
 <li>
-<p>结合电位公式<span class="mathjax-exps">$V_{ab}=-&#x5C;int_b^a&#x5C;vec{E}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{l}$</span>可以求解空间各点电位问题</p>
+<p>结合电位公式 <span class="mathjax-exps">$V_{ab}=-&#x5C;int_b^a&#x5C;vec{E}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{l}$</span>可以求解空间各点电位问题</p>
 </li>
 <li>
 <p>结合电容公式<span class="mathjax-exps">$C=&#x5C;dfrac{Q_a}{V_{ab}}$</span>, 就可以求解电容问题</p>
@@ -781,11 +780,11 @@ code.language-yaml {
 <p><div class="mathjax-exps">$$&#x5C;Delta I=&#x5C;vec{J}&#x5C;cdot&#x5C;Delta &#x5C;vec{s}$$</div><br>
 通过面积s的电流</p>
 <p><div class="mathjax-exps">$$I=&#x5C;int_s&#x5C;vec{J}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{s}$$</div></p>
-<p>运流电流(自由空间中飞的电子形成的电流)密度为<br>
+<p>运流电流 (自由空间中飞的电子形成的电流) 密度为<br>
 <div class="mathjax-exps">$$&#x5C;vec{J}=&#x5C;rho_v&#x5C;vec{U_v}$$</div><br>
 <span class="mathjax-exps">$&#x5C;rho_v$</span>为体电荷密度, <span class="mathjax-exps">$&#x5C;vec{U_v}$</span>为电荷运动平均速度</p>
-<p>传导电流(导线里面的)密度为<br>
-<div class="mathjax-exps">$$&#x5C;vec{J}=&#x5C;sigma&#x5C;vec{E}(又叫欧姆定律微分形式)$$</div><br>
+<p>传导电流 (导线里面的) 密度为<br>
+<div class="mathjax-exps">$$&#x5C;vec{J}=&#x5C;sigma&#x5C;vec{E}&#x5C; (又叫欧姆定律微分形式)$$</div><br>
 <span class="mathjax-exps">$&#x5C;sigma$</span>为媒质电导率, <span class="mathjax-exps">$&#x5C;vec{E}$</span>为导体中的电场强度</p>
 <blockquote>
 <p><s>上面这俩看看就行了</s></p>
@@ -819,20 +818,20 @@ code.language-yaml {
 <h3 class="mume-header" id="%E9%9D%99%E7%A3%81%E5%9C%BA">静磁场</h3>
 
 <p>静磁场是研究由运动电荷建立的与时间无关的场</p>
-<p>于是用电流定义在媒质中的<strong>磁通密度</strong>(毕奥-萨伐尔定律)<br>
+<p>于是用电流定义在媒质中的<strong>磁通密度</strong> (毕奥-萨伐尔定律)<br>
 <div class="mathjax-exps">$$&#x5C;vec{B}=&#x5C;dfrac{&#x5C;mu}{4&#x5C;pi}&#x5C;int_c&#x5C;dfrac{I{&#x5C;rm d}&#x5C;vec{l}&#x5C;times&#x5C;vec{R}}{R^3}$$</div></p>
-<p>同时用<strong>磁场强度</strong>定义<strong>磁通密度</strong>为(重要)<br>
+<p>同时用<strong>磁场强度</strong>定义<strong>磁通密度</strong>为 (重要)<br>
 <div class="mathjax-exps">$$&#x5C;vec{B}=&#x5C;mu&#x5C;vec{H}$$</div></p>
 <p>载流导体在磁场中受到的力由<strong>安培力定律</strong><br>
 <div class="mathjax-exps">$$&#x5C;vec{F}=&#x5C;int_cI{&#x5C;rm d}&#x5C;vec{l}&#x5C;times&#x5C;vec{B}$$</div><br>
 确定, 此处<span class="mathjax-exps">$&#x5C;vec{B}$</span>为式中电流I以外的源所产生的磁通密度<br>
 又有<span class="mathjax-exps">$&#x5C;vec{F}=q&#x5C;vec{v}&#x5C;times&#x5C;vec{B}$</span></p>
-<p>通过一个开表面的磁通(等下会用到)<br>
+<p>通过一个开表面的磁通 (等下会用到)<br>
 <div class="mathjax-exps">$$&#x5C;Phi=&#x5C;int_s&#x5C;vec{B}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{s}$$</div></p>
 <p>通过闭合面的静磁通量等于零. 即<br>
 <div class="mathjax-exps">$$&#x5C;oint_s&#x5C;vec{B}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{s}=0或&#x5C;nabla&#x5C;cdot B=0$$</div></p>
-<p><strong>安培环路定律(重要)</strong><br>
-<div class="mathjax-exps">$$&#x5C;oint_c&#x5C;vec{H}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{l}=I或&#x5C;nabla&#x5C;times&#x5C;vec{H}=&#x5C;vec{J_v}$$</div><br>
+<p><strong>安培环路定律 (重要)</strong><br>
+<div class="mathjax-exps">$$&#x5C;oint_c&#x5C;vec{H}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{l}=I&#x5C; 或&#x5C; &#x5C;nabla&#x5C;times&#x5C;vec{H}=&#x5C;vec{J_v}$$</div><br>
 若电流或者电流分布是高度<strong>对称</strong>的, <strong>由上式可以计算出<span class="mathjax-exps">$&#x5C;vec{H}$</span>场.</strong></p>
 <p>安培环路定律常用解题步骤</p>
 <ol>
@@ -880,42 +879,42 @@ code.language-yaml {
 <h4 class="mume-header" id="%E4%BE%8B%E9%A2%98-1">例题</h4>
 
 <blockquote>
-<p>一根极长的沿轴放置的空心导体, 其外径为b, 内径为a, 载有沿轴方向的电流I, 如图5-21a所示 . 若电流是<strong>均匀分布</strong>的, 试求在空间任一点的磁场强度 .<br>
-此题使用圆柱坐标解题 ( <span class="mathjax-exps">$&#x5C;rho,&#x5C; &#x5C;phi,&#x5C; z$</span>坐标系 ) 更佳<br>
+<p>一根极长的沿轴放置的空心导体, 其外径为b, 内径为a, 载有沿轴方向的电流I, 如图5-21a所示 . 若电流是<strong>均匀分布</strong>的, 试求在空间任一点的磁场强度.<br>
+<strong>此题使用圆柱坐标解题 ( <span class="mathjax-exps">$&#x5C;rho, &#x5C; &#x5C;phi, &#x5C; z$</span>坐标系 ) 更佳</strong><br>
 <img src="pics/%E5%AE%89%E5%9F%B9%E5%AE%9A%E5%BE%8B.jpg" alt="&#x5B89;&#x57F9;&#x5B9A;&#x5F8B;"></p>
 </blockquote>
-<p>电流均匀分布, 因此可以先算电流密度<span class="mathjax-exps">$&#x5C;vec{J_v}=&#x5C;dfrac{&#x5C;vec{I}}{S}$</span>(总电流除以面积), 此处则有<br>
+<p>电流均匀分布, 因此可以先算电流密度<span class="mathjax-exps">$&#x5C;vec{J_v}=&#x5C;dfrac{&#x5C;vec{I}}{S}$</span> (总电流除以面积), 此处则有<br>
 <div class="mathjax-exps">$$&#x5C;vec{J}=&#x5C;dfrac{I}{&#x5C;pi r(b^2-a^2)}$$</div><br>
 根据对称的理由, 磁力线应是同心圆, 磁场强度应在<span class="mathjax-exps">$&#x5C;phi$</span>方向, <span class="mathjax-exps">$H_&#x5C;phi$</span>沿每一圆环为一常数 . 此处有三个区域, 我们分别对每一区域求磁场强度 .</p>
 <ul>
 <li>
-<p>(a)区域1. <span class="mathjax-exps">$&#x5C;rho&#x5C;leq a$</span>: 对于任何闭合环路来说, 所包围的电流为零, 即<span class="mathjax-exps">$&#x5C;rho$</span>=1时, <span class="mathjax-exps">$&#x5C;vec{H}=0$</span></p>
+<p>(a) 区域1. <span class="mathjax-exps">$&#x5C;rho&#x5C;leq a$</span>: 对于任何闭合环路来说, 所包围的电流为零, 即<span class="mathjax-exps">$&#x5C;rho$</span>=1时, <span class="mathjax-exps">$&#x5C;vec{H}=0$</span></p>
 </li>
 <li>
-<p>(b)区域2. <span class="mathjax-exps">$a&#x5C;leq&#x5C;rho&#x5C;leq b$</span>: 图b示半径为<span class="mathjax-exps">$&#x5C;rho$</span>的闭合圆环截流导体截面图 . 所包围的净电流为</p>
+<p>(b) 区域2. <span class="mathjax-exps">$a&#x5C;leq&#x5C;rho&#x5C;leq b$</span>: 图b示半径为<span class="mathjax-exps">$&#x5C;rho$</span>的闭合圆环截流导体截面图 . 所包围的净电流为</p>
 </li>
 </ul>
-<p><div class="mathjax-exps">$$&#x5C;begin{eqnarray}I_{enc}  &amp;=&amp;&#x5C;int_s&#x5C;vec{J_v}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{s}=&#x5C;dfrac{I}{&#x5C;pi r(b^2-a^2)}&#x5C;int_a^&#x5C;rho &#x5C;rho{&#x5C;rm d}&#x5C;rho&#x5C;int_0^{2&#x5C;pi}{&#x5C;rm d}&#x5C;phi&#x5C;&#x5C;  &amp;=&amp;&#x5C;dfrac{I(&#x5C;rho^2-a^2)}{b^2-a^2}&#x5C;&#x5C;&#x5C;end{eqnarray}$$</div></p>
+<p><div class="mathjax-exps">$$&#x5C;begin{eqnarray}I_{enc} &amp;=&amp;&#x5C;int_s&#x5C;vec{J_v}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{s}=&#x5C;dfrac{I}{&#x5C;pi r(b^2-a^2)}&#x5C;int_a^&#x5C;rho &#x5C;rho{&#x5C;rm d}&#x5C;rho&#x5C;int_0^{2&#x5C;pi}{&#x5C;rm d}&#x5C;phi&#x5C;&#x5C; &amp;=&amp;&#x5C;dfrac{I(&#x5C;rho^2-a^2)}{b^2-a^2}&#x5C;&#x5C;&#x5C;end{eqnarray}$$</div></p>
 <blockquote>
-<p>电流除以圆环总面积在乘以包围住的面积, 就计算出环路内被包围的电流,<s>其实不用写积分直接算就OK(真的</s></p>
+<p>电流除以圆环总面积在乘以包围住的面积, 就计算出环路内被包围的电流, <s>其实不用写积分直接算就OK (真的</s></p>
 </blockquote>
 <p>另一方面<br>
 <div class="mathjax-exps">$$&#x5C;oint_c&#x5C;vec{H}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{l}=2&#x5C;pi&#x5C;rho H_&#x5C;phi$$</div></p>
 <p>因此结合安培定律可得<br>
-<div class="mathjax-exps">$$&#x5C;vec{H}=&#x5C;dfrac{I}{2&#x5C;pi&#x5C;rho}&#x5C;left[&#x5C;dfrac{&#x5C;rho^2-a^2}{b^2-a^2}&#x5C;right]&#x5C;vec{a_&#x5C;phi}&#x5C; (&#x5C;vec{a_&#x5C;phi}表示方向),&#x5C; a&#x5C;leq&#x5C;rho&#x5C;leq b$$</div></p>
+<div class="mathjax-exps">$$&#x5C;vec{H}=&#x5C;dfrac{I}{2&#x5C;pi&#x5C;rho}&#x5C;left[&#x5C;dfrac{&#x5C;rho^2-a^2}{b^2-a^2}&#x5C;right]&#x5C;vec{a_&#x5C;phi}&#x5C; (&#x5C;vec{a_&#x5C;phi}表示方向), &#x5C; a&#x5C;leq&#x5C;rho&#x5C;leq b$$</div></p>
 <ul>
-<li>(c)区域3, <span class="mathjax-exps">$&#x5C;rho&#x5C;geq b$</span>: 观测点在导体之外(见图5-21c). 因此包围的净电流为I. 在此区域的磁场强度为</li>
+<li>(c)区域3, <span class="mathjax-exps">$&#x5C;rho&#x5C;geq b$</span>: 观测点在导体之外 (见图5-21c). 因此包围的净电流为I. 在此区域的磁场强度为</li>
 </ul>
-<p><div class="mathjax-exps">$$&#x5C;vec{H}=&#x5C;dfrac{I}{2&#x5C;pi&#x5C;rho}&#x5C;vec{a_&#x5C;rho},&#x5C; &#x5C;rho&#x5C;geq b$$</div></p>
+<p><div class="mathjax-exps">$$&#x5C;vec{H}=&#x5C;dfrac{I}{2&#x5C;pi&#x5C;rho}&#x5C;vec{a_&#x5C;rho}, &#x5C; &#x5C;rho&#x5C;geq b$$</div></p>
 <blockquote>
 <p>其他的利用安培定律计算的题目也跟这个类似啦, 希望可以举一反三哦</p>
 </blockquote>
 <h3 class="mume-header" id="%E6%97%B6%E5%8F%98%E7%94%B5%E7%A3%81%E5%9C%BA">时变电磁场</h3>
 
-<p>导体在磁场中移动产生的运动emf(电动势)为(动生电动势)<br>
+<p>导体在磁场中移动产生的运动emf (电动势) 为 (动生电动势)<br>
 <div class="mathjax-exps">$$e_m=&#x5C;int_c(&#x5C;vec{u}&#x5C;times&#x5C;vec{B})&#x5C;cdot{&#x5C;rm d}&#x5C;vec{l}$$</div><br>
-式中<span class="mathjax-exps">$&#x5C;vec{u}$</span>为导体的速度, <span class="mathjax-exps">$&#x5C;vec{B}$</span>为磁通密度, 闭合导体中由运动emf产生的感应电流是在感应电流场<span class="mathjax-exps">$(&#x5C;vec{u}&#x5C;times&#x5C;vec{B})$</span>的方向</p>
-<p>通过在空间固定的N匝线圈所包围的面积的时变磁通产生的变压器emf为(感生电动势)<br>
+式中<span class="mathjax-exps">$&#x5C;vec{u}$</span>为导体的速度, <span class="mathjax-exps">$&#x5C;vec{B}$</span>为磁通密度, 闭合导体中由运动emf产生的感应电流是在感应电流场 <span class="mathjax-exps">$(&#x5C;vec{u}&#x5C;times&#x5C;vec{B})$</span> 的方向</p>
+<p>通过在空间固定的N匝线圈所包围的面积的时变磁通产生的变压器emf为 (感生电动势)<br>
 <div class="mathjax-exps">$$e_t=-N&#x5C;int_s&#x5C;dfrac{&#x5C;partial&#x5C;vec{B}}{&#x5C;partial t}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{s}&#x5C; (磁通密度&#x5C;vec{B}对时间求偏导数)$$</div></p>
 <blockquote>
 <p><s>如果没学过偏导数的话... 那就百度一下吧</s></p>
@@ -925,7 +924,7 @@ code.language-yaml {
 <p>线圈互感的定义</p>
 <p><div class="mathjax-exps">$$L_{21}=N_2&#x5C;dfrac{{&#x5C;rm d}&#x5C;Phi_{21}}{{&#x5C;rm d}i_1}$$</div></p>
 <blockquote>
-<p>式中<span class="mathjax-exps">$L_{21}$</span>为<strong>线圈2</strong>由<strong>线圈1所产生的磁通</strong>引起的互感(脚标表示的意义的顺序不要搞反咯, 谁产生磁通就除以谁的电流)</p>
+<p>式中<span class="mathjax-exps">$L_{21}$</span>为<strong>线圈2</strong>由<strong>线圈1所产生的磁通</strong>引起的互感 (脚标表示的意义的顺序不要搞反咯, 谁产生磁通就除以谁的电流)</p>
 </blockquote>
 <ul>
 <li><strong>此处N均为匝数</strong></li>
@@ -956,6 +955,752 @@ code.language-yaml {
 
 <p>积分形式<br>
 <div class="mathjax-exps">$$&#x5C;begin{eqnarray}&#x5C;oint_c&#x5C;vec{E}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{l}&amp;=&amp;-&#x5C;int_s&#x5C;dfrac{&#x5C;partial&#x5C;vec{B}}{&#x5C;partial t}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{s} &#x5C;&#x5C;&#x5C;oint_c&#x5C;vec{H}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{l}&amp;=&amp;&#x5C;int_s&#x5C;vec{J}{&#x5C;rm d}s+&#x5C;int_s&#x5C;dfrac{&#x5C;partial&#x5C;vec{D}}{&#x5C;partial t}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{s}&#x5C;&#x5C;&#x5C;oint_s&#x5C;vec{D}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{s}&amp;=&amp;&#x5C;int_v&#x5C;rho_v{&#x5C;rm d}v&#x5C;&#x5C;&#x5C;oint_s&#x5C;vec{B}&#x5C;cdot{&#x5C;rm d}&#x5C;vec{s}&amp;=&amp;0&#x5C;end{eqnarray}$$</div></p>
+<h2 class="mume-header" id="%E6%8C%AF%E5%8A%A8">振动</h2>
+
+<h3 class="mume-header" id="%E6%8C%AF%E5%8A%A8%E7%9A%84%E6%96%B9%E7%A8%8B">振动的方程</h3>
+
+<p>省略一大堆看不懂的数学证明, 得到振动的运动学方程<br>
+<div class="mathjax-exps">$$x=A&#x5C;cos(&#x5C;omega t+&#x5C;varphi)$$</div></p>
+<h3 class="mume-header" id="%E7%89%B9%E5%BE%81%E9%87%8F">特征量</h3>
+
+<p>(为了方便, 后面的均统一使用下面符号表示)</p>
+<p>振幅: <span class="mathjax-exps">$A$</span></p>
+<p>周期: <span class="mathjax-exps">$T$</span>, 频率: <span class="mathjax-exps">$f$</span>, <span class="mathjax-exps">$f=&#x5C;dfrac{1}{T}$</span>, 角频率: <span class="mathjax-exps">$&#x5C;omega$</span>, 其中: <span class="mathjax-exps">$&#x5C;omega=2&#x5C;pi f$</span></p>
+<p>相位: <span class="mathjax-exps">$&#x5C;omega t+&#x5C;varphi$</span>, 初相位: <span class="mathjax-exps">$&#x5C;varphi$</span></p>
+<h3 class="mume-header" id="%E7%AE%80%E5%86%99%E8%BF%90%E5%8A%A8%E7%9A%84%E8%A7%A3%E9%A2%98%E6%96%B9%E6%B3%95">简写运动的解题方法</h3>
+
+<p><strong>旋转矢量法</strong> (常用), 振动曲线法</p>
+<h3 class="mume-header" id="%E6%97%8B%E8%BD%AC%E7%9F%A2%E9%87%8F%E6%B3%95%E7%9A%84%E5%B0%8F%E5%AE%9E%E4%BE%8B">旋转矢量法的小实例</h3>
+
+<blockquote>
+<p>运动方程<span class="mathjax-exps">$x=A&#x5C;cos(&#x5C;omega t+&#x5C;varphi)$</span>中参量的确定</p>
+</blockquote>
+<p>利用运动学的知识, 可以得到<span class="mathjax-exps">$位置x, &#x5C; 速度v, &#x5C; 加速度a$</span>的表达式(求导)</p>
+<p><div class="mathjax-exps">$$&#x5C;begin{cases}x=A&#x5C;cos(&#x5C;omega t+&#x5C;varphi)&#x5C;&#x5C;v=A&#x5C;omega&#x5C;sin(&#x5C;omega t+&#x5C;varphi)&#x5C;&#x5C;a=-A&#x5C;omega^2&#x5C;cos(&#x5C;omega t+&#x5C;varphi)&#x5C;end{cases}&#x5C; (幅度的系数为极值)$$</div></p>
+<p><img src="pics/%E6%97%8B%E8%BD%AC%E7%9F%A2%E9%87%8F.jpg" alt="&#x65CB;&#x8F6C;&#x77E2;&#x91CF;"></p>
+<blockquote>
+<p>图中参量解释<br>
+矢量长度为幅值A<br>
+初始位置为<span class="mathjax-exps">$&#x5C;varphi$</span>, 在图中x轴对应位置为<span class="mathjax-exps">$x_1=A&#x5C;cos(&#x5C;varphi)$</span><br>
+以角频率<span class="mathjax-exps">$&#x5C;omega$</span>运动, 经过时间t后, 在图中x轴对应位置为 <span class="mathjax-exps">$x_2=A&#x5C;cos(&#x5C;omega t+&#x5C;varphi)$</span></p>
+</blockquote>
+<p>代入初始条件: <span class="mathjax-exps">$x=x_0, &#x5C; 或者&#x5C; v=v_0$</span>, 求解出<span class="mathjax-exps">$A, &#x5C; &#x5C;varphi$</span></p>
+<p>记得留意位置的正负, 以及对应的相位 (弧度制)</p>
+<h3 class="mume-header" id="%E6%8C%AF%E5%8A%A8%E7%9A%84%E8%83%BD%E9%87%8F">振动的能量</h3>
+
+<p>动能:<br>
+<div class="mathjax-exps">$$E_k=&#x5C;dfrac{1}{2}mv^2=&#x5C;dfrac{1}{2}mA^2&#x5C;omega^2&#x5C;sin^2(&#x5C;omega t+&#x5C;varphi)$$</div></p>
+<p>势能:<br>
+<div class="mathjax-exps">$$E_p=&#x5C;dfrac{1}{2}kx^2=&#x5C;dfrac{1}{2}m&#x5C;omega^2A^2&#x5C;cos^2(&#x5C;omega t+&#x5C;varphi)$$</div></p>
+<p>机械能:<br>
+<div class="mathjax-exps">$$E_k+E_p=&#x5C;dfrac{1}{2}m&#x5C;omega^2A^2=&#x5C;dfrac{1}{2}kA^2, &#x5C; k=m&#x5C;omega^2$$</div></p>
+<ul>
+<li>动能与势能反相变化</li>
+<li>机械能守恒</li>
+</ul>
+<h3 class="mume-header" id="%E6%8C%AF%E5%8A%A8%E7%9A%84%E5%90%88%E6%88%90">振动的合成</h3>
+
+<h4 class="mume-header" id="%E5%90%8C%E6%96%B9%E5%90%91-%E5%90%8C%E9%A2%91%E7%8E%87%E7%9A%84%E6%8C%AF%E5%8A%A8%E5%90%88%E6%88%90">同方向, 同频率的振动合成</h4>
+
+<p>这个比较重要</p>
+<p><div class="mathjax-exps">$$&#x5C;begin{cases}x_1=A_1&#x5C;cos(&#x5C;omega t+&#x5C;varphi_1)&#x5C;&#x5C;x_2=A_2&#x5C;cos(&#x5C;omega t+&#x5C;varphi_2)&#x5C;end{cases}$$</div></p>
+<p>合振动<br>
+<div class="mathjax-exps">$$x=A&#x5C;cos(&#x5C;omega t+&#x5C;varphi)$$</div></p>
+<p><div class="mathjax-exps">$$&#x5C;begin{cases}A&amp;=&amp;&#x5C;sqrt{A_1^2+A_2^2+2A_1A_2&#x5C;cos(&#x5C;varphi_2-&#x5C;varphi_1)}&#x5C;&#x5C; &#x5C;&#x5C;&#x5C;varphi&amp;=&amp;arctan&#x5C;left(&#x5C;dfrac{A_1&#x5C;sin(&#x5C;varphi_1)+A_2&#x5C;sin(&#x5C;varphi_2)}{A_1&#x5C;cos(&#x5C;varphi_1)+A_2&#x5C;cos(&#x5C;varphi_2)}&#x5C;right)&#x5C;&#x5C; &#x5C;&#x5C;&#x5C;Delta&#x5C;varphi&amp;=&amp;&#x5C;varphi_2-&#x5C;varphi_1=&#x5C;begin{cases} &amp;=&amp;2k&#x5C;pi&#x5C; &amp;A_{max}&amp;&amp;=&amp;&amp;|A_1+A_2|&amp;&#x5C;&#x5C; &amp;=&amp;(2k+1)&#x5C;pi&#x5C; &amp;A_{min}&amp;&amp;=&amp;&amp;|A_1+A_2|&amp;&#x5C;&#x5C; &amp;&#x5C;neq&amp; k&#x5C;pi&#x5C; &amp;|A_1-A_2|&amp;&lt;&amp;A&amp;&lt;&amp;|A_1+A_2|&amp; &#x5C;end{cases}&#x5C;end{cases}$$</div></p>
+<blockquote>
+<p>解释:<br>
+式3中的 <span class="mathjax-exps">$&#x5C;Delta&#x5C;varphi$</span> 指两个振动的初相位的差是否满足右方三种关系之一, 则合振动幅值为对应的A</p>
+</blockquote>
+<h4 class="mume-header" id="%E5%90%8C%E6%96%B9%E5%90%91-%E4%B8%8D%E5%90%8C%E9%A2%91%E7%8E%87%E7%9A%84%E6%8C%AF%E5%8A%A8%E5%90%88%E6%88%90">同方向, 不同频率的振动合成</h4>
+
+<p><div class="mathjax-exps">$$&#x5C;begin{cases}x_1=A_1&#x5C;cos(&#x5C;omega_1 t+&#x5C;varphi_1)&#x5C;&#x5C;x_2=A_2&#x5C;cos(&#x5C;omega_2 t+&#x5C;varphi_2)&#x5C;end{cases}$$</div></p>
+<p>合振动<br>
+<div class="mathjax-exps">$$x=x_1+x_2=&#x5C;overbrace{2A&#x5C;cos&#x5C;left(2&#x5C;pi&#x5C;dfrac{f_1-f_2}{2}t&#x5C;right)}^{幅值}&#x5C;cos&#x5C;underbrace{&#x5C;left(2&#x5C;pi&#x5C;dfrac{f_1+f_2}{2}t&#x5C;right)}_{相位}$$</div></p>
+<p>振幅<br>
+<div class="mathjax-exps">$$&#x5C;left|2A&#x5C;cos&#x5C;left(2&#x5C;pi&#x5C;dfrac{f_1-f_2}{2}t&#x5C;right)&#x5C;right|$$</div></p>
+<p>振幅的变化频率--拍频<br>
+<div class="mathjax-exps">$$f=f_2-f_1$$</div></p>
+<h4 class="mume-header" id="%E4%B8%8D%E5%90%8C%E6%96%B9%E5%90%91-%E5%90%8C%E9%A2%91%E7%8E%87%E7%9A%84%E6%8C%AF%E5%8A%A8%E5%90%88%E6%88%90">不同方向, 同频率的振动合成</h4>
+
+<p><div class="mathjax-exps">$$&#x5C;begin{cases}x_1=A_1&#x5C;cos(&#x5C;omega t+&#x5C;varphi_1)&#x5C;&#x5C;y_2=A_2&#x5C;cos(&#x5C;omega t+&#x5C;varphi_2)&#x5C;end{cases}$$</div></p>
+<p>合振动轨迹<br>
+<div class="mathjax-exps">$$&#x5C;dfrac{x_1^2}{A_1^2}+&#x5C;dfrac{y_2^2}{A_2^2}-2&#x5C;dfrac{x_1y_2}{A_1A_2}&#x5C;cos(&#x5C;varphi_2-&#x5C;varphi_1)=&#x5C;sin^2(&#x5C;varphi_2-&#x5C;varphi_1)$$</div></p>
+<h4 class="mume-header" id="%E4%B8%8D%E5%90%8C%E6%96%B9%E5%90%91-%E4%B8%8D%E5%90%8C%E9%A2%91%E7%8E%87%E7%9A%84%E6%8C%AF%E5%8A%A8%E5%90%88%E6%88%90">不同方向, 不同频率的振动合成</h4>
+
+<p>李萨如图(书本封面那个)</p>
+<h2 class="mume-header" id="%E6%B3%A2%E5%8A%A8">波动</h2>
+
+<h3 class="mume-header" id="%E6%B3%A2%E5%8A%A8%E7%9A%84%E6%8F%8F%E8%BF%B0%E7%89%B9%E5%BE%81%E9%87%8F">波动的描述(特征量)</h3>
+
+<p>振幅: <span class="mathjax-exps">$A$</span></p>
+<p>周期: <span class="mathjax-exps">$T$</span>, 频率: <span class="mathjax-exps">$f$</span>, <span class="mathjax-exps">$f=&#x5C;dfrac{1}{T}$</span>, 角频率: <span class="mathjax-exps">$&#x5C;omega$</span>, 其中: <span class="mathjax-exps">$&#x5C;omega=2&#x5C;pi f$</span>, <span class="mathjax-exps">$T=2&#x5C;dfrac{&#x5C;pi}{&#x5C;omega}$</span>, <span class="mathjax-exps">$f=&#x5C;dfrac{&#x5C;omega}{2&#x5C;pi}$</span></p>
+<p>波长: <span class="mathjax-exps">$&#x5C;lambda$</span>, 波数: <span class="mathjax-exps">$k=&#x5C;dfrac{2&#x5C;pi}{&#x5C;lambda}$</span></p>
+<p>波速(波移动的速度): <span class="mathjax-exps">$u=f&#x5C;lambda=&#x5C;dfrac{&#x5C;lambda}{T}=&#x5C;dfrac{&#x5C;omega}{k}$</span></p>
+<h3 class="mume-header" id="%E5%B9%B3%E9%9D%A2%E7%AE%80%E8%B0%90%E6%B3%A2%E6%B3%A2%E5%87%BD%E6%95%B0">平面简谐波波函数</h3>
+
+<h4 class="mume-header" id="%E5%8F%82%E8%80%83%E7%82%B9o%E7%9A%84%E6%8C%AF%E5%8A%A8%E7%8A%B6%E6%80%81">参考点o的振动状态</h4>
+
+<p><div class="mathjax-exps">$$y_0=A&#x5C;cos(&#x5C;omega t)$$</div></p>
+<h4 class="mume-header" id="%E5%8F%82%E8%80%83%E7%82%B9o%E4%B8%8E%E5%BE%85%E6%B1%82%E7%82%B9p%E7%9A%84%E7%9B%B8%E4%BD%8D%E5%B7%AE">参考点o与待求点P的相位差</h4>
+
+<p><div class="mathjax-exps">$$&#x5C;Delta&#x5C;varphi=&#x5C;omega&#x5C;dfrac{x}{u}$$</div></p>
+<h4 class="mume-header" id="%E6%A0%B9%E6%8D%AE%E5%8F%82%E8%80%83%E7%82%B9%E5%86%99p%E7%9A%84%E6%8C%AF%E5%8A%A8%E6%96%B9%E7%A8%8B">根据参考点写P的振动方程</h4>
+
+<p><div class="mathjax-exps">$$y_p=A&#x5C;cos(&#x5C;omega t&#x5C;pm&#x5C;Delta&#x5C;varphi)$$</div></p>
+<p><span class="mathjax-exps">$&#x5C;pm$</span>由参考点y与待求点相位的领先和滞后决定的</p>
+<h3 class="mume-header" id="%E6%B3%A2%E5%87%BD%E6%95%B0yx-t%E7%9A%84%E4%B8%80%E8%88%AC%E5%BD%A2%E5%BC%8F%E4%BB%A5%E5%8F%8A%E7%89%A9%E7%90%86%E6%84%8F%E4%B9%89%E9%87%8D%E7%82%B9%E7%9C%8B%E8%BF%99%E9%87%8C">波函数<span class="mathjax-exps">$y(x, &#x5C; t)$</span>的一般形式以及物理意义(重点看这里)</h3>
+
+<h4 class="mume-header" id="%E4%B8%80%E8%88%AC%E5%BD%A2%E5%BC%8F-%E4%B8%89%E7%A7%8D">一般形式 (三种)</h4>
+
+<p><div class="mathjax-exps">$$&#x5C;begin{cases}y(x, &#x5C; t)&amp;=&amp;&#x5C;cos&#x5C;left[&#x5C;omega&#x5C;left(t&#x5C;pm &#x5C;dfrac{x-x_0}{u}&#x5C;right)+&#x5C;varphi&#x5C;right]&#x5C;&#x5C; &#x5C;&#x5C;y(x, &#x5C; t)&amp;=&amp;&#x5C;cos&#x5C;left[2&#x5C;pi&#x5C;left( &#x5C;dfrac{t}{T}&#x5C;pm &#x5C;dfrac{x-x_0}{&#x5C;lambda}&#x5C;right)+&#x5C;varphi&#x5C;right]&#x5C;&#x5C; &#x5C;&#x5C;y(x, &#x5C; t)&amp;=&amp;&#x5C;cos&#x5C;{[&#x5C;omega t&#x5C;pm k(x-x_0)]+&#x5C;varphi&#x5C;}&#x5C; (不常用)&#x5C;end{cases}$$</div></p>
+<h4 class="mume-header" id="%E7%89%A9%E7%90%86%E6%84%8F%E4%B9%89">物理意义</h4>
+
+<p><span class="mathjax-exps">$x$</span>一定, <span class="mathjax-exps">$y(t)$</span>: 位移时间图, 位置为<span class="mathjax-exps">$x$</span>的质点的振动情况<br>
+<span class="mathjax-exps">$t$</span>一定, <span class="mathjax-exps">$y(x)$</span>: 波形图, <span class="mathjax-exps">$t$</span>时刻, 不同质点偏移平衡位置的情况<br>
+<span class="mathjax-exps">$y$</span>一定, <span class="mathjax-exps">$x(t)$</span>: 波形传播, <span class="mathjax-exps">$u=f&#x5C;lambda=&#x5C;dfrac{&#x5C;lambda}{T}=&#x5C;dfrac{&#x5C;omega}{k}$</span></p>
+<h3 class="mume-header" id="%E6%B3%A2%E7%9A%84%E8%A1%8D%E5%B0%84%E4%B8%8E%E5%B9%B2%E6%B6%89">波的衍射与干涉</h3>
+
+<h4 class="mume-header" id="%E6%B3%A2%E7%9A%84%E4%BC%A0%E6%92%AD%E9%81%B5%E4%BB%8E%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86">波的传播遵从的基本原理</h4>
+
+<p>波的叠加原理: 独立性与叠加性<br>
+惠更斯原理: 波面上各点可以成子波源</p>
+<h4 class="mume-header" id="%E6%B3%A2%E7%9A%84%E5%B9%B2%E6%B6%89">波的干涉</h4>
+
+<p>相干条件: 频率相同, 振动方向平行, 相位差恒定</p>
+<p>有两个波源:<br>
+<div class="mathjax-exps">$$y_1=A_1&#x5C;cos&#x5C;left(&#x5C;omega t- &#x5C;dfrac{2&#x5C;pi}{&#x5C;lambda}x_1+&#x5C;varphi_1&#x5C;right)&#x5C;&#x5C;y_2=A_2&#x5C;cos&#x5C;left(&#x5C;omega t- &#x5C;dfrac{2&#x5C;pi}{&#x5C;lambda}x_2+&#x5C;varphi_2&#x5C;right)$$</div></p>
+<ul>
+<li>合振动振幅:</li>
+</ul>
+<p><div class="mathjax-exps">$$&#x5C;begin{eqnarray}A&amp;=&amp;&#x5C;sqrt{A_1^2+A_2^2+2A_1A_2&#x5C;cos(&#x5C;Delta&#x5C;varphi)}&#x5C;&#x5C;&#x5C;Delta&#x5C;varphi&amp;=&amp;&#x5C;varphi_2-&#x5C;varphi_1-2&#x5C;pi &#x5C;dfrac{x_2-x_1}{&#x5C;lambda}&#x5C;end{eqnarray}$$</div></p>
+<ul>
+<li>相位差<span class="mathjax-exps">$&#x5C;Delta&#x5C;varphi$</span>决定干涉结果</li>
+</ul>
+<p><span class="mathjax-exps">$&#x5C;Delta&#x5C;varphi=&#x5C;pm 2k&#x5C;pi$</span>, 干涉加强, <span class="mathjax-exps">$A=A_1+A_2$</span></p>
+<p><span class="mathjax-exps">$&#x5C;Delta&#x5C;varphi=&#x5C;pm (2k+1)&#x5C;pi$</span>, 干涉减弱, <span class="mathjax-exps">$A=|A_1-A_2|$</span></p>
+<ul>
+<li>相位差<span class="mathjax-exps">$&#x5C;Delta&#x5C;varphi=0$</span>时, 波程差<span class="mathjax-exps">$&#x5C;delta=x_2-x_1$</span>决定干涉结果</li>
+</ul>
+<p><span class="mathjax-exps">$&#x5C;delta=&#x5C;pm 2k &#x5C;dfrac{&#x5C;lambda}{2}$</span>, 干涉加强, <span class="mathjax-exps">$A=A_1+A_2$</span></p>
+<p><span class="mathjax-exps">$&#x5C;delta=&#x5C;pm (2k+1) &#x5C;dfrac{&#x5C;lambda}{2}$</span>, 干涉减弱, <span class="mathjax-exps">$A=|A_1-A_2|$</span></p>
+<p>其中<span class="mathjax-exps">$k=0, &#x5C; 1, &#x5C; 2&#x5C;cdots$</span></p>
+<h3 class="mume-header" id="%E9%A9%BB%E6%B3%A2">驻波</h3>
+
+<h4 class="mume-header" id="%E9%A9%BB%E6%B3%A2%E6%96%B9%E7%A8%8B">驻波方程</h4>
+
+<p><div class="mathjax-exps">$$y=y_1+y_2=&#x5C;overbrace{2A&#x5C;cos 2&#x5C;pi&#x5C;dfrac{x}{&#x5C;lambda}}^{幅值}&#x5C;cos &#x5C;underbrace{2&#x5C;pi ft}_{相位}$$</div></p>
+<h4 class="mume-header" id="%E6%B3%A2%E8%85%B9%E4%B8%8E%E6%B3%A2%E8%8A%82">波腹与波节</h4>
+
+<ul>
+<li>波腹位置(驻波的最高点)<div class="mathjax-exps">$$x_k=&#x5C;pm 2k &#x5C;dfrac{&#x5C;lambda}{4}$$</div></li>
+<li>波腹位置(驻波的最低点)<div class="mathjax-exps">$$x_k=&#x5C;pm (2k+1) &#x5C;dfrac{&#x5C;lambda}{4}$$</div></li>
+<li>相邻波腹波节间距离<div class="mathjax-exps">$$&#x5C;Delta x_k= &#x5C;dfrac{&#x5C;lambda}{2}$$</div></li>
+</ul>
+<h4 class="mume-header" id="%E5%90%84%E7%82%B9%E7%9B%B8%E4%BD%8D">各点相位</h4>
+
+<ul>
+<li>同一波节两侧, 相位相反</li>
+<li>相邻波节之间, 相位相同</li>
+</ul>
+<h4 class="mume-header" id="%E7%9B%B8%E4%BD%8D%E8%B7%83%E5%8F%98">相位跃变</h4>
+
+<p>波疏介质<span class="mathjax-exps">$&#x5C;Rightarrow$</span>波密介质<span class="mathjax-exps">$&#x5C;Rightarrow$</span>波疏介质<br>
+入射波与反射波相位差<span class="mathjax-exps">$&#x5C;pi$</span>, 波程差<span class="mathjax-exps">$&#x5C;dfrac{&#x5C;lambda}{2}$</span>, 半波损失 (后面光学部分会用到)</p>
+<h4 class="mume-header" id="%E9%A9%BB%E6%B3%A2%E7%9A%84%E8%83%BD%E9%87%8F">驻波的能量</h4>
+
+<p>动能集中于波腹, 势能集中于波节</p>
+<h3 class="mume-header" id="%E5%A4%9A%E6%99%AE%E5%8B%92%E6%95%88%E5%BA%94">多普勒效应</h3>
+
+<h4 class="mume-header" id="%E4%BB%A5%E4%BB%8B%E8%B4%A8%E4%B8%BA%E5%8F%82%E8%80%83%E7%B3%BB">以介质为参考系</h4>
+
+<p>波源: 频率<span class="mathjax-exps">$f$</span>, 波源速度<span class="mathjax-exps">$v_{source}$</span><br>
+观察者: 频率<span class="mathjax-exps">$f&#x27;$</span>, 观察者运动速度<span class="mathjax-exps">$v_{0}$</span><br>
+介质: 频率<span class="mathjax-exps">$f_b$</span>, 波在介质中的传播速度<span class="mathjax-exps">$u$</span></p>
+<h4 class="mume-header" id="%E9%A2%91%E7%8E%87%E4%B8%8E%E6%B3%A2%E6%BA%90%E9%A2%91%E7%8E%87%E7%9A%84%E5%85%B3%E7%B3%BB">频率与波源频率的关系</h4>
+
+<p>观察者静止, 波源运动:<br>
+<div class="mathjax-exps">$$f&#x27;= &#x5C;dfrac{u&#x5C;pm v_0}{u}f$$</div></p>
+<p>波源静止, 观察者运动:<br>
+<div class="mathjax-exps">$$f&#x27;= &#x5C;dfrac{u}{u&#x5C;mp v_{source}}f$$</div></p>
+<p>波源与观察者介运动:<br>
+<div class="mathjax-exps">$$f&#x27;= &#x5C;dfrac{u&#x5C;pm v_0}{u&#x5C;mp v_{source}}f$$</div><br>
+<strong><span class="mathjax-exps">$&#x5C;pm$</span>号的意义: 以介质为参考系, 靠近 / 远离</strong></p>
+<h2 class="mume-header" id="%E5%85%89%E5%AD%A6">光学</h2>
+
+<h3 class="mume-header" id="%E5%85%89%E7%9A%84%E5%B9%B2%E6%B6%89">光的干涉</h3>
+
+<p>相干光产生的条件</p>
+<ul>
+<li>频率相同</li>
+<li>振动方向平行</li>
+<li>相位差恒定</li>
+</ul>
+<h4 class="mume-header" id="%E6%B1%82%E8%A7%A3%E5%85%89%E5%AD%A6%E9%97%AE%E9%A2%98%E4%B8%80%E8%88%AC%E6%AD%A5%E9%AA%A4">求解光学问题一般步骤</h4>
+
+<ul>
+<li>画出光路图(解题关键)</li>
+<li>由光路图得出 波程/光程 差的表达式</li>
+<li>根据题目要求代入干涉 加强/减弱 的条件</li>
+<li>将k值按顺序代入, 解出答案</li>
+</ul>
+<h4 class="mume-header" id="%E6%9D%A8%E6%B0%8F%E5%8F%8C%E7%BC%9D%E5%B9%B2%E6%B6%89%E5%AE%9E%E9%AA%8C-%E6%B3%A2%E6%8C%AF%E9%9D%A2%E5%88%86%E5%89%B2%E6%B3%95">杨氏双缝干涉实验 (波振面分割法)</h4>
+
+<h5 class="mume-header" id="%E5%85%89%E8%B7%AF%E5%9B%BE">光路图</h5>
+
+<p><img src="pics/%E5%8F%8C%E7%BC%9D_1.jpg" alt="&#x53CC;&#x7F1D;_1"></p>
+<p>手绘图<br>
+<img src="pics/%E5%8F%8C%E7%BC%9D_2.jpg" alt="&#x53CC;&#x7F1D;_2"></p>
+<h5 class="mume-header" id="%E8%AE%A1%E7%AE%97%E8%BF%87%E7%A8%8B">计算过程</h5>
+
+<p>省略数学证明, 可以得出两 <span class="mathjax-exps">$&#x5C;angle&#x5C;theta$</span> 相等</p>
+<p>光的波长为<span class="mathjax-exps">$&#x5C;lambda$</span>, 两缝<span class="mathjax-exps">$S_1, &#x5C; S_2$</span>之间间距为d, 且有<span class="mathjax-exps">$d&#x27;&gt;&gt;d$</span>, O为<span class="mathjax-exps">$S_1, &#x5C; S_2$</span>中心点且与O'正对</p>
+<p><span class="mathjax-exps">$r_1, &#x5C; r_2$</span>的波程差为<span class="mathjax-exps">$&#x5C;Delta r$</span></p>
+<p>首先, 当 <span class="mathjax-exps">$&#x5C;theta=0, &#x5C; &#x5C;Delta r=0, &#x5C; k=0$</span>, 在点O'处, 为明纹, 称为<strong>中央明纹</strong>(不要遗漏)</p>
+<p>其余情况下, 在O'两侧, 可以得到<br>
+<div class="mathjax-exps">$$&#x5C;Delta r=r_1-r_2&#x5C;approx d&#x5C;sin&#x5C;theta$$</div></p>
+<p>因为<span class="mathjax-exps">$d&#x27;&gt;&gt;d, &#x5C; &#x5C;theta&#x5C;approx 0$</span>, 根据高等数学等价无穷小, 可以得到<br>
+<div class="mathjax-exps">$$&#x5C;theta&#x5C;approx&#x5C;sin&#x5C;theta&#x5C;approx&#x5C;tan&#x5C;theta= &#x5C;dfrac{x}{d&#x27;}$$</div></p>
+<p>代入上式整合, 可以得到<br>
+<div class="mathjax-exps">$$&#x5C;Delta r= &#x5C;dfrac{d}{d&#x27;}x$$</div></p>
+<p>根据上一章干涉的条件可以得到<br>
+<div class="mathjax-exps">$$&#x5C;Delta r= &#x5C;dfrac{d}{d&#x27;}x&#x5C;begin{cases}&amp;=&amp;2k &#x5C;dfrac{&#x5C;lambda}{2}&#x5C; 干涉加强, &#x5C; 明纹&#x5C;&#x5C;&amp;=&amp;(2k+1) &#x5C;dfrac{&#x5C;lambda}{2}&#x5C; 干涉减弱, &#x5C; 暗纹&#x5C;end{cases}&#x5C;&#x5C;&#x5C; k=0, &#x5C; &#x5C;pm 1, &#x5C; &#x5C;pm 2, &#x5C; &#x5C;cdots&#x5C; (干涉从k=0开始计算)$$</div></p>
+<p>化简得到<br>
+<div class="mathjax-exps">$$x_{k}=&#x5C;pm &#x5C;dfrac{d&#x27;}{d}k&#x5C;lambda&#x5C; , &#x5C; k=0, &#x5C; &#x5C;pm 1, &#x5C; &#x5C;pm 2, &#x5C; &#x5C;cdots$$</div><br>
+的时候, <span class="mathjax-exps">$x_{k}$</span>为明条纹中心</p>
+<p>同理<br>
+<div class="mathjax-exps">$$x_{k}=&#x5C;pm &#x5C;dfrac{d&#x27;}{d}(2k+1) &#x5C;dfrac{&#x5C;lambda}{2}&#x5C; , &#x5C; k=0, &#x5C; &#x5C;pm 1, &#x5C; &#x5C;pm 2, &#x5C; &#x5C;cdots$$</div><br>
+的时候, <span class="mathjax-exps">$x_{k}$</span>为暗条纹中心</p>
+<p>一般而言, 两条相邻的暗条纹中心之间的距离为一条明条纹的宽度</p>
+<p>综上, 在干涉区域内, 在屏幕上可以看到在中央明纹的两侧, 对称地分布着明暗相间的干涉条纹, 如果已知<span class="mathjax-exps">$d, &#x5C; d&#x27;, &#x5C; &#x5C;lambda$</span> , 则可以计算出相邻的明纹或者暗纹中心的之间的距离为<br>
+<div class="mathjax-exps">$$&#x5C;Delta x=x_{k+1}-x_k= &#x5C;dfrac{d&#x27;}{d}&#x5C;lambda$$</div></p>
+<blockquote>
+<p>干涉条纹示意<br>
+<img src="pics/%E5%B9%B2%E6%B6%89%E6%9D%A1%E7%BA%B9.jpg" alt="&#x5E72;&#x6D89;&#x6761;&#x7EB9;"></p>
+</blockquote>
+<p>所以, 若已知<span class="mathjax-exps">$d, &#x5C; d&#x27;$</span>, 又测出<span class="mathjax-exps">$&#x5C;Delta x$</span>, 则可以计算出<strong>单色光</strong>的波长 <span class="mathjax-exps">$&#x5C;lambda$</span><br>
+若用白光照射, 则在中央明纹(白色)两侧, 将会出现彩色条纹(波长不同的光出现在不同的位置)</p>
+<h3 class="mume-header" id="%E5%85%89%E7%A8%8B%E4%B8%8E%E8%96%84%E8%86%9C%E5%B9%B2%E6%B6%89">光程与薄膜干涉</h3>
+
+<h4 class="mume-header" id="%E5%85%89%E7%A8%8B">光程</h4>
+
+<p>光程就是将光在<strong>折射率为<span class="mathjax-exps">$n$</span>的介质</strong>中的几何路程<span class="mathjax-exps">$L$</span>换算为在真空中光的路程<span class="mathjax-exps">$nL$</span></p>
+<h4 class="mume-header" id="%E4%BA%A7%E7%94%9F%E7%9B%B8%E4%BD%8D%E8%B7%83%E5%8F%98%E7%9A%84%E6%9D%A1%E4%BB%B6">产生相位跃变的条件</h4>
+
+<p>波疏介质<span class="mathjax-exps">$&#x5C;Rightarrow$</span>波密介质<span class="mathjax-exps">$&#x5C;Rightarrow$</span>波疏介质(这里体现为折射率的不同)</p>
+<p>入射波与反射波相位差<span class="mathjax-exps">$&#x5C;pi$</span>, 波程差<span class="mathjax-exps">$&#x5C;dfrac{&#x5C;lambda}{2}$</span>, <strong>半波损失</strong></p>
+<h4 class="mume-header" id="%E8%96%84%E8%86%9C%E5%B9%B2%E6%B6%89%E6%8C%AF%E5%B9%85%E5%88%86%E5%89%B2%E6%B3%95">薄膜干涉(振幅分割法)</h4>
+
+<p>仅讨论垂直入射的情况 <s>(不是垂直的我没看懂)</s></p>
+<p><div class="mathjax-exps">$$&#x5C;Delta_r=2n_2d+ &#x5C;dfrac{&#x5C;lambda}{2}&#x5C;begin{cases}&amp;=&amp;2k &#x5C;dfrac{&#x5C;lambda}{2}=k&#x5C;lambda, &#x5C; &#x5C; k=1, &#x5C; 2, &#x5C; &#x5C;cdots&#x5C; 干涉加强, &#x5C; 明纹&#x5C;&#x5C;&amp;=&amp;(2k+1) &#x5C;dfrac{&#x5C;lambda}{2}, &#x5C; &#x5C; k=0, &#x5C; 1, &#x5C; 2, &#x5C; &#x5C;cdots&#x5C; 干涉减弱, &#x5C; 暗纹&#x5C;end{cases}&#x5C;&#x5C;$$</div></p>
+<h5 class="mume-header" id="%E4%B8%80%E9%81%93%E4%BE%8B%E9%A2%98%E6%9D%A5%E8%AE%B2%E8%A7%A3">一道例题来讲解</h5>
+
+<blockquote>
+<p>一油轮漏出的油(折射率n = 1.20)污染了某海域, 在海水(n = 1.30)表面形成一层薄薄的油污</p>
+</blockquote>
+<ol>
+<li>如果太阳正位于海域上空, 一直升飞机的驾驶员从机上向正下方观察, 他所正对的油层厚度为460nm, 则他将观察到油层呈什么颜色?</li>
+<li>如果一潜水员潜入该区域水下, 并向正上方观察又将观察到油层呈什么颜色?</li>
+</ol>
+<h6 class="mume-header" id="%E8%96%84%E8%86%9C%E5%B9%B2%E6%B6%89%E5%85%89%E8%B7%AF%E5%9B%BE">薄膜干涉光路图</h6>
+
+<p><img src="pics/%E8%96%84%E8%86%9C%E5%B9%B2%E6%B6%89.jpg" alt="&#x8584;&#x819C;&#x5E72;&#x6D89;"></p>
+<blockquote>
+<p>这是一个薄膜干涉的问题。太阳垂直照射在海面上, 驾驶员和潜水员所看到的分别是反射光的干涉结果和透射光的干涉结果</p>
+</blockquote>
+<p>(1)由于油层的折射率n 小于海水的折射率n.但大于空气的折射率, 所以在油层<strong>上、下表面反射</strong>的太阳光均发生<span class="mathjax-exps">$&#x5C;pi$</span>的相位跃变(半波损失), 两反射光(2, 3)之间的光程差为</p>
+<p><div class="mathjax-exps">$$&#x5C;Delta_r=2n_1d&#x5C; (两次半波损失合起来为一个波长, &#x5C; 所以没有了 &#x5C;dfrac{&#x5C;lambda}{2})$$</div><br>
+令<br>
+<div class="mathjax-exps">$$&#x5C;Delta_r=2k &#x5C;dfrac{&#x5C;lambda}{2}=k&#x5C;lambda$$</div><br>
+解得<br>
+<div class="mathjax-exps">$$&#x5C;lambda= &#x5C;dfrac{2n_1d}{k}&#x5C;&#x5C;k=, &#x5C; 1, &#x5C; 2, &#x5C; &#x5C;cdots$$</div></p>
+<p>代入数据, 并依次代入k求解</p>
+<p>其中k=2时, 波长为<span class="mathjax-exps">$&#x5C;lambda_2=552nm$</span> 的绿光在可见范围内, 而<span class="mathjax-exps">$&#x5C;lambda_1, &#x5C; &#x5C;lambda_3$</span> 则分别在红外线和紫外线的波长范围内, 所以, 驾驶员将看到油膜呈绿色</p>
+<p>(2)此题中透射光(2, 4)的光程差为<br>
+<div class="mathjax-exps">$$&#x5C;Delta_t=2n_1d+ &#x5C;dfrac{&#x5C;lambda}{2}$$</div></p>
+<blockquote>
+<p><span class="mathjax-exps">$&#x5C;Delta_t$</span> 与<span class="mathjax-exps">$&#x5C;Delta_r$</span>相差 <span class="mathjax-exps">$&#x5C;dfrac{&#x5C;lambda}{2}$</span>, 当反射光干涉加强时, 透射光干涉互相减弱, 符合能量守恒定律</p>
+</blockquote>
+<p>令<br>
+<div class="mathjax-exps">$$&#x5C;Delta_t=2k &#x5C;dfrac{&#x5C;lambda}{2}=k&#x5C;lambda&#x5C;&#x5C;k=1, &#x5C; 2, &#x5C; &#x5C;cdots$$</div><br>
+代入数据求解(略)</p>
+<p>其中波长为<span class="mathjax-exps">$&#x5C;lambda_2=736nm$</span> 的红光和<span class="mathjax-exps">$&#x5C;lambda_3=441.6nm$</span> 的紫光在可见范围内, 而<span class="mathjax-exps">$&#x5C;lambda_1$</span>是红外线, <span class="mathjax-exps">$&#x5C;lambda_4$</span>是紫外线。所以, 潛水員看到的油膜呈紫红色。</p>
+<h3 class="mume-header" id="%E5%8A%88%E5%B0%96%E4%B8%8E%E7%89%9B%E9%A1%BF%E7%8E%AF">劈尖与牛顿环</h3>
+
+<h4 class="mume-header" id="%E5%AE%9A%E9%87%8F%E5%88%86%E6%9E%90">定量分析</h4>
+
+<blockquote>
+<p>下面定量讨论劈尖干涉条纹的形成原理, 在图 16 中, D为细丝直径, L为玻璃片长度, <span class="mathjax-exps">$&#x5C;theta$</span>为两玻璃片间夹角, 实际<span class="mathjax-exps">$&#x5C;theta$</span>很小(<span class="mathjax-exps">$&#x5C;theta$</span>被夸大了), 所以在劈尖的上表面处反射的光线和在下表面处反射的光线都可看作垂直于劈尖表面, 它们在劈尖表面处相遇并相干叠加, 由于劈尖层空气的折射率n比玻璃的折射率n<sub>1</sub>小, 所以光在劈尖<strong>下表面反射时</strong>因有相位跃变而产生附加光程差<span class="mathjax-exps">$&#x5C;dfrac{&#x5C;lambda}{2}$</span></p>
+</blockquote>
+<p><img src="pics/%E5%8A%88%E5%B0%96.jpg" alt="&#x5288;&#x5C16;"></p>
+<p>这样, 可得劈尖厚度为d处上下表面反射的两相干光的总光程差为<br>
+<div class="mathjax-exps">$$&#x5C;Delta=2nd+ &#x5C;dfrac{&#x5C;lambda}{2}$$</div></p>
+<p>式中d为劈尖上下表面间的距离, 劈尖反射光干涉极大 (明纹中心) 的条件<br>
+<div class="mathjax-exps">$$2nd+ &#x5C;dfrac{&#x5C;lambda}{2}=k&#x5C;lambda&#x5C;&#x5C;k=1, &#x5C; 2, &#x5C; &#x5C;cdots$$</div></p>
+<p>产生干涉极小 (暗纹中心) 的条件为<br>
+<div class="mathjax-exps">$$2nd+ &#x5C;dfrac{&#x5C;lambda}{2}=(2k+1) &#x5C;dfrac{&#x5C;lambda}{2}&#x5C;&#x5C;k=0, &#x5C; 1, &#x5C; 2, &#x5C; &#x5C;cdots$$</div></p>
+<blockquote>
+<p>可以看出, 凡劈尖内厚度d相同的地方均满足相同的干涉条件, 因此, 劈尖的干涉条纹是一系列平行于劈尖棱边的明暗相间的直条纹, 我们把这种与薄膜上等厚线相对应的干涉现象, 叫做<strong>等厚干涉</strong>, 等厚干涉形成的干涉条纹叫做等厚干涉条纹</p>
+</blockquote>
+<p><span class="mathjax-exps">$d=0$</span>时(两玻璃片相接触处), <span class="mathjax-exps">$&#x5C;Delta= &#x5C;dfrac{&#x5C;lambda}{2}$</span>, 为暗纹</p>
+<p>设第<span class="mathjax-exps">$k$</span>级明纹处劈尖厚度为<span class="mathjax-exps">$d_k$</span>, 可求出相邻明纹(暗纹)处劈尖的厚度差<br>
+<div class="mathjax-exps">$$d_{k+1}-d_k= &#x5C;dfrac{&#x5C;lambda}{2n}= &#x5C;dfrac{&#x5C;lambda_n}{2}$$</div></p>
+<p>若设相邻两明(暗)纹之间距离为b<br>
+<img src="pics/%E5%8A%88%E5%B0%96%E6%9D%A1%E7%BA%B9.jpg" alt="&#x5288;&#x5C16;&#x6761;&#x7EB9;"><br>
+则有<br>
+<div class="mathjax-exps">$$&#x5C;theta&#x5C;approx &#x5C;dfrac{D}{L}, &#x5C; &#x5C;theta&#x5C;approx &#x5C;dfrac{&#x5C;lambda_n}{2b}&#x5C;&#x5C;&#x5C;therefore&#x5C; D= &#x5C;dfrac{&#x5C;lambda_n}{2b}L= &#x5C;dfrac{&#x5C;lambda}{2nb}L$$</div></p>
+<h4 class="mume-header" id="%E5%8A%88%E5%B0%96%E4%BE%8B%E9%A2%98">劈尖例题</h4>
+
+<blockquote>
+<p><strong>波长为 680nm</strong> 的平行光照射到 <strong>L=12cm</strong> 长的两块玻璃片上, 相互接触, 另一边被厚度 <strong>D = 0.048 mm</strong> 的纸片隔开. 试问在这 12cm 长度内会呈现多少条暗条纹?</p>
+</blockquote>
+<p>解<br>
+这是一个空气劈尖的问题。由两块玻璃片形成了空气劈尖薄膜, 由空气膜上、下表面反射的光相当干涉, 在薄膜上看到干涉条纹。其暗纹条件为(空气折射率<span class="mathjax-exps">$n=1$</span>)<br>
+<div class="mathjax-exps">$$2d+ &#x5C;dfrac{&#x5C;lambda}{2}=(2k+1) &#x5C;dfrac{&#x5C;lambda}{2}&#x5C;&#x5C;k=0, &#x5C; 1, &#x5C; 2, &#x5C; &#x5C;cdots$$</div></p>
+<p>对应量大膜厚D处, 将形成最大级次k<sub>m</sub>的暗条纹。<br>
+于是<br>
+<div class="mathjax-exps">$$2D+ &#x5C;dfrac{&#x5C;lambda}{2}=(2k_m+1) &#x5C;dfrac{&#x5C;lambda}{2}$$</div><br>
+解得<br>
+<div class="mathjax-exps">$$k_m= &#x5C;dfrac{2D}{&#x5C;lambda}=141.2$$</div><br>
+取整数, k<sub>m</sub>=141. <strong>注意 d = 0 处出现的是k = 0 的暗纹, 所以一共有 142 条暗条纹</strong></p>
+<h4 class="mume-header" id="%E7%89%9B%E9%A1%BF%E7%8E%AF">牛顿环</h4>
+
+<p><img src="pics/%E7%89%9B%E9%A1%BF%E7%8E%AF.jpg" alt="&#x725B;&#x987F;&#x73AF;"></p>
+<h5 class="mume-header" id="%E5%88%86%E6%9E%90">分析</h5>
+
+<p>牛顿环是一个空气劈尖</p>
+<p>由图可得, 在厚度为d时, 两相干光光程差为<br>
+<div class="mathjax-exps">$$&#x5C;Delta=2d+ &#x5C;dfrac{&#x5C;lambda}{2}$$</div></p>
+<p>另有<br>
+<div class="mathjax-exps">$$&#x5C;begin{eqnarray}r^2&amp;=&amp;R^2-(R-d)^2=2dR-d^2&#x5C;&#x5C;&#x5C;because R&amp;&gt;&gt;&amp;d&#x5C;&#x5C;&#x5C;therefore&#x5C; r&amp;=&amp;&#x5C;sqrt{2dR}=&#x5C;sqrt{&#x5C;left(&#x5C;Delta- &#x5C;dfrac{&#x5C;lambda}{2}&#x5C;right)R}&#x5C;end{eqnarray}$$</div></p>
+<p>结合式<br>
+<div class="mathjax-exps">$$&#x5C;Delta_r=2n_2d+ &#x5C;dfrac{&#x5C;lambda}{2}&#x5C;begin{cases}&amp;=&amp;2k &#x5C;dfrac{&#x5C;lambda}{2}=k&#x5C;lambda&#x5C; , &#x5C; &#x5C; k=1, &#x5C; 2, &#x5C; &#x5C;cdots&#x5C; 干涉加强, &#x5C; 明纹&#x5C;&#x5C;&amp;=&amp;(2k+1) &#x5C;dfrac{&#x5C;lambda}{2}&#x5C; , &#x5C; k=0, &#x5C; 1, &#x5C; 2, &#x5C; &#x5C;cdots&#x5C; 干涉减弱, &#x5C; 暗纹&#x5C;end{cases}&#x5C;&#x5C;$$</div></p>
+<p>可解得<br>
+<div class="mathjax-exps">$$&#x5C;begin{eqnarray}明环半径&#x5C; r&amp;=&amp;&#x5C;sqrt{&#x5C;left(k- &#x5C;dfrac{&#x5C;lambda}{2}&#x5C;right)R&#x5C;lambda}&#x5C; , &#x5C; k=1, &#x5C; 2, &#x5C; &#x5C;cdots&#x5C;&#x5C; &#x5C;&#x5C;暗环半径&#x5C; r&amp;=&amp;&#x5C;sqrt{kR&#x5C;lambda}&#x5C; , &#x5C; k=0, &#x5C; 1, &#x5C; 2, &#x5C; &#x5C;cdots&#x5C;end{eqnarray}$$</div></p>
+<p>d=0处, 光程差<span class="mathjax-exps">$&#x5C;Delta= &#x5C;dfrac{&#x5C;lambda}{2}$</span>, 所以反射式牛顿环中心总是暗环</p>
+<h4 class="mume-header" id="%E6%B1%82%E8%A7%A3%E5%B9%B2%E6%B6%89%E9%97%AE%E9%A2%98%E4%B8%80%E8%88%AC%E6%AD%A5%E9%AA%A4">求解干涉问题一般步骤</h4>
+
+<ul>
+<li>画出光路图(解题关键)</li>
+<li>由光路图得出 波程/光程 差的表达式(注意是否有半波损失 (折射率小<span class="mathjax-exps">$&#x5C;Rightarrow$</span>折射率大), 以及是否有经历两次半波损失来确定光程差是否需要&quot;<span class="mathjax-exps">$+ &#x5C;dfrac{&#x5C;lambda}{2}$</span>&quot; )</li>
+<li>根据题目要求代入干涉加强/减弱的条件</li>
+<li>将k值按顺序代入, 解出答案</li>
+</ul>
+<h5 class="mume-header" id="eg">eg</h5>
+
+<p><img src="pics/%E8%96%84%E8%86%9C%E5%B9%B2%E6%B6%89.jpg" alt="&#x8584;&#x819C;&#x5E72;&#x6D89;"></p>
+<p>设空气折射率为n</p>
+<p>如果<span class="mathjax-exps">$n&lt;n_1&lt;n_2$</span>, 则<br>
+<div class="mathjax-exps">$$&#x5C;Delta=2n_2d, &#x5C; 两次半波损失$$</div></p>
+<h3 class="mume-header" id="%E5%8D%95%E7%BC%9D%E8%A1%8D%E5%B0%84">单缝衍射</h3>
+
+<h4 class="mume-header" id="%E5%8D%95%E7%BC%9D%E8%A1%8D%E5%B0%84%E5%85%89%E8%B7%AF%E5%9B%BE">单缝衍射光路图</h4>
+
+<p><img src="pics/%E5%8D%95%E7%BC%9D%E8%A1%8D%E5%B0%84.jpg" alt="&#x5355;&#x7F1D;&#x884D;&#x5C04;"></p>
+<h4 class="mume-header" id="%E6%B3%A2%E5%B8%A6%E6%B3%95">波带法</h4>
+
+<p><div class="mathjax-exps">$$b&#x5C;sin &#x5C;theta=&#x5C;pm k &#x5C;dfrac{&#x5C;lambda}{2}$$</div></p>
+<h4 class="mume-header" id="%E5%8F%82%E9%87%8F">参量</h4>
+
+<p>中间有一个凸透镜</p>
+<p><div class="mathjax-exps">$$&#x5C;begin{eqnarray}&#x5C;theta&amp;&#x5C;Rightarrow&amp; 衍射角&#x5C;&#x5C;b&amp;&#x5C;Rightarrow&amp; 缝宽&#x5C;&#x5C;f&amp;&#x5C;Rightarrow&amp; 透镜焦距&#x5C;&#x5C;x&amp;&#x5C;Rightarrow&amp; 光汇聚点距透镜光心的水平线和屏幕交点的距离&#x5C;end{eqnarray}$$</div></p>
+<h4 class="mume-header" id="%E7%BB%93%E8%AE%BA">结论</h4>
+
+<p>省略证明过程</p>
+<p>当<span class="mathjax-exps">$&#x5C;theta$</span>角合适, 且<br>
+<div class="mathjax-exps">$$b&#x5C;sin &#x5C;theta=&#x5C;pm 2k &#x5C;dfrac{&#x5C;lambda}{2}=&#x5C;pm k&#x5C;lambda&#x5C;&#x5C;k=1, &#x5C; 2, &#x5C; &#x5C;cdots$$</div><br>
+时, 点Q为暗条纹中心, 对应于<span class="mathjax-exps">$k=1, &#x5C; 2, &#x5C; &#x5C;cdots$</span>分别叫做第k级暗纹, 正负号表示分布在中央明纹的两侧.<br>
+<strong>两侧第一级暗纹的距离, 称为中央明纹的宽度</strong>(不要遗忘了中央明纹)</p>
+<p>当<span class="mathjax-exps">$&#x5C;theta$</span>角合适, 且<br>
+<div class="mathjax-exps">$$b&#x5C;sin &#x5C;theta=&#x5C;pm (2k+1) &#x5C;dfrac{&#x5C;lambda}{2}&#x5C;&#x5C;k=1, &#x5C; 2, &#x5C; &#x5C;cdots$$</div><br>
+时, 点Q为暗条纹中心, 对应于<span class="mathjax-exps">$k=1, &#x5C; 2, &#x5C; &#x5C;cdots$</span>分别叫做第k级暗纹.<br>
+<strong>上两式与杨氏双缝干涉条纹的条件形式上刚好相反, 不要搞混了哦</strong></p>
+<h4 class="mume-header" id="%E5%8D%95%E7%BC%9D%E8%A1%8D%E5%B0%84%E6%9D%A1%E7%BA%B9%E7%9A%84%E5%9B%BE%E6%A0%B7">单缝衍射条纹的图样</h4>
+
+<p>单缝衍射图样是中央明纹两侧对称分布着明暗条纹的一组衍射图样</p>
+<h4 class="mume-header" id="%E5%8D%95%E7%BC%9D%E8%A1%8D%E5%B0%84%E7%9A%84%E5%87%A0%E4%BD%95%E5%85%B3%E7%B3%BB%E8%A7%A3%E9%A2%98%E5%B8%B8%E7%94%A8">单缝衍射的几何关系(解题常用)</h4>
+
+<p><img src="pics/%E5%8D%95%E7%BC%9D%E8%A1%8D%E5%B0%84.jpg" alt="&#x5355;&#x7F1D;&#x884D;&#x5C04;"></p>
+<p>前提条件 <span class="mathjax-exps">$&#x5C;because&#x5C;theta&#x5C;approx 0$</span>, <span class="mathjax-exps">$&#x5C;therefore&#x5C;sin&#x5C;theta&#x5C;approx&#x5C;tan&#x5C;theta&#x5C;approx&#x5C;theta$</span></p>
+<p>则有等式关系<br>
+<div class="mathjax-exps">$$&#x5C;begin{eqnarray}&#x5C;tan&#x5C;theta&amp;=&amp; &#x5C;dfrac{x}{f}&#x5C;&#x5C;&#x5C;sin&#x5C;theta&amp;=&amp;&#x5C;begin{cases} &#x5C;dfrac{k&#x5C;lambda}{b}&#x5C; , &#x5C; 暗纹&#x5C;&#x5C; &#x5C;dfrac{(2k+1)&#x5C;lambda}{2b}&#x5C; , &#x5C; 明纹&#x5C;end{cases}&#x5C;end{eqnarray}$$</div></p>
+<p>联立求解x, 得<br>
+<div class="mathjax-exps">$$x=&#x5C;begin{cases} &#x5C;dfrac{k&#x5C;lambda f}{b}&#x5C; , &#x5C; 暗纹&#x5C;&#x5C; &#x5C;dfrac{(2k+1)&#x5C;lambda f}{2b}&#x5C; , &#x5C; 明纹&#x5C;end{cases}$$</div></p>
+<p>令k=1, 代入暗纹求解得<br>
+<div class="mathjax-exps">$$x_1= &#x5C;dfrac{&#x5C;lambda}{b}f$$</div><br>
+得出<strong>中央明纹</strong>宽度(容易漏掉)<br>
+<div class="mathjax-exps">$$&#x5C;Delta x_0=2x_1= &#x5C;dfrac{2&#x5C;lambda f}{b}$$</div></p>
+<p>其他任意相邻暗纹(明纹)距离<br>
+<div class="mathjax-exps">$$&#x5C;Delta x=&#x5C;left[ &#x5C;dfrac{(k+1)&#x5C;lambda}{b}- &#x5C;dfrac{k&#x5C;lambda}{b}&#x5C;right]f= &#x5C;dfrac{&#x5C;lambda f}{b}$$</div></p>
+<p>利用其他已知条件也可以根据 <span class="mathjax-exps">$&#x5C;sin&#x5C;theta&#x5C;approx&#x5C;tan&#x5C;theta&#x5C;approx&#x5C;theta$</span> 反求<span class="mathjax-exps">$&#x5C;theta$</span></p>
+<h3 class="mume-header" id="%E5%9C%86%E5%AD%94%E8%A1%8D%E5%B0%84">圆孔衍射</h3>
+
+<p>一级暗环<br>
+<div class="mathjax-exps">$$&#x5C;theta=1.44 &#x5C;dfrac{&#x5C;lambda}{D}$$</div></p>
+<h3 class="mume-header" id="%E8%A1%8D%E5%B0%84%E5%85%89%E6%A0%85">衍射光栅</h3>
+
+<p>光栅常数: <span class="mathjax-exps">$d=(b+b&#x27;)$</span></p>
+<p>光栅方程 (明条纹)<br>
+<div class="mathjax-exps">$$(b+b&#x27;)&#x5C;sin&#x5C;theta=&#x5C;pm k&#x5C;lambda&#x5C; , &#x5C; k=0, &#x5C; 1, &#x5C; 2, &#x5C; &#x5C;cdots&#x5C; &#x5C;Rightarrow 双缝干涉明纹$$</div></p>
+<p><div class="mathjax-exps">$$&#x5C;because&#x5C;theta&#x5C;approx0, &#x5C; &#x5C;therefore &#x5C;theta&#x5C;approx&#x5C;sin&#x5C;theta&#x5C;&#x5C;&#x5C;therefore &#x5C;theta_k= &#x5C;dfrac{k&#x5C;lambda}{b+b&#x27;}$$</div></p>
+<p>相邻主明纹宽度<br>
+<div class="mathjax-exps">$$&#x5C;Delta&#x5C;theta= &#x5C;dfrac{&#x5C;lambda}{b+b&#x27;}$$</div></p>
+<h4 class="mume-header" id="%E5%85%89%E6%A0%85%E7%BC%BA%E7%BA%A7%E9%97%AE%E9%A2%98-%E9%9A%BE%E9%A2%98">光栅缺级问题 (难题)</h4>
+
+<p><div class="mathjax-exps">$$&#x5C;begin{cases}(b+b&#x27;)&#x5C;sin&#x5C;theta&amp;=&amp;k&#x5C;lambda&#x5C; 双缝干涉明纹&#x5C;&#x5C;b&#x5C;sin&#x5C;theta&amp;=&amp;k&#x27;&#x5C;lambda&#x5C; 单缝衍射暗纹&#x5C;end{cases}&#x5C;&#x5C;两式相除&#x5C;Rightarrow  &#x5C;dfrac{b+b&#x27;}{b}= &#x5C;dfrac{k}{k&#x27;}$$</div></p>
+<p>当<span class="mathjax-exps">$&#x5C;dfrac{b+b&#x27;}{b}$</span>为整数比时, 当k与k'亦为相应比值时, 将会出现缺级现象 (相应的本应有明纹消失), 可先将k'固定为1, k依次取值求解, 依次类推...</p>
+<h3 class="mume-header" id="%E5%85%89%E7%9A%84%E5%81%8F%E6%8C%AF">光的偏振</h3>
+
+<h4 class="mume-header" id="%E9%A9%AC%E5%90%95%E6%96%AF%E5%AE%9A%E5%BE%8B">马吕斯定律</h4>
+
+<p><div class="mathjax-exps">$$I=I_0&#x5C;cos^2&#x5C;alpha$$</div></p>
+<h4 class="mume-header" id="%E5%B8%83%E5%84%92%E6%96%AF%E7%89%B9%E5%AE%9A%E5%BE%8B">布儒斯特定律</h4>
+
+<p><img src="pics/%E5%B8%83%E5%84%92%E6%96%AF%E7%89%B9%E8%A7%92.png" alt="&#x5E03;&#x5112;&#x65AF;&#x7279;"></p>
+<p><div class="mathjax-exps">$$&#x5C;tan i_B= &#x5C;dfrac{n_2}{n_1}$$</div></p>
+<h2 class="mume-header" id="%E6%B0%94%E4%BD%93%E5%8A%A8%E7%90%86%E8%AE%BA">气体动理论</h2>
+
+<h3 class="mume-header" id="%E7%BB%9F%E8%AE%A1%E8%A7%84%E5%BE%8B%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5">统计规律基本概念</h3>
+
+<p>概率密度函数<br>
+<div class="mathjax-exps">$$f(x)= &#x5C;dfrac{{&#x5C;rm d}P}{{&#x5C;rm d}x}$$</div></p>
+<p>概率<br>
+<div class="mathjax-exps">$${&#x5C;rm d}P=f(x){&#x5C;rm dX}$$</div></p>
+<p>概率的归一化条件<br>
+<div class="mathjax-exps">$$&#x5C;int{&#x5C;rm d}P=&#x5C;int f(x){&#x5C;rm d}x=1$$</div></p>
+<h3 class="mume-header" id="%E4%B8%80%E4%BA%9B%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A">一些名词解释</h3>
+
+<ul>
+<li>热力学系统: 由大量微观粒子组成的物体或者物体系</li>
+<li>外界与环境: 能够与热力学系统相互作用的其他物体</li>
+<li>孤立系统: 与外界没有任何相互作用的热力学系统</li>
+<li>平衡态: 在孤立系统中, 系统各部分宏观性质不随时间发生变化的状态</li>
+</ul>
+<h3 class="mume-header" id="%E6%8F%8F%E8%BF%B0%E7%8A%B6%E6%80%81%E7%9A%84%E5%8F%82%E9%87%8F">描述状态的参量</h3>
+
+<p><div class="mathjax-exps">$$体积:&#x5C; V&#x5C;&#x5C;压强:&#x5C; p&#x5C;&#x5C;温度:&#x5C; T&#x5C;&#x5C;摄氏温标:&#x5C; t&#x5C; (°C), &#x5C; t=T-273(K)$$</div></p>
+<h3 class="mume-header" id="%E7%90%86%E6%83%B3%E6%B0%94%E4%BD%93%E7%8A%B6%E6%80%81%E6%96%B9%E7%A8%8B">理想气体状态方程</h3>
+
+<p><div class="mathjax-exps">$$&#x5C;begin{eqnarray}pV&amp;=&amp;NkT&#x5C;&#x5C;pV&amp;=&amp;&#x5C;nu RT= &#x5C;dfrac{N}{N_A}RT= &#x5C;dfrac{m}{M}RT&#x5C; , &#x5C; &#x5C;nu&#x5C;Rightarrow&#x5C; 物质的量&#x5C;&#x5C;p&amp;=&amp;nkT= &#x5C;dfrac{N}{V}kT&#x5C;end{eqnarray}$$</div></p>
+<p>玻尔兹曼常数: <span class="mathjax-exps">$k=1.38&#x5C;times 10^{-23}J&#x5C;cdot K^{-1}$</span><br>
+阿伏伽德罗常数: <span class="mathjax-exps">$N_A=6.02&#x5C;times10^{23}mol^{-1}$</span><br>
+摩尔气体常数: <span class="mathjax-exps">$R=kN_A=8.31J&#x5C;cdot K^{-1}&#x5C;cdot mol^{-1}$</span></p>
+<h4 class="mume-header" id="%E7%90%86%E6%83%B3%E6%B0%94%E4%BD%93%E5%88%86%E5%AD%90%E6%A8%A1%E5%9E%8B">理想气体分子模型</h4>
+
+<ul>
+<li>
+<p>气体分子可以视为质点</p>
+</li>
+<li>
+<p>除碰撞瞬间外, 分子间相互作用可以忽略</p>
+</li>
+<li>
+<p>分子间碰撞和分子与器壁碰撞视为完全弹性碰撞</p>
+</li>
+<li>
+<p>分子重力势能远小于平均动能, 重力可忽略</p>
+</li>
+<li>
+<p>等概率假设:</p>
+</li>
+</ul>
+<ol>
+<li>气体处于平衡态时, 向各个方向运动的概率相等</li>
+<li>分子速率在各个方向上的分量的各种平均值相等</li>
+<li><span class="mathjax-exps">$&#x5C;overline{v_x}=&#x5C;overline{v_y}=&#x5C;overline{v_z}=0&#x5C; &#x5C;overline{v_x^2}=&#x5C;overline{v_y^2}=&#x5C;overline{v_z^2}= &#x5C;dfrac{1}{3}&#x5C;overline{v^2}$</span></li>
+</ol>
+<h4 class="mume-header" id="%E7%90%86%E6%83%B3%E6%B0%94%E4%BD%93%E5%8E%8B%E5%BC%BA-%E6%B8%A9%E5%BA%A6-%E5%86%85%E8%83%BD%E5%85%AC%E5%BC%8F">理想气体压强, 温度, 内能公式</h4>
+
+<ul>
+<li>自由度: 决定物体的空间位置所需的独立坐标的数量</li>
+<li><span class="mathjax-exps">$i=t+r+v&#x5C; (t平动, &#x5C; r转动, &#x5C; v振动自由度)$</span></li>
+<li>能量均分定理: <span class="mathjax-exps">$&#x5C;overline{&#x5C;varepsilon}= &#x5C;dfrac{t+r+2v}{2}kT$</span></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>分子类型</th>
+<th>自由度 <span class="mathjax-exps">$i$</span></th>
+<th>分子平均能能量<span class="mathjax-exps">$&#x5C;overline{&#x5C;varepsilon}$</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>单原子分子</td>
+<td><span class="mathjax-exps">$t=3, r=v=0$</span></td>
+<td><span class="mathjax-exps">$&#x5C;dfrac{3}{2}kT$</span></td>
+</tr>
+<tr>
+<td rowspan="2">双原子分子</td>
+<td>刚性 <span class="mathjax-exps">$t=3, &#x5C; r=2, &#x5C; v=0$</span></td>
+<td><span class="mathjax-exps">$&#x5C;dfrac{5}{2}kT$</span></td>
+</tr>
+<tr>
+
+<td>非刚性 <span class="mathjax-exps">$t=3, &#x5C; r=2, &#x5C; v=1$</span></td>
+<td><span class="mathjax-exps">$&#x5C;dfrac{7}{2}kT$</span></td>
+</tr>
+<tr>
+<td rowspan="2">三原子分子</td>
+<td>刚性 <span class="mathjax-exps">$t=3, &#x5C; r=3, &#x5C; v=0$</span></td>
+<td><span class="mathjax-exps">$3kT$</span></td>
+</tr>
+<tr>
+
+<td>非刚性 <span class="mathjax-exps">$t=3, &#x5C; r=3, &#x5C; v=3$</span></td>
+<td><span class="mathjax-exps">$6kT$</span></td>
+</tr>
+</tbody>
+</table>
+<p>压强公式<br>
+<div class="mathjax-exps">$$p= &#x5C;dfrac{1}{3}nm&#x5C;overline{v^2}= &#x5C;dfrac{2}{3}n&#x5C;overline{&#x5C;varepsilon_k}$$</div></p>
+<p>温度公式<br>
+<div class="mathjax-exps">$$T= &#x5C;dfrac{2}{3} &#x5C;dfrac{&#x5C;overline{&#x5C;varepsilon_k}}{k}$$</div></p>
+<p>平均平动动能<br>
+<div class="mathjax-exps">$$&#x5C;overline{&#x5C;varepsilon_k}= &#x5C;dfrac{1}{2}m&#x5C;overline{v^2}= &#x5C;dfrac{3}{2}kT$$</div></p>
+<p><span class="mathjax-exps">$&#x5C;nu&#x5C; mol$</span> 刚性气体分子内能(无振动自由度)<br>
+<div class="mathjax-exps">$$E=&#x5C;nu N_A&#x5C;overline{&#x5C;varepsilon}=&#x5C;nu  &#x5C;dfrac{i}{2}RT=&#x5C;nu &#x5C;dfrac{t_r}{2}RT$$</div><br>
+<strong>表明计算内能可由温度, 物质的量以及分子的自由度得出; 动能可由温度计算得出, 再代入上面的一些公式里面对题目进行求解</strong></p>
+<h4 class="mume-header" id="%E7%90%86%E6%83%B3%E6%B0%94%E4%BD%93%E7%9A%84%E9%80%9F%E7%8E%87%E5%88%86%E5%B8%83%E5%87%BD%E6%95%B0%E9%9C%80%E8%A6%81%E4%B8%80%E7%82%B9%E7%82%B9%E6%A6%82%E7%8E%87%E8%AE%BA%E7%9F%A5%E8%AF%86%E6%9D%A5%E7%90%86%E8%A7%A3">理想气体的速率分布函数(需要一点点概率论知识来理解)</h4>
+
+<p>概率密度函数 <span class="mathjax-exps">$f(v)$</span></p>
+<p><img src="pics/%E6%B0%94%E4%BD%93%E7%9A%84%E6%A6%82%E7%8E%87%E5%AF%86%E5%BA%A6%E5%87%BD%E6%95%B0.png" alt="&#x6C14;&#x4F53;&#x7684;&#x6982;&#x7387;&#x5BC6;&#x5EA6;&#x51FD;&#x6570;"></p>
+<h5 class="mume-header" id="fv-%E7%89%A9%E7%90%86%E6%84%8F%E4%B9%89"><span class="mathjax-exps">$f(v)$</span> 物理意义</h5>
+
+<p>温度为T的平衡状态下, 速率在附近单位速率区间的分子数占总数的百分比, 即概率密度</p>
+<h5 class="mume-header" id="fvrm-dv-%E7%89%A9%E7%90%86%E6%84%8F%E4%B9%89"><span class="mathjax-exps">$f(v){&#x5C;rm d}v$</span> 物理意义</h5>
+
+<p>速率在<span class="mathjax-exps">$v&#x5C;rightarrow v+{&#x5C;rm d}v$</span> 区间的分子数占总分子数的百分比, 即概率</p>
+<h5 class="mume-header" id="%E5%BD%92%E4%B8%80%E5%8C%96%E6%9D%A1%E4%BB%B6-%E6%A6%82%E7%8E%87%E6%98%AF%E4%B8%8D%E4%BC%9A%E5%A4%A7%E4%BA%8E1%E7%9A%84">归一化条件 (概率是不会大于1的)</h5>
+
+<p><div class="mathjax-exps">$$&#x5C;int_0^&#x5C;infty f(v){&#x5C;rm d}v=1$$</div></p>
+<h4 class="mume-header" id="%E7%90%86%E6%83%B3%E6%B0%94%E4%BD%93%E9%80%9F%E7%8E%87%E5%88%86%E5%B8%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8">理想气体速率分布函数的应用</h4>
+
+<h5 class="mume-header" id="%E6%B1%82%E9%80%9F%E7%8E%87%E5%9C%A8-v_1-v_2-%E5%8C%BA%E9%97%B4%E5%86%85%E6%B0%94%E4%BD%93%E5%88%86%E5%AD%90%E6%80%BB%E6%95%B0%E5%8D%A0%E5%88%86%E5%AD%90%E6%80%BB%E6%95%B0%E7%9A%84%E7%99%BE%E5%88%86%E6%AF%94">求速率在 <span class="mathjax-exps">$(v_1, &#x5C; v_2)$</span> 区间内气体分子总数占分子总数的百分比</h5>
+
+<p><div class="mathjax-exps">$$&#x5C;dfrac{&#x5C;Delta N}{N}=&#x5C;int_{v_1}^{v_2}f(v){&#x5C;rm d}v$$</div></p>
+<h5 class="mume-header" id="%E6%B1%82%E9%80%9F%E7%8E%87%E5%9C%A8-v_1-v_2-%E5%8C%BA%E9%97%B4%E5%86%85%E6%B0%94%E4%BD%93%E5%88%86%E5%AD%90%E6%95%B0">求速率在 <span class="mathjax-exps">$(v_1, &#x5C; v_2)$</span> 区间内气体分子数</h5>
+
+<p><div class="mathjax-exps">$$&#x5C;Delta N=N&#x5C;int_{v_1}^{v_2}f(v){&#x5C;rm d}v$$</div></p>
+<h5 class="mume-header" id="%E6%B1%82%E7%89%A9%E7%90%86%E9%87%8F%E7%9A%84%E5%B9%B3%E5%9D%87%E5%80%BC">求物理量的平均值</h5>
+
+<p><div class="mathjax-exps">$$&#x5C;overline{v}=&#x5C;int_0^&#x5C;infty vf(v){&#x5C;rm d}v&#x5C;&#x5C;&#x5C;overline{&#x5C;varepsilon_k}=&#x5C;dfrac{1}{2}m&#x5C;overline{v^2}= &#x5C;dfrac{1}{2}m&#x5C;int_0^&#x5C;infty v^2f(v){&#x5C;rm d}v$$</div></p>
+<blockquote>
+<p>概率论求数学期望的公式<br>
+<div class="mathjax-exps">$$E(x)=&#x5C;int xf(x){&#x5C;rm d}x$$</div></p>
+</blockquote>
+<h4 class="mume-header" id="%E9%BA%A6%E5%85%8B%E6%96%AF%E9%9F%A6%E9%80%9F%E7%8E%87%E5%88%86%E5%B8%83%E5%87%BD%E6%95%B0">麦克斯韦速率分布函数</h4>
+
+<p><div class="mathjax-exps">$$f(v)=4&#x5C;pi&#x5C;left( &#x5C;dfrac{m}{2&#x5C;pi kT}&#x5C;right)e^{- &#x5C;dfrac{mv^2}{2kT}}&#x5C;cdot v^2$$</div></p>
+<h5 class="mume-header" id="%E4%B8%89%E7%A7%8D%E7%BB%9F%E8%AE%A1%E9%80%9F%E7%8E%87">三种统计速率</h5>
+
+<p><div class="mathjax-exps">$$v_p&lt;&#x5C;overline{v}&lt;&#x5C;sqrt{&#x5C;overline{v^2}}$$</div></p>
+<p>最概然速率<br>
+<div class="mathjax-exps">$$v_p=&#x5C;sqrt{ &#x5C;dfrac{2kT}{m}}=&#x5C;sqrt{ &#x5C;dfrac{2RT}{M}}$$</div></p>
+<p>平均速率<br>
+<div class="mathjax-exps">$$&#x5C;overline{v}=&#x5C;sqrt{ &#x5C;dfrac{8kT}{&#x5C;pi m}}=&#x5C;sqrt{ &#x5C;dfrac{8RT}{&#x5C;pi M}}$$</div></p>
+<p>方均根速率<br>
+<div class="mathjax-exps">$$&#x5C;sqrt{&#x5C;overline{v^2}}=&#x5C;sqrt{ &#x5C;dfrac{3kT}{m}}=&#x5C;sqrt{ &#x5C;dfrac{3RT}{M}}$$</div></p>
+<h4 class="mume-header" id="%E5%88%86%E5%AD%90%E7%A2%B0%E6%92%9E">分子碰撞</h4>
+
+<h5 class="mume-header" id="%E5%B9%B3%E5%9D%87%E8%87%AA%E7%94%B1%E7%A8%8B">平均自由程</h5>
+
+<p><div class="mathjax-exps">$$&#x5C;overline{&#x5C;lambda}= &#x5C;dfrac{1}{(&#x5C;sqrt{2}&#x5C;pi d^2n)}= &#x5C;dfrac{kT}{(&#x5C;sqrt{2}&#x5C;pi d^2p)}$$</div></p>
+<h5 class="mume-header" id="%E5%B9%B3%E5%9D%87%E7%A2%B0%E6%92%9E%E6%AC%A1%E6%95%B0">平均碰撞次数</h5>
+
+<p><div class="mathjax-exps">$$&#x5C;overline{Z}=&#x5C;sqrt{2}&#x5C;pi d^2n&#x5C;overline{v}$$</div></p>
+<h5 class="mume-header" id="%E5%B9%B3%E5%9D%87%E9%80%9F%E7%8E%87">平均速率</h5>
+
+<p><div class="mathjax-exps">$$&#x5C;overline{v}=&#x5C;overline{&#x5C;lambda}&#x5C;cdot&#x5C;overline{Z}$$</div></p>
+<h2 class="mume-header" id="%E7%83%AD%E5%8A%9B%E5%AD%A6">热力学</h2>
+
+<h3 class="mume-header" id="%E5%87%86%E9%9D%99%E6%80%81%E8%BF%87%E7%A8%8B-%E5%8A%9F%E4%B8%8E%E7%83%AD%E9%87%8F">准静态过程, 功与热量</h3>
+
+<h4 class="mume-header" id="%E7%83%AD%E5%8A%9B%E5%AD%A6%E8%BF%87%E7%A8%8B">热力学过程</h4>
+
+<p>热力学系统状态随时间变化的过程</p>
+<h4 class="mume-header" id="%E5%87%86%E9%9D%99%E6%80%81%E8%BF%87%E7%A8%8B">准静态过程</h4>
+
+<p>过程无限缓慢, 中间状态均视为平衡态</p>
+<h4 class="mume-header" id="%E5%8A%9F">功</h4>
+
+<p>W, 过程量</p>
+<ul>
+<li>元功: <span class="mathjax-exps">${&#x5C;rm d}W=p{&#x5C;rm d}V$</span></li>
+<li>总功: <span class="mathjax-exps">$W=&#x5C;int_{v_1}^{v_2}p{&#x5C;rm d}V=-W^{ex}$</span></li>
+<li>气体膨胀: <span class="mathjax-exps">$W&gt;0$</span>; 气体压缩: <span class="mathjax-exps">$W&lt;0$</span> (对外做功)</li>
+</ul>
+<h4 class="mume-header" id="%E7%83%AD%E9%87%8F">热量</h4>
+
+<p>Q, 过程量</p>
+<ul>
+<li>吸热<span class="mathjax-exps">$Q &gt; 0$</span>; 放热<span class="mathjax-exps">$Q &lt;0$</span></li>
+<li>热量传递方式:导热、对流、热辐射</li>
+</ul>
+<h3 class="mume-header" id="%E5%86%85%E8%83%BD%E4%B8%8E%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%B8%80%E5%AE%9A%E5%BE%8B">内能与热力学第一定律</h3>
+
+<h4 class="mume-header" id="%E5%86%85%E8%83%BD">内能</h4>
+
+<p>系统处于某个状态所具有的能量, E</p>
+<ul>
+<li>内能是状态量</li>
+<li>内能增量: <span class="mathjax-exps">$&#x5C;Delta E = E_B-E_A$</span></li>
+</ul>
+<h4 class="mume-header" id="%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%B8%80%E5%AE%9A%E5%BE%8B">热力学第一定律</h4>
+
+<p><div class="mathjax-exps">$$Q= &#x5C;Delta E + W&#x5C; 或&#x5C; dW = {&#x5C;rm d}E + p{&#x5C;rm d}V$$</div></p>
+<ul>
+<li><span class="mathjax-exps">$Q&gt;0$</span>系统从外界吸热; <span class="mathjax-exps">$Q&lt;0$</span>系统向外界放热</li>
+<li><span class="mathjax-exps">$&#x5C;Delta E&gt;0$</span>系统内能增加; <span class="mathjax-exps">$&#x5C;Delta E&lt;0$</span>系统内能减少</li>
+<li><span class="mathjax-exps">$W&gt;0$</span>系统对外做正功; <span class="mathjax-exps">$W&lt;0$</span>系统对外做负功</li>
+</ul>
+<h3 class="mume-header" id="%E7%AD%89%E4%BD%93%E8%BF%87%E7%A8%8B">等体过程</h3>
+
+<h4 class="mume-header" id="%E7%AD%89%E4%BD%93%E8%BF%87%E7%A8%8B%E5%9B%BE%E5%83%8F">等体过程图像</h4>
+
+<p><img src="pics/%E7%AD%89%E4%BD%93.jpg" alt="&#x7B49;&#x4F53;"></p>
+<p><div class="mathjax-exps">$$Q= &#x5C;Delta E + W$$</div></p>
+<p>体积不变, <span class="mathjax-exps">$W=0$</span></p>
+<p>系统吸(放)热全部用于改变自身内能</p>
+<h4 class="mume-header" id="%E7%AD%89%E4%BD%93%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E7%83%AD%E9%87%8F-%E5%86%85%E8%83%BD%E4%B8%8E%E6%B8%A9%E5%BA%A6">等体过程中的热量, 内能与温度</h4>
+
+<p>摩尔定体热容<br>
+<div class="mathjax-exps">$$C_{V, m}= &#x5C;dfrac{i}{2}R$$</div></p>
+<h5 class="mume-header" id="%E7%83%AD%E9%87%8F-1">热量</h5>
+
+<p><div class="mathjax-exps">$$Q_V=&#x5C;nu C_{V, m}(T_2-T_1)$$</div></p>
+<h5 class="mume-header" id="%E5%81%9A%E5%8A%9F">做功</h5>
+
+<p><div class="mathjax-exps">$$W=0$$</div></p>
+<h5 class="mume-header" id="%E5%86%85%E8%83%BD-1">内能</h5>
+
+<p><div class="mathjax-exps">$$&#x5C;Delta E=Q_V=&#x5C;nu C_{V, m}(T_2-T_1)$$</div></p>
+<p><div class="mathjax-exps">$$pV=&#x5C;nu RT&#x5C;Rightarrow  &#x5C;dfrac{P}{T}= &#x5C;dfrac{&#x5C;nu R}{V}=常数$$</div></p>
+<h3 class="mume-header" id="%E7%AD%89%E5%8E%8B%E8%BF%87%E7%A8%8B">等压过程</h3>
+
+<h4 class="mume-header" id="%E7%AD%89%E5%8E%8B%E8%BF%87%E7%A8%8B%E5%9B%BE%E5%83%8F">等压过程图像</h4>
+
+<p><img src="pics/%E7%AD%89%E5%8E%8B.jpg" alt="&#x7B49;&#x538B;"><br>
+<div class="mathjax-exps">$$Q= &#x5C;Delta E + W$$</div></p>
+<p>系统吸(放)热用于改变自身内能和对外做功</p>
+<h4 class="mume-header" id="%E7%AD%89%E5%8E%8B%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E7%83%AD%E9%87%8F-%E5%86%85%E8%83%BD%E4%B8%8E%E6%B8%A9%E5%BA%A6">等压过程中的热量, 内能与温度</h4>
+
+<h5 class="mume-header" id="%E6%91%A9%E5%B0%94%E5%AE%9A%E5%8E%8B%E7%83%AD%E5%AE%B9">摩尔定压热容</h5>
+
+<p><div class="mathjax-exps">$$C_{p, m}=C_{V, m}+R= &#x5C;dfrac{i+2}{2}R$$</div></p>
+<h5 class="mume-header" id="%E7%83%AD%E9%87%8F-2">热量</h5>
+
+<p><div class="mathjax-exps">$$Q_V=&#x5C;nu C_{p, m}(T_2-T_1)$$</div></p>
+<h5 class="mume-header" id="%E5%81%9A%E5%8A%9F-1">做功</h5>
+
+<p><div class="mathjax-exps">$$W=&#x5C;int_{V_1}^{V_2}p{&#x5C;rm d}V=p(V_2-V_1)$$</div></p>
+<h5 class="mume-header" id="%E5%86%85%E8%83%BD-2">内能</h5>
+
+<p><div class="mathjax-exps">$$&#x5C;Delta E=Q_V=&#x5C;nu C_{p, m}(T_2-T_1)-p(V_2-V_1)$$</div></p>
+<p><div class="mathjax-exps">$$pV=&#x5C;nu RT&#x5C;Rightarrow  &#x5C;dfrac{V}{T}= &#x5C;dfrac{&#x5C;nu R}{p}=常数$$</div></p>
+<h3 class="mume-header" id="%E7%AD%89%E6%B8%A9%E8%BF%87%E7%A8%8B">等温过程</h3>
+
+<h4 class="mume-header" id="%E7%AD%89%E6%B8%A9%E8%BF%87%E7%A8%8B%E5%9B%BE%E5%83%8F">等温过程图像</h4>
+
+<p><img src="pics/%E7%AD%89%E6%B8%A9.jpg" alt="&#x7B49;&#x6E29;"></p>
+<p>温度不变, 内能不变, <span class="mathjax-exps">$&#x5C;Delta E=0$</span></p>
+<p>系统吸(放)热全部用于对外做功</p>
+<h4 class="mume-header" id="%E7%AD%89%E6%B8%A9%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E7%83%AD%E9%87%8F-%E5%86%85%E8%83%BD%E4%B8%8E%E6%B8%A9%E5%BA%A6">等温过程中的热量, 内能与温度</h4>
+
+<p><div class="mathjax-exps">$$Q= &#x5C;Delta E + W$$</div></p>
+<p><div class="mathjax-exps">$$pV=&#x5C;nu RT=常数&#x5C;&#x5C;&#x5C;Rightarrow p= &#x5C;dfrac{&#x5C;nu RT}{V}$$</div></p>
+<p><div class="mathjax-exps">$$p_1V_1=p_2V_2&#x5C;Rightarrow &#x5C;dfrac{V_2}{V_1}= &#x5C;dfrac{p_1}{p_2}$$</div></p>
+<h5 class="mume-header" id="%E7%83%AD%E9%87%8F-3">热量</h5>
+
+<p><div class="mathjax-exps">$$Q_T=W_T$$</div></p>
+<h5 class="mume-header" id="%E5%81%9A%E5%8A%9F-2">做功</h5>
+
+<p><div class="mathjax-exps">$$W_T=&#x5C;int_{V_1}^{V_2}p{&#x5C;rm d}V=&#x5C;nu RT&#x5C; &#x5C;ln &#x5C;dfrac{V_2}{V_1}=&#x5C;nu RT&#x5C; &#x5C;ln &#x5C;dfrac{p_1}{p_2}$$</div></p>
+<h5 class="mume-header" id="%E5%86%85%E8%83%BD-3">内能</h5>
+
+<p><div class="mathjax-exps">$$&#x5C;Delta E=0$$</div></p>
+<h3 class="mume-header" id="%E7%BB%9D%E7%83%AD%E8%BF%87%E7%A8%8B">绝热过程</h3>
+
+<h4 class="mume-header" id="%E7%BB%9D%E7%83%AD%E8%BF%87%E7%A8%8B%E5%9B%BE%E5%83%8F">绝热过程图像</h4>
+
+<p><img src="pics/%E7%BB%9D%E7%83%AD.jpg" alt="&#x7EDD;&#x70ED;"></p>
+<p>系统通过改变自身内能实现对外做功</p>
+<p><div class="mathjax-exps">$$Q=&#x5C;Delta E+W$$</div></p>
+<h4 class="mume-header" id="%E7%BB%9D%E7%83%AD%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E7%83%AD%E9%87%8F-%E5%86%85%E8%83%BD%E4%B8%8E%E6%B8%A9%E5%BA%A6">绝热过程中的热量, 内能与温度</h4>
+
+<p>定义<br>
+<div class="mathjax-exps">$$&#x5C;gamma= &#x5C;dfrac{C_{p, m}}{C_{V, m}}$$</div></p>
+<h5 class="mume-header" id="%E7%83%AD%E9%87%8F-4">热量</h5>
+
+<p><div class="mathjax-exps">$$Q_a=0$$</div></p>
+<h5 class="mume-header" id="%E5%86%85%E8%83%BD-4">内能</h5>
+
+<p><div class="mathjax-exps">$$&#x5C;Delta E=&#x5C;nu C_{V, m}(T_2-T_1)$$</div></p>
+<h5 class="mume-header" id="%E5%81%9A%E5%8A%9F-3">做功</h5>
+
+<p><div class="mathjax-exps">$$W_a=-&#x5C;Delta E=-&#x5C;nu C_{V, m}(T_2-T_1)= &#x5C;dfrac{p_1V_1-p_2V_2}{&#x5C;gamma-1}$$</div></p>
+<p><div class="mathjax-exps">$$pV^&#x5C;gamma=常数$$</div></p>
+<h4 class="mume-header" id="%E7%AD%89%E6%B8%A9%E8%BF%87%E7%A8%8B%E4%B8%8E%E7%BB%9D%E7%83%AD%E8%BF%87%E7%A8%8B%E7%9A%84%E5%9B%BE%E5%83%8F%E6%AF%94%E8%BE%83">等温过程与绝热过程的图像比较</h4>
+
+<p><img src="pics/%E7%AD%89%E6%B8%A9%E7%BB%9D%E7%83%AD%E6%AF%94%E8%BE%83.jpg" alt="&#x7B49;&#x6E29;&#x7EDD;&#x70ED;&#x6BD4;&#x8F83;"></p>
+<h3 class="mume-header" id="%E5%BE%AA%E7%8E%AF%E8%BF%87%E7%A8%8B">循环过程</h3>
+
+<p><img src="pics/%E5%BE%AA%E7%8E%AF%E8%BF%87%E7%A8%8B.png" alt="&#x5FAA;&#x73AF;&#x8FC7;&#x7A0B;"></p>
+<h4 class="mume-header" id="%E5%8D%A1%E8%AF%BA%E5%BE%AA%E7%8E%AF">卡诺循环</h4>
+
+<p>两个等温过程, 两个绝热过程</p>
+<h5 class="mume-header" id="%E5%8D%A1%E8%AF%BA%E7%83%AD%E6%9C%BA">卡诺热机</h5>
+
+<p><img src="pics/%E5%8D%A1%E8%AF%BA%E7%83%AD%E6%9C%BA.png" alt="&#x5361;&#x8BFA;&#x70ED;&#x673A;"></p>
+<h6 class="mume-header" id="%E6%95%88%E7%8E%87">效率</h6>
+
+<p><div class="mathjax-exps">$$&#x5C;eta= &#x5C;dfrac{W}{Q_1}= &#x5C;dfrac{Q_1-Q_2}{Q_1}=1- &#x5C;dfrac{Q_2}{Q_1}=1- &#x5C;dfrac{T_2}{T_1}$$</div></p>
+<h5 class="mume-header" id="%E5%8D%A1%E8%AF%BA%E8%87%B4%E5%86%B7%E6%9C%BA">卡诺致冷机</h5>
+
+<p><img src="pics/%E5%8D%A1%E8%AF%BA%E5%86%B7%E6%9C%BA.png" alt="&#x5361;&#x8BFA;&#x51B7;&#x673A;"></p>
+<h6 class="mume-header" id="%E5%88%B6%E5%86%B7%E7%B3%BB%E6%95%B0">制冷系数</h6>
+
+<p><div class="mathjax-exps">$$e= &#x5C;dfrac{Q_2}{W}= &#x5C;dfrac{Q_2}{Q_1-Q_2}= &#x5C;dfrac{T_2}{T_1-T_2}$$</div></p>
+<h3 class="mume-header" id="%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%BA%8C%E5%AE%9A%E5%BE%8B">热力学第二定律</h3>
+
+<ul>
+<li>不可能把热量从低温物体自动传到高温物体二不引起外界变化</li>
+<li>不可能从单一热源吸热使之完全转变为有用功二而不产生其他变化</li>
+</ul>
+<h4 class="mume-header" id="%E5%8D%A1%E8%AF%BA%E5%AE%9A%E7%90%86">卡诺定理</h4>
+
+<p><div class="mathjax-exps">$$&#x5C;eta&#x27;&#x5C; (不可逆机的效率)&#x5C;leq&#x5C;eta=1- &#x5C;dfrac{T_2}{T_1}$$</div></p>
+<ul>
+<li>相同高温和低温热源之间工作的任意可逆热机效率相同</li>
+<li>工作在相同温和低温热源之间的一切不可逆热机效率小于可逆热机效率</li>
+</ul>
+<h3 class="mume-header" id="%E7%86%B5%E5%92%8C%E7%86%B5%E5%A2%9E%E5%8A%A0%E5%8E%9F%E7%90%86">熵和熵增加原理</h3>
+
+<p>任一可逆循环过程, 热温比之和为零<br>
+<div class="mathjax-exps">$$&#x5C;oint &#x5C;dfrac{{&#x5C;rm d}Q}{T}=0$$</div></p>
+<h4 class="mume-header" id="%E7%86%B5">熵</h4>
+
+<p><div class="mathjax-exps">$$S_B-S_A=&#x5C;int_A^B &#x5C;dfrac{{&#x5C;rm d}Q}{T}&#x5C; (可逆过程)$$</div></p>
+<ul>
+<li>熵是态函数, 具有可加性</li>
+<li>无限小过程的熵 <span class="mathjax-exps">${&#x5C;rm d}S+ &#x5C;dfrac{{&#x5C;rm d}Q}{T}$</span></li>
+</ul>
+<h4 class="mume-header" id="%E7%86%B5%E5%A2%9E%E5%8A%A0%E5%8E%9F%E7%90%86">熵增加原理</h4>
+
+<p><div class="mathjax-exps">$$&#x5C;Delta S&#x5C;geq 0$$</div></p>
+<p>孤立系统中的可逆过程熵不变, 不可逆过程熵增</p>
+<h3 class="mume-header" id="%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%BA%8C%E5%AE%9A%E5%BE%8B%E7%9A%84%E7%BB%9F%E8%AE%A1%E6%84%8F%E4%B9%89">热力学第二定律的统计意义</h3>
+
+<h4 class="mume-header" id="%E7%83%AD%E5%8A%9B%E5%AD%A6%E6%A6%82%E7%8E%87w">热力学概率<span class="mathjax-exps">$W$</span></h4>
+
+<p>分子热运动无序度的度量</p>
+<h4 class="mume-header" id="%E7%8E%BB%E5%B0%94%E5%85%B9%E6%9B%BC%E5%85%B3%E7%B3%BB%E5%BC%8F">玻尔兹曼关系式</h4>
+
+<p><div class="mathjax-exps">$$S=k&#x5C;ln W$$</div></p>
+<p>孤立系统熵增加的过程是系统微观状态数增大的过程, 是系统从非平衡态趋于平衡态的过程, 是一个不可逆过程</p>
+<h2 class="mume-header" id="%E7%9B%B8%E5%AF%B9%E8%AE%BA">相对论</h2>
+
+<p>看着书的目录好像没有, 先不写了</p>
+<p>-完-</p>
 
       </div>
       <div class="md-sidebar-toc"><ul>
@@ -1056,6 +1801,7 @@ code.language-yaml {
 <li><a href="#%E9%AB%98%E6%96%AF%E5%AE%9A%E7%90%86%E9%87%8D%E7%82%B9%E6%9D%A5%E4%BA%86">高斯定理(重点来了)</a>
 <ul>
 <li><a href="#%E7%94%A8%E9%AB%98%E6%96%AF%E5%AE%9A%E7%90%86%E6%B1%82%E7%94%B5%E5%9C%BA%E5%BC%BA%E5%BA%A6%E4%B8%80%E7%82%B9%E7%82%B9%E6%80%BB%E7%BB%93">用高斯定理求电场强度一点点总结</a></li>
+<li><a href="#%E8%A1%A5%E5%85%85%E4%B8%80%E7%82%B9">补充一点</a></li>
 </ul>
 </li>
 <li><a href="#%E7%94%B5%E5%8A%BF%E4%B8%8E%E7%94%B5%E5%9C%BA%E4%B8%AD%E7%9A%84%E5%82%A8%E8%83%BD">电势与电场中的储能</a></li>
@@ -1083,6 +1829,273 @@ code.language-yaml {
 </li>
 </ul>
 </li>
+<li><a href="#%E6%8C%AF%E5%8A%A8">振动</a>
+<ul>
+<li><a href="#%E6%8C%AF%E5%8A%A8%E7%9A%84%E6%96%B9%E7%A8%8B">振动的方程</a></li>
+<li><a href="#%E7%89%B9%E5%BE%81%E9%87%8F">特征量</a></li>
+<li><a href="#%E7%AE%80%E5%86%99%E8%BF%90%E5%8A%A8%E7%9A%84%E8%A7%A3%E9%A2%98%E6%96%B9%E6%B3%95">简写运动的解题方法</a></li>
+<li><a href="#%E6%97%8B%E8%BD%AC%E7%9F%A2%E9%87%8F%E6%B3%95%E7%9A%84%E5%B0%8F%E5%AE%9E%E4%BE%8B">旋转矢量法的小实例</a></li>
+<li><a href="#%E6%8C%AF%E5%8A%A8%E7%9A%84%E8%83%BD%E9%87%8F">振动的能量</a></li>
+<li><a href="#%E6%8C%AF%E5%8A%A8%E7%9A%84%E5%90%88%E6%88%90">振动的合成</a>
+<ul>
+<li><a href="#%E5%90%8C%E6%96%B9%E5%90%91-%E5%90%8C%E9%A2%91%E7%8E%87%E7%9A%84%E6%8C%AF%E5%8A%A8%E5%90%88%E6%88%90">同方向, 同频率的振动合成</a></li>
+<li><a href="#%E5%90%8C%E6%96%B9%E5%90%91-%E4%B8%8D%E5%90%8C%E9%A2%91%E7%8E%87%E7%9A%84%E6%8C%AF%E5%8A%A8%E5%90%88%E6%88%90">同方向, 不同频率的振动合成</a></li>
+<li><a href="#%E4%B8%8D%E5%90%8C%E6%96%B9%E5%90%91-%E5%90%8C%E9%A2%91%E7%8E%87%E7%9A%84%E6%8C%AF%E5%8A%A8%E5%90%88%E6%88%90">不同方向, 同频率的振动合成</a></li>
+<li><a href="#%E4%B8%8D%E5%90%8C%E6%96%B9%E5%90%91-%E4%B8%8D%E5%90%8C%E9%A2%91%E7%8E%87%E7%9A%84%E6%8C%AF%E5%8A%A8%E5%90%88%E6%88%90">不同方向, 不同频率的振动合成</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E6%B3%A2%E5%8A%A8">波动</a>
+<ul>
+<li><a href="#%E6%B3%A2%E5%8A%A8%E7%9A%84%E6%8F%8F%E8%BF%B0%E7%89%B9%E5%BE%81%E9%87%8F">波动的描述(特征量)</a></li>
+<li><a href="#%E5%B9%B3%E9%9D%A2%E7%AE%80%E8%B0%90%E6%B3%A2%E6%B3%A2%E5%87%BD%E6%95%B0">平面简谐波波函数</a>
+<ul>
+<li><a href="#%E5%8F%82%E8%80%83%E7%82%B9o%E7%9A%84%E6%8C%AF%E5%8A%A8%E7%8A%B6%E6%80%81">参考点o的振动状态</a></li>
+<li><a href="#%E5%8F%82%E8%80%83%E7%82%B9o%E4%B8%8E%E5%BE%85%E6%B1%82%E7%82%B9p%E7%9A%84%E7%9B%B8%E4%BD%8D%E5%B7%AE">参考点o与待求点P的相位差</a></li>
+<li><a href="#%E6%A0%B9%E6%8D%AE%E5%8F%82%E8%80%83%E7%82%B9%E5%86%99p%E7%9A%84%E6%8C%AF%E5%8A%A8%E6%96%B9%E7%A8%8B">根据参考点写P的振动方程</a></li>
+</ul>
+</li>
+<li><a href="#%E6%B3%A2%E5%87%BD%E6%95%B0yx-t%E7%9A%84%E4%B8%80%E8%88%AC%E5%BD%A2%E5%BC%8F%E4%BB%A5%E5%8F%8A%E7%89%A9%E7%90%86%E6%84%8F%E4%B9%89%E9%87%8D%E7%82%B9%E7%9C%8B%E8%BF%99%E9%87%8C">波函数<span class="mathjax-exps">$y(x, &#x5C; t)$</span>的一般形式以及物理意义(重点看这里)</a>
+<ul>
+<li><a href="#%E4%B8%80%E8%88%AC%E5%BD%A2%E5%BC%8F-%E4%B8%89%E7%A7%8D">一般形式 (三种)</a></li>
+<li><a href="#%E7%89%A9%E7%90%86%E6%84%8F%E4%B9%89">物理意义</a></li>
+</ul>
+</li>
+<li><a href="#%E6%B3%A2%E7%9A%84%E8%A1%8D%E5%B0%84%E4%B8%8E%E5%B9%B2%E6%B6%89">波的衍射与干涉</a>
+<ul>
+<li><a href="#%E6%B3%A2%E7%9A%84%E4%BC%A0%E6%92%AD%E9%81%B5%E4%BB%8E%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86">波的传播遵从的基本原理</a></li>
+<li><a href="#%E6%B3%A2%E7%9A%84%E5%B9%B2%E6%B6%89">波的干涉</a></li>
+</ul>
+</li>
+<li><a href="#%E9%A9%BB%E6%B3%A2">驻波</a>
+<ul>
+<li><a href="#%E9%A9%BB%E6%B3%A2%E6%96%B9%E7%A8%8B">驻波方程</a></li>
+<li><a href="#%E6%B3%A2%E8%85%B9%E4%B8%8E%E6%B3%A2%E8%8A%82">波腹与波节</a></li>
+<li><a href="#%E5%90%84%E7%82%B9%E7%9B%B8%E4%BD%8D">各点相位</a></li>
+<li><a href="#%E7%9B%B8%E4%BD%8D%E8%B7%83%E5%8F%98">相位跃变</a></li>
+<li><a href="#%E9%A9%BB%E6%B3%A2%E7%9A%84%E8%83%BD%E9%87%8F">驻波的能量</a></li>
+</ul>
+</li>
+<li><a href="#%E5%A4%9A%E6%99%AE%E5%8B%92%E6%95%88%E5%BA%94">多普勒效应</a>
+<ul>
+<li><a href="#%E4%BB%A5%E4%BB%8B%E8%B4%A8%E4%B8%BA%E5%8F%82%E8%80%83%E7%B3%BB">以介质为参考系</a></li>
+<li><a href="#%E9%A2%91%E7%8E%87%E4%B8%8E%E6%B3%A2%E6%BA%90%E9%A2%91%E7%8E%87%E7%9A%84%E5%85%B3%E7%B3%BB">频率与波源频率的关系</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E5%85%89%E5%AD%A6">光学</a>
+<ul>
+<li><a href="#%E5%85%89%E7%9A%84%E5%B9%B2%E6%B6%89">光的干涉</a>
+<ul>
+<li><a href="#%E6%B1%82%E8%A7%A3%E5%85%89%E5%AD%A6%E9%97%AE%E9%A2%98%E4%B8%80%E8%88%AC%E6%AD%A5%E9%AA%A4">求解光学问题一般步骤</a></li>
+<li><a href="#%E6%9D%A8%E6%B0%8F%E5%8F%8C%E7%BC%9D%E5%B9%B2%E6%B6%89%E5%AE%9E%E9%AA%8C-%E6%B3%A2%E6%8C%AF%E9%9D%A2%E5%88%86%E5%89%B2%E6%B3%95">杨氏双缝干涉实验 (波振面分割法)</a>
+<ul>
+<li><a href="#%E5%85%89%E8%B7%AF%E5%9B%BE">光路图</a></li>
+<li><a href="#%E8%AE%A1%E7%AE%97%E8%BF%87%E7%A8%8B">计算过程</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E5%85%89%E7%A8%8B%E4%B8%8E%E8%96%84%E8%86%9C%E5%B9%B2%E6%B6%89">光程与薄膜干涉</a>
+<ul>
+<li><a href="#%E5%85%89%E7%A8%8B">光程</a></li>
+<li><a href="#%E4%BA%A7%E7%94%9F%E7%9B%B8%E4%BD%8D%E8%B7%83%E5%8F%98%E7%9A%84%E6%9D%A1%E4%BB%B6">产生相位跃变的条件</a></li>
+<li><a href="#%E8%96%84%E8%86%9C%E5%B9%B2%E6%B6%89%E6%8C%AF%E5%B9%85%E5%88%86%E5%89%B2%E6%B3%95">薄膜干涉(振幅分割法)</a>
+<ul>
+<li><a href="#%E4%B8%80%E9%81%93%E4%BE%8B%E9%A2%98%E6%9D%A5%E8%AE%B2%E8%A7%A3">一道例题来讲解</a>
+<ul>
+<li><a href="#%E8%96%84%E8%86%9C%E5%B9%B2%E6%B6%89%E5%85%89%E8%B7%AF%E5%9B%BE">薄膜干涉光路图</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E5%8A%88%E5%B0%96%E4%B8%8E%E7%89%9B%E9%A1%BF%E7%8E%AF">劈尖与牛顿环</a>
+<ul>
+<li><a href="#%E5%AE%9A%E9%87%8F%E5%88%86%E6%9E%90">定量分析</a></li>
+<li><a href="#%E5%8A%88%E5%B0%96%E4%BE%8B%E9%A2%98">劈尖例题</a></li>
+<li><a href="#%E7%89%9B%E9%A1%BF%E7%8E%AF">牛顿环</a>
+<ul>
+<li><a href="#%E5%88%86%E6%9E%90">分析</a></li>
+</ul>
+</li>
+<li><a href="#%E6%B1%82%E8%A7%A3%E5%B9%B2%E6%B6%89%E9%97%AE%E9%A2%98%E4%B8%80%E8%88%AC%E6%AD%A5%E9%AA%A4">求解干涉问题一般步骤</a>
+<ul>
+<li><a href="#eg">eg</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E5%8D%95%E7%BC%9D%E8%A1%8D%E5%B0%84">单缝衍射</a>
+<ul>
+<li><a href="#%E5%8D%95%E7%BC%9D%E8%A1%8D%E5%B0%84%E5%85%89%E8%B7%AF%E5%9B%BE">单缝衍射光路图</a></li>
+<li><a href="#%E6%B3%A2%E5%B8%A6%E6%B3%95">波带法</a></li>
+<li><a href="#%E5%8F%82%E9%87%8F">参量</a></li>
+<li><a href="#%E7%BB%93%E8%AE%BA">结论</a></li>
+<li><a href="#%E5%8D%95%E7%BC%9D%E8%A1%8D%E5%B0%84%E6%9D%A1%E7%BA%B9%E7%9A%84%E5%9B%BE%E6%A0%B7">单缝衍射条纹的图样</a></li>
+<li><a href="#%E5%8D%95%E7%BC%9D%E8%A1%8D%E5%B0%84%E7%9A%84%E5%87%A0%E4%BD%95%E5%85%B3%E7%B3%BB%E8%A7%A3%E9%A2%98%E5%B8%B8%E7%94%A8">单缝衍射的几何关系(解题常用)</a></li>
+</ul>
+</li>
+<li><a href="#%E5%9C%86%E5%AD%94%E8%A1%8D%E5%B0%84">圆孔衍射</a></li>
+<li><a href="#%E8%A1%8D%E5%B0%84%E5%85%89%E6%A0%85">衍射光栅</a>
+<ul>
+<li><a href="#%E5%85%89%E6%A0%85%E7%BC%BA%E7%BA%A7%E9%97%AE%E9%A2%98-%E9%9A%BE%E9%A2%98">光栅缺级问题 (难题)</a></li>
+</ul>
+</li>
+<li><a href="#%E5%85%89%E7%9A%84%E5%81%8F%E6%8C%AF">光的偏振</a>
+<ul>
+<li><a href="#%E9%A9%AC%E5%90%95%E6%96%AF%E5%AE%9A%E5%BE%8B">马吕斯定律</a></li>
+<li><a href="#%E5%B8%83%E5%84%92%E6%96%AF%E7%89%B9%E5%AE%9A%E5%BE%8B">布儒斯特定律</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E6%B0%94%E4%BD%93%E5%8A%A8%E7%90%86%E8%AE%BA">气体动理论</a>
+<ul>
+<li><a href="#%E7%BB%9F%E8%AE%A1%E8%A7%84%E5%BE%8B%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5">统计规律基本概念</a></li>
+<li><a href="#%E4%B8%80%E4%BA%9B%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A">一些名词解释</a></li>
+<li><a href="#%E6%8F%8F%E8%BF%B0%E7%8A%B6%E6%80%81%E7%9A%84%E5%8F%82%E9%87%8F">描述状态的参量</a></li>
+<li><a href="#%E7%90%86%E6%83%B3%E6%B0%94%E4%BD%93%E7%8A%B6%E6%80%81%E6%96%B9%E7%A8%8B">理想气体状态方程</a>
+<ul>
+<li><a href="#%E7%90%86%E6%83%B3%E6%B0%94%E4%BD%93%E5%88%86%E5%AD%90%E6%A8%A1%E5%9E%8B">理想气体分子模型</a></li>
+<li><a href="#%E7%90%86%E6%83%B3%E6%B0%94%E4%BD%93%E5%8E%8B%E5%BC%BA-%E6%B8%A9%E5%BA%A6-%E5%86%85%E8%83%BD%E5%85%AC%E5%BC%8F">理想气体压强, 温度, 内能公式</a></li>
+<li><a href="#%E7%90%86%E6%83%B3%E6%B0%94%E4%BD%93%E7%9A%84%E9%80%9F%E7%8E%87%E5%88%86%E5%B8%83%E5%87%BD%E6%95%B0%E9%9C%80%E8%A6%81%E4%B8%80%E7%82%B9%E7%82%B9%E6%A6%82%E7%8E%87%E8%AE%BA%E7%9F%A5%E8%AF%86%E6%9D%A5%E7%90%86%E8%A7%A3">理想气体的速率分布函数(需要一点点概率论知识来理解)</a>
+<ul>
+<li><a href="#fv-%E7%89%A9%E7%90%86%E6%84%8F%E4%B9%89"><span class="mathjax-exps">$f(v)$</span> 物理意义</a></li>
+<li><a href="#fvrm-dv-%E7%89%A9%E7%90%86%E6%84%8F%E4%B9%89"><span class="mathjax-exps">$f(v){&#x5C;rm d}v$</span> 物理意义</a></li>
+<li><a href="#%E5%BD%92%E4%B8%80%E5%8C%96%E6%9D%A1%E4%BB%B6-%E6%A6%82%E7%8E%87%E6%98%AF%E4%B8%8D%E4%BC%9A%E5%A4%A7%E4%BA%8E1%E7%9A%84">归一化条件 (概率是不会大于1的)</a></li>
+</ul>
+</li>
+<li><a href="#%E7%90%86%E6%83%B3%E6%B0%94%E4%BD%93%E9%80%9F%E7%8E%87%E5%88%86%E5%B8%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%BA%94%E7%94%A8">理想气体速率分布函数的应用</a>
+<ul>
+<li><a href="#%E6%B1%82%E9%80%9F%E7%8E%87%E5%9C%A8-v_1-v_2-%E5%8C%BA%E9%97%B4%E5%86%85%E6%B0%94%E4%BD%93%E5%88%86%E5%AD%90%E6%80%BB%E6%95%B0%E5%8D%A0%E5%88%86%E5%AD%90%E6%80%BB%E6%95%B0%E7%9A%84%E7%99%BE%E5%88%86%E6%AF%94">求速率在 <span class="mathjax-exps">$(v_1, &#x5C; v_2)$</span> 区间内气体分子总数占分子总数的百分比</a></li>
+<li><a href="#%E6%B1%82%E9%80%9F%E7%8E%87%E5%9C%A8-v_1-v_2-%E5%8C%BA%E9%97%B4%E5%86%85%E6%B0%94%E4%BD%93%E5%88%86%E5%AD%90%E6%95%B0">求速率在 <span class="mathjax-exps">$(v_1, &#x5C; v_2)$</span> 区间内气体分子数</a></li>
+<li><a href="#%E6%B1%82%E7%89%A9%E7%90%86%E9%87%8F%E7%9A%84%E5%B9%B3%E5%9D%87%E5%80%BC">求物理量的平均值</a></li>
+</ul>
+</li>
+<li><a href="#%E9%BA%A6%E5%85%8B%E6%96%AF%E9%9F%A6%E9%80%9F%E7%8E%87%E5%88%86%E5%B8%83%E5%87%BD%E6%95%B0">麦克斯韦速率分布函数</a>
+<ul>
+<li><a href="#%E4%B8%89%E7%A7%8D%E7%BB%9F%E8%AE%A1%E9%80%9F%E7%8E%87">三种统计速率</a></li>
+</ul>
+</li>
+<li><a href="#%E5%88%86%E5%AD%90%E7%A2%B0%E6%92%9E">分子碰撞</a>
+<ul>
+<li><a href="#%E5%B9%B3%E5%9D%87%E8%87%AA%E7%94%B1%E7%A8%8B">平均自由程</a></li>
+<li><a href="#%E5%B9%B3%E5%9D%87%E7%A2%B0%E6%92%9E%E6%AC%A1%E6%95%B0">平均碰撞次数</a></li>
+<li><a href="#%E5%B9%B3%E5%9D%87%E9%80%9F%E7%8E%87">平均速率</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E7%83%AD%E5%8A%9B%E5%AD%A6">热力学</a>
+<ul>
+<li><a href="#%E5%87%86%E9%9D%99%E6%80%81%E8%BF%87%E7%A8%8B-%E5%8A%9F%E4%B8%8E%E7%83%AD%E9%87%8F">准静态过程, 功与热量</a>
+<ul>
+<li><a href="#%E7%83%AD%E5%8A%9B%E5%AD%A6%E8%BF%87%E7%A8%8B">热力学过程</a></li>
+<li><a href="#%E5%87%86%E9%9D%99%E6%80%81%E8%BF%87%E7%A8%8B">准静态过程</a></li>
+<li><a href="#%E5%8A%9F">功</a></li>
+<li><a href="#%E7%83%AD%E9%87%8F">热量</a></li>
+</ul>
+</li>
+<li><a href="#%E5%86%85%E8%83%BD%E4%B8%8E%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%B8%80%E5%AE%9A%E5%BE%8B">内能与热力学第一定律</a>
+<ul>
+<li><a href="#%E5%86%85%E8%83%BD">内能</a></li>
+<li><a href="#%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%B8%80%E5%AE%9A%E5%BE%8B">热力学第一定律</a></li>
+</ul>
+</li>
+<li><a href="#%E7%AD%89%E4%BD%93%E8%BF%87%E7%A8%8B">等体过程</a>
+<ul>
+<li><a href="#%E7%AD%89%E4%BD%93%E8%BF%87%E7%A8%8B%E5%9B%BE%E5%83%8F">等体过程图像</a></li>
+<li><a href="#%E7%AD%89%E4%BD%93%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E7%83%AD%E9%87%8F-%E5%86%85%E8%83%BD%E4%B8%8E%E6%B8%A9%E5%BA%A6">等体过程中的热量, 内能与温度</a>
+<ul>
+<li><a href="#%E7%83%AD%E9%87%8F-1">热量</a></li>
+<li><a href="#%E5%81%9A%E5%8A%9F">做功</a></li>
+<li><a href="#%E5%86%85%E8%83%BD-1">内能</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E7%AD%89%E5%8E%8B%E8%BF%87%E7%A8%8B">等压过程</a>
+<ul>
+<li><a href="#%E7%AD%89%E5%8E%8B%E8%BF%87%E7%A8%8B%E5%9B%BE%E5%83%8F">等压过程图像</a></li>
+<li><a href="#%E7%AD%89%E5%8E%8B%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E7%83%AD%E9%87%8F-%E5%86%85%E8%83%BD%E4%B8%8E%E6%B8%A9%E5%BA%A6">等压过程中的热量, 内能与温度</a>
+<ul>
+<li><a href="#%E6%91%A9%E5%B0%94%E5%AE%9A%E5%8E%8B%E7%83%AD%E5%AE%B9">摩尔定压热容</a></li>
+<li><a href="#%E7%83%AD%E9%87%8F-2">热量</a></li>
+<li><a href="#%E5%81%9A%E5%8A%9F-1">做功</a></li>
+<li><a href="#%E5%86%85%E8%83%BD-2">内能</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E7%AD%89%E6%B8%A9%E8%BF%87%E7%A8%8B">等温过程</a>
+<ul>
+<li><a href="#%E7%AD%89%E6%B8%A9%E8%BF%87%E7%A8%8B%E5%9B%BE%E5%83%8F">等温过程图像</a></li>
+<li><a href="#%E7%AD%89%E6%B8%A9%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E7%83%AD%E9%87%8F-%E5%86%85%E8%83%BD%E4%B8%8E%E6%B8%A9%E5%BA%A6">等温过程中的热量, 内能与温度</a>
+<ul>
+<li><a href="#%E7%83%AD%E9%87%8F-3">热量</a></li>
+<li><a href="#%E5%81%9A%E5%8A%9F-2">做功</a></li>
+<li><a href="#%E5%86%85%E8%83%BD-3">内能</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E7%BB%9D%E7%83%AD%E8%BF%87%E7%A8%8B">绝热过程</a>
+<ul>
+<li><a href="#%E7%BB%9D%E7%83%AD%E8%BF%87%E7%A8%8B%E5%9B%BE%E5%83%8F">绝热过程图像</a></li>
+<li><a href="#%E7%BB%9D%E7%83%AD%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E7%83%AD%E9%87%8F-%E5%86%85%E8%83%BD%E4%B8%8E%E6%B8%A9%E5%BA%A6">绝热过程中的热量, 内能与温度</a>
+<ul>
+<li><a href="#%E7%83%AD%E9%87%8F-4">热量</a></li>
+<li><a href="#%E5%86%85%E8%83%BD-4">内能</a></li>
+<li><a href="#%E5%81%9A%E5%8A%9F-3">做功</a></li>
+</ul>
+</li>
+<li><a href="#%E7%AD%89%E6%B8%A9%E8%BF%87%E7%A8%8B%E4%B8%8E%E7%BB%9D%E7%83%AD%E8%BF%87%E7%A8%8B%E7%9A%84%E5%9B%BE%E5%83%8F%E6%AF%94%E8%BE%83">等温过程与绝热过程的图像比较</a></li>
+</ul>
+</li>
+<li><a href="#%E5%BE%AA%E7%8E%AF%E8%BF%87%E7%A8%8B">循环过程</a>
+<ul>
+<li><a href="#%E5%8D%A1%E8%AF%BA%E5%BE%AA%E7%8E%AF">卡诺循环</a>
+<ul>
+<li><a href="#%E5%8D%A1%E8%AF%BA%E7%83%AD%E6%9C%BA">卡诺热机</a>
+<ul>
+<li><a href="#%E6%95%88%E7%8E%87">效率</a></li>
+</ul>
+</li>
+<li><a href="#%E5%8D%A1%E8%AF%BA%E8%87%B4%E5%86%B7%E6%9C%BA">卡诺致冷机</a>
+<ul>
+<li><a href="#%E5%88%B6%E5%86%B7%E7%B3%BB%E6%95%B0">制冷系数</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%BA%8C%E5%AE%9A%E5%BE%8B">热力学第二定律</a>
+<ul>
+<li><a href="#%E5%8D%A1%E8%AF%BA%E5%AE%9A%E7%90%86">卡诺定理</a></li>
+</ul>
+</li>
+<li><a href="#%E7%86%B5%E5%92%8C%E7%86%B5%E5%A2%9E%E5%8A%A0%E5%8E%9F%E7%90%86">熵和熵增加原理</a>
+<ul>
+<li><a href="#%E7%86%B5">熵</a></li>
+<li><a href="#%E7%86%B5%E5%A2%9E%E5%8A%A0%E5%8E%9F%E7%90%86">熵增加原理</a></li>
+</ul>
+</li>
+<li><a href="#%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%BA%8C%E5%AE%9A%E5%BE%8B%E7%9A%84%E7%BB%9F%E8%AE%A1%E6%84%8F%E4%B9%89">热力学第二定律的统计意义</a>
+<ul>
+<li><a href="#%E7%83%AD%E5%8A%9B%E5%AD%A6%E6%A6%82%E7%8E%87w">热力学概率<span class="mathjax-exps">$W$</span></a></li>
+<li><a href="#%E7%8E%BB%E5%B0%94%E5%85%B9%E6%9B%BC%E5%85%B3%E7%B3%BB%E5%BC%8F">玻尔兹曼关系式</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E7%9B%B8%E5%AF%B9%E8%AE%BA">相对论</a></li>
 </ul>
 </li>
 </ul>
